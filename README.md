@@ -62,7 +62,7 @@ After every other result, we ran the collision test unchanged on one day of a re
 | Highest evidence E among unrelated visitors | 4.35 | 8.25 | same file |
 | Lying swarms above that highest E | 6 of 23 | 4 of 23 | same file |
 
-Two causes: big crowds hold chance clean splits, and many folders hold one file per need. A clean split still cannot finish any of our datasets under the log's 24-hour value, but it can take 75-92% of one first. A hub must set its cutoffs on its own traffic (report section 5 and Appendix H).
+Two causes: big crowds hold chance clean splits, and many folders hold one file per need. A clean split still cannot finish any of our datasets under the log's 24-hour value, but it can take 75-92% of one first. A hub must set its cutoffs on its own traffic (report section 4.7 and Appendix H).
 
 ## Scorecard: confess or be caught
 
@@ -87,7 +87,7 @@ All counts are from the simulated hub, with cutoffs set on simulated honest user
   - our canary-carry-over prediction (H1) ended in a tie;
   - on a real 1995 web log, our simulated cutoffs raised false alarms in 10 of 59 folders within an hour (Result 5; not pre-registered).
 - **Controls.** A same-length sham question; a neutral brief; cutoffs set on 12 honest-only worlds and tested on 12 more.
-- **Main limitation.** The honest users are simulated (13 of 32 realism checks passed), and the one real log we tried shows the cutoffs set on them are too low (report §5 and Appendices A and H).
+- **Main limitation.** The honest users are simulated (13 of 32 realism checks passed), and the one real log we tried shows the cutoffs set on them are too low (report §4.7 and Appendices A and H).
 
 ## Repository structure
 
