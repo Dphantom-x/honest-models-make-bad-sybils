@@ -3,6 +3,9 @@
 The experiments ran in a private repository. This is its full commit log: abbreviated hash, commit time (US Eastern, UTC-5) and message, newest first. The report (Appendix B) and `predictions.md` cite these hashes. Each prediction's commit comes before the commit of its outcome, and the private repository can be shown to reviewers to verify the hashes.
 
 ```
+c386686  2026-11-09 04:39  Report: AI-use statements without parentheses
+abe1872  2026-11-09 04:38  Report: two verified cross-sprint citations (IR 1st place on who notices escapes; collusion-sprint permutation-calibrated alarm); margins 0.65/0.6 in
+3b9a3b0  2026-11-09 04:36  Report: explicit coverage (IP/region per account, agents' messages never read, honeypot as step 4, personhood credentials); AI-use wording: most of the code, text from the author's notes
 e7402b0  2026-11-09 04:09  Report: keep every sentence; smaller top/bottom margins and table placement instead of trims (user request)
 ad4e07e  2026-11-09 04:05  Report: the collision test on a real 1995 web log (post hoc): simulated cutoffs do not transfer; Appendix H, section 5, Table 3 row, abstract
 0a01ef0  2026-11-09 03:39  Report: master table of conditions and outcomes (confess or be caught), E defined at Figure 1, 4.4 condensed
