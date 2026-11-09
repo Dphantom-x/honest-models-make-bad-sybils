@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>{{TITLE_PLAIN}}</title>
 <style>
-  @page { size: Letter; margin: 0.5in 1.25in 0.55in 1.25in; }
+  @page { size: Letter; margin: 0.4in 1.25in 0.55in 1.25in; }
   html { font-family: "Times New Roman", "Nimbus Roman", Times, serif; font-size: 10pt; color: #000; }
   body { margin: 0; line-height: 1.22; }
   p { margin: 0 0 0.55em 0; text-align: justify; hyphens: auto; }
@@ -250,7 +250,7 @@
 
 <p>A victim cannot see a swarm&rsquo;s intent in its logs, nor tell a swarm from an honest team by behaviour alone. It can still ask, and it can count. Today&rsquo;s models answered truthfully. Told to lie, or refused for telling the truth, most lied, but a lie about coordination is a claim the downloads can check: unrelated people usually collide, a planned split rarely does, and escaping both tests means wasting most of the downloads. How often strangers avoid each other depends on the crowd, so each hub must set its cutoffs on its own traffic.</p>
 
-<p><b>Next steps.</b> Three pieces would turn this into a deployed defence: calibrate the collision test on each hub&rsquo;s own traffic with a permutation null that corrects for crowd size, and re-score the lying swarms against it; run the coached-evasion briefs as pre-registered experiments across model families; and pilot the access-form question with a real host of gated datasets, which needs no new infrastructure.</p>
+<p><b>Next steps.</b> We see this as the start of victim-side oversight for agent swarms, built from the logs every service already keeps. With support, we would (1) calibrate the collision test on real traffic with a permutation null corrected for crowd size, and run it live with a host of gated datasets; (2) release a drop-in swarm check and an open benchmark of simulated hubs calibrated on real traffic; (3) track, release by release, whether models keep telling the truth about coordination, including under coached evasion; and (4) carry the question to every service with per-account limits, as a declared-coordination standard alongside agent IDs and signed bot requests [12&ndash;14].</p>
 
 <h2>References</h2>
 <div class="refs">

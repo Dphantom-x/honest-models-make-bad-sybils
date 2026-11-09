@@ -64,6 +64,15 @@ After every other result, we ran the collision test unchanged on one day of a re
 
 Two causes: big crowds hold chance clean splits, and many folders hold one file per need. A clean split still cannot finish any of our datasets under the log's 24-hour value, but it can take 75-92% of one first. A hub must set its cutoffs on its own traffic (report section 4.7 and Appendix H).
 
+## Roadmap: victim-side oversight for agent swarms
+
+This sprint result is the first piece. With support, the next steps are:
+
+1. **Real traffic.** Calibrate the collision test on real logs with a permutation null that corrects for crowd size, and run it live with a partner that hosts gated datasets.
+2. **Open tools.** Release a drop-in swarm check and an open benchmark of simulated hubs calibrated on real traffic, so anyone can test their monitors against live AI swarms.
+3. **A living confession tracker.** Measure, model by model and release by release, whether agents keep telling the truth when asked about coordination, including under coached evasion.
+4. **A standard.** Carry the question beyond datasets to any service with per-account limits, as a declared-coordination field that sits alongside agent IDs and signed bot requests.
+
 ## Scorecard: confess or be caught
 
 | Version | Attacking swarms | Confessed | Lied and flagged | Lied and missed |
