@@ -3,6 +3,7 @@
 The experiments ran in a private repository. This is its full commit log: abbreviated hash, commit time (US Eastern, UTC-5) and message, newest first. The report (Appendix B) and `predictions.md` cite these hashes. Each prediction's commit comes before the commit of its outcome, and the private repository can be shown to reviewers to verify the hashes.
 
 ```
+9a4eca4  2026-11-09 03:19  Report: public repo link on the title page; Appendix B states what is public and what is on request
 19c31c6  2026-11-09 03:10  Submission copy of the final PDF and the plain-text abstract
 a5e9b38  2026-11-09 03:03  README: public-facing summary, results at a glance, reproduction, safety notes
 d85888c  2026-11-09 03:02  Report polish: abstract leads with the findings, checkpoints at Results and Discussion, figures redrawn narrower
