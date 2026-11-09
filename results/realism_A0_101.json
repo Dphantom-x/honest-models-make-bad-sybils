@@ -1,0 +1,649 @@
+{
+ "checks": [
+  {
+   "check": "busiest/quietest hour (people)",
+   "id": "V1",
+   "note": "global on requests; per region on visit starts (requests per region are dominated by a few heavy users), regions with 20+ visits in every hour",
+   "status": "pass",
+   "target": "1.5-2.5 global; 5-9 per region",
+   "value": {
+    "global": 1.96,
+    "region_median": 7.42,
+    "regions": {
+     "-5.0": 6.71,
+     "-8.0": 5.41,
+     "0.0": 9.19,
+     "1.0": 7.47,
+     "5.5": 9.81,
+     "8.0": 7.42,
+     "9.0": 5.44
+    }
+   }
+  },
+  {
+   "check": "weekday/weekend by population",
+   "id": "V2",
+   "note": "people on visit starts in their own local days (UTC days smear each zone's weekend and lower the ratio by about 5%, reported alongside); CI on UTC requests (cron schedules run in UTC)",
+   "status": "fail",
+   "target": "browser 1.05-1.15; developers 1.35-1.45; CI about 2.5 (2.0-3.0)",
+   "value": {
+    "browser": 0.89,
+    "browser_utc_visits": 0.73,
+    "ci": 2.66,
+    "developer_utc_requests": 1.046,
+    "developer_utc_visits": 0.869,
+    "developers": 1.105
+   }
+  },
+  {
+   "check": "session starts are Poisson within an hour",
+   "id": "V3",
+   "note": "visits: a session ID's requests with gaps under 30 min (people)",
+   "status": "fail",
+   "target": "dispersion of per-minute session starts about 1 (0.8-1.25); requests over-dispersed",
+   "value": {
+    "hours": 168,
+    "requests": 19.2,
+    "starts": 1.283
+   }
+  },
+  {
+   "check": "self-similarity of request counts",
+   "id": "V4",
+   "note": "per busy hour, 1-second bins aggregated up to 6 minutes; median over hours",
+   "status": "pass",
+   "target": "H 0.7-0.85 (variance-time, 1 s to 10 min, busy hours)",
+   "value": {
+    "H": 0.732,
+    "hours": 55
+   }
+  },
+  {
+   "check": "think-time tail",
+   "id": "V5",
+   "note": "gaps between a person's consecutive requests after a page or API answer (not a file transfer), from 30 s (Crovella's think times) to 10 min (beyond that, mostly between visits); truncated-Pareto MLE",
+   "status": "pass",
+   "target": "think-time tail alpha about 1.5 (1.3-1.7)",
+   "value": {
+    "alpha": 1.366,
+    "gaps": 10828
+   }
+  },
+  {
+   "check": "per-entity inter-arrival CV",
+   "id": "V6",
+   "note": "CV of burst-start gaps (bursts split by 30 s of silence), entities with 10+ bursts",
+   "status": "pass",
+   "target": "a mixture: cron and loops near 0, people and agents above 1, few near 1",
+   "value": {
+    "entities": 1920,
+    "min_cv": 0.003,
+    "people_median_cv": 1.75,
+    "share_0.8_1.2": 0.167,
+    "share_below_0.3": 0.001
+   }
+  },
+  {
+   "check": "popularity exponent",
+   "id": "V7",
+   "note": "snapshot calls per repository, ranks 3-300; the tail check can't run with about 800 repositories (gap 9)",
+   "status": "pass",
+   "target": "rank exponent 0.8-1.0 (head); 1.5-1.8 for ranks 1k-10k",
+   "value": {
+    "head_exponent": 0.898,
+    "repos": 807,
+    "tail": "not run"
+   }
+  },
+  {
+   "check": "downloads of new repositories",
+   "id": "V8",
+   "note": "repositories created inside the logged window are all under 30 days old",
+   "status": "pass",
+   "target": "about 2% of downloads go to repositories under 30 days old (1-4%)",
+   "value": {
+    "new_repos": 4,
+    "share": 0.0372
+   }
+  },
+  {
+   "check": "flash-crowd shape",
+   "id": "V9",
+   "note": "each repository created in the window with 300+ requests; half-peak on 10-min smoothed counts; decay p on 10-min counts from twice the time to peak (30 min at least) to 24 h; pass when most releases pass",
+   "status": "pass",
+   "target": "half of peak in 1-20 min; decay p 0.6-1.4; 40-80% of prefixes seen before",
+   "value": {
+    "passing": 2,
+    "releases": [
+     {
+      "half_peak_min": 0,
+      "p": null,
+      "prefixes": 1594,
+      "repo": "u_04a0cce1a533/base-r3",
+      "requests": 17732,
+      "seen_before": 0.652
+     },
+     {
+      "half_peak_min": 3,
+      "p": 1.04,
+      "prefixes": 653,
+      "repo": "u_8ceef991c0e0/distil-r2",
+      "requests": 9054,
+      "seen_before": 0.588
+     },
+     {
+      "half_peak_min": 2,
+      "p": 0.79,
+      "prefixes": 190,
+      "repo": "u_905428857293/embed-r1",
+      "requests": 6003,
+      "seen_before": 0.632
+     },
+     {
+      "half_peak_min": 5,
+      "p": null,
+      "prefixes": 347,
+      "repo": "u_c8e58a2cdecf/base-r4",
+      "requests": 7266,
+      "seen_before": 0.723
+     }
+    ]
+   }
+  },
+  {
+   "check": "client mechanics",
+   "id": "V10",
+   "note": "size follows the catalogue's file counts (3-11 files, so 7-25 requests; a 26-file repository gives 42, tests/test_sim_client_emulator.py); concurrency estimated as requests starting within 20 ms",
+   "status": "pass",
+   "target": "bursts of about 40 requests in under 2 s, at most 8 concurrent; mostly HEAD; 302 present; 404s mostly on first loads",
+   "value": {
+    "302_present": true,
+    "404_first_load_share": 0.998,
+    "bursts": 20037,
+    "head_share": 0.889,
+    "median_size": 8.0,
+    "p95_size": 13.0,
+    "p99_requests_per_20ms": 8,
+    "share_under_2s": 1.0
+   }
+  },
+  {
+   "check": "retry structure",
+   "id": "V11",
+   "note": "the hub serves no 5xx, so the 1-2-4-8-8 s back-off is checked by tests/test_sim_client_emulator.py (known answer t0+1, +3, +7, +15, +23)",
+   "status": "pass",
+   "target": "retry gaps 1, 2, 4, 8, 8 s; after a 429, resume at reset + 1 s",
+   "value": {
+    "429s_checked": 10681,
+    "resumed_at_reset_plus_1s": 1.0
+   }
+  },
+  {
+   "check": "agent signatures",
+   "id": "V12",
+   "note": "the harness mix can't be checked: hub.client.UA_FAMILIES has no agent/<harness> tag",
+   "status": "pass",
+   "target": "harness mix as in 2.6; fan-out bursts of 10-20 calls about every 10 s",
+   "value": {
+    "harness_mix": "not run",
+    "median_burst": 12.0,
+    "median_gap_s": 14.8
+   }
+  },
+  {
+   "check": "benign correlation null",
+   "id": "V13",
+   "note": "Pearson correlation of hourly request counts, accounts with 20+ requests in 6+ distinct hours (sparse accounts correlate by coincidence); pass when at least 10 benign pairs reach 0.8 and most of them involve look-alike behaviours 1-8 (the normal population's CI bots count with CI)",
+   "status": "pass",
+   "target": "benign pairwise correlations have a heavy upper tail from look-alikes 1-8",
+   "value": {
+    "accounts": 1662,
+    "enrichment_vs_all_pairs": 0.85,
+    "pairs_r_ge_0.8": 37,
+    "q99.9": 0.543,
+    "share_from_lookalike_behaviours_1_8": 0.649,
+    "swarm_comparison": "not run (no swarm in this run)"
+   }
+  },
+  {
+   "check": "real-versus-simulated discriminator",
+   "id": "V14",
+   "note": "needs real reference traces (Wikimedia, WorldCup, NASA, PyPI): a download that needs the user's OK (gap 12)",
+   "status": "not run",
+   "target": "AUROC near 0.5",
+   "value": null
+  },
+  {
+   "check": "blended background",
+   "id": "V15",
+   "note": "needs a real trace (gap 12)",
+   "status": "not run",
+   "target": "one arm with a real human timing trace",
+   "value": null
+  },
+  {
+   "check": "population ablations",
+   "id": "V16",
+   "note": "needs the monitor's alarm (T006) and one run per ablation",
+   "status": "not run",
+   "target": "false alarms rise with look-alikes present",
+   "value": null
+  },
+  {
+   "check": "origin-class shares per bucket",
+   "id": "O1",
+   "note": "the suspected_resi_proxy cells are left to O13: 3.3's medians (1.3/3.7/5.1%) need several times more real proxy traffic than O13's 'about 4 in 5 labelled requests are direct' allows, so the two can't both hold; the cells are reported",
+   "status": "fail",
+   "target": "every cell with a median of 1% or more inside the 3.3 median +-50%; mobile 15-35% of human pages; Tor at most 0.3%; relay at most 1% of pages; hosting at least 50% of resolvers",
+   "value": {
+    "cells_within_50pct": "14/15",
+    "hosting_resolvers": 0.513,
+    "mobile_share_human_pages": 0.18,
+    "relay_pages": 0.0059,
+    "shares_pct": {
+     "api/enterprise": 12.67,
+     "api/hosting": 61.48,
+     "api/hub_internal": 2.51,
+     "api/mobile": 2.13,
+     "api/public_proxy": 0.01,
+     "api/residential": 17.51,
+     "api/suspected_resi_proxy": 0.59,
+     "api/tor": 0.03,
+     "api/vpn": 3.07,
+     "pages/consumer_relay": 0.59,
+     "pages/enterprise": 5.63,
+     "pages/hosting": 33.96,
+     "pages/mobile": 15.79,
+     "pages/public_proxy": 0.0,
+     "pages/residential": 37.99,
+     "pages/suspected_resi_proxy": 1.97,
+     "pages/tor": 0.09,
+     "pages/vpn": 3.98,
+     "resolvers/enterprise": 17.17,
+     "resolvers/hosting": 51.34,
+     "resolvers/hub_internal": 1.26,
+     "resolvers/mobile": 3.07,
+     "resolvers/public_proxy": 0.01,
+     "resolvers/residential": 24.14,
+     "resolvers/suspected_resi_proxy": 0.67,
+     "resolvers/tor": 0.09,
+     "resolvers/vpn": 2.24
+    },
+    "tor_max": 0.0009
+   }
+  },
+  {
+   "check": "weekend drop in hosting share",
+   "id": "O2",
+   "note": "",
+   "status": "pass",
+   "target": "weekend drop of 5-10 points in the hosting share of resolvers",
+   "value": {
+    "drop_points": 5.86,
+    "weekday": 0.525,
+    "weekend": 0.466
+   }
+  },
+  {
+   "check": "token-hours with 3+ ASNs",
+   "id": "O3",
+   "note": "token = root key chain (child chains grouped under their parent)",
+   "status": "pass",
+   "target": "0.3-3% of honest token-hours; more than half from CI",
+   "value": {
+    "from_ci": 0.802,
+    "share": 0.011,
+    "token_hours": 29796
+   }
+  },
+  {
+   "check": "token-hours with 2+ classes",
+   "id": "O4",
+   "note": "",
+   "status": "pass",
+   "target": "0.5-3%",
+   "value": {
+    "share": 0.0212
+   }
+  },
+  {
+   "check": "token-hours with 5+ short-lived origins",
+   "id": "O5",
+   "note": "short-lived: an (ASN, /24) the token first used under 60 minutes earlier",
+   "status": "pass",
+   "target": "0.1-2%, at least 80% from CI and agent sandboxes",
+   "value": {
+    "from_ci_and_sandboxes": 1.0,
+    "share": 0.0048
+   }
+  },
+  {
+   "check": "/24s per human token per day",
+   "id": "O6",
+   "note": "",
+   "status": "pass",
+   "target": "median 1, p90 2, p99 3-4",
+   "value": {
+    "median": 1.0,
+    "p90": 2.0,
+    "p99": 3.0
+   }
+  },
+  {
+   "check": "residential tokens on a new /24",
+   "id": "O7",
+   "note": "home lines only (residential /24s by their true class), active on consecutive days",
+   "status": "pass",
+   "target": "2-10% of residential tokens a day on a new /24",
+   "value": {
+    "share": 0.0445,
+    "token_days": 1729
+   }
+  },
+  {
+   "check": "long-run per-user entropy",
+   "id": "O8",
+   "note": "needs 3-4 weeks of history",
+   "status": "not run",
+   "target": "IP about 2 bits, ASN about 0.8 bits",
+   "value": null
+  },
+  {
+   "check": "accounts per /24 per day",
+   "id": "O9",
+   "note": "",
+   "status": "fail",
+   "target": "at least 80% of active /24s have one account; 1-5% have 10 or more",
+   "value": {
+    "one_account": 0.87,
+    "ten_or_more": 0.0089
+   }
+  },
+  {
+   "check": "round-trip gap",
+   "id": "O10",
+   "note": "per request; connections carry several requests",
+   "status": "pass",
+   "target": "hosting direct: P(<=20 ms) about 97%, P(<0) about 3%, P(>50 ms) about 0.04%; benign P(>50 ms) 0.2-1% resolvers and API, 1-4% pages; null on 20-30% of browser requests",
+   "value": {
+    "browser_null": 0.262,
+    "gt50_by_bucket": {
+     "api": 0.0052,
+     "pages": 0.0252,
+     "resolvers": 0.0064
+    },
+    "hosting_gt50": 0.00062,
+    "hosting_le20": 0.9692,
+    "hosting_neg": 0.0268
+   }
+  },
+  {
+   "check": "fingerprint concentration",
+   "id": "O11",
+   "note": "",
+   "status": "pass",
+   "target": "top 10 tls_fp cover at least 90% of library and of browser requests",
+   "value": {
+    "browser": 0.9901,
+    "library": 0.924
+   }
+  },
+  {
+   "check": "UA versus TLS mismatch",
+   "id": "O12",
+   "note": "",
+   "status": "pass",
+   "target": "2-6% of browser traffic: a browser UA with a non-browser TLS fingerprint",
+   "value": {
+    "share": 0.0219
+   }
+  },
+  {
+   "check": "suspected_resi_proxy labels",
+   "id": "O13",
+   "note": "",
+   "status": "pass",
+   "target": "0.5-3% of benign residential and mobile requests labelled suspected_resi_proxy; about 4 in 5 labelled requests direct",
+   "value": {
+    "benign_res_mobile_share": 0.0197,
+    "labelled_direct": 0.664
+   }
+  },
+  {
+   "check": "new tokens' first ASN",
+   "id": "O14",
+   "note": "new root tokens: sign-up issue rows (child keys are delegations, not new credentials)",
+   "status": "pass",
+   "target": "20-50% of new tokens have a hosting or anonymiser first ASN",
+   "value": {
+    "new_tokens": 534,
+    "share": 0.303
+   }
+  },
+  {
+   "check": "signed-agent share",
+   "id": "O15",
+   "note": "",
+   "status": "pass",
+   "target": "0 on resolver and API library traffic; at most 1% of page requests",
+   "value": {
+    "library": 0.0,
+    "pages": 0.0
+   }
+  },
+  {
+   "check": "a benign token exceeds every per-token origin threshold daily",
+   "id": "O16",
+   "note": "",
+   "status": "pass",
+   "target": "every day: some token with 3+ ASNs, some with 2+ classes, some with 5+ short-lived origins in an hour",
+   "value": {
+    "days": 7,
+    "days_ok": 7
+   }
+  }
+ ],
+ "days": 7.0,
+ "events": 1068155,
+ "leak_audit": {
+  "auroc": 0.5,
+  "construction": {
+   "features": [
+    "t_int",
+    "fmt_account",
+    "fmt_session",
+    "fmt_key_id",
+    "fmt_chain",
+    "null_origin_net",
+    "null_origin_asn",
+    "null_origin_class",
+    "null_tls_fp",
+    "null_http_fp",
+    "null_ua",
+    "net_fmt",
+    "asn_fmt"
+   ],
+   "min_accounts_to_gate": 20,
+   "per_population_rf": {
+    "browser": 0.499,
+    "ci": 0.499,
+    "cli": 0.499,
+    "cohort": 0.498,
+    "lab_nat": 0.499,
+    "library": 0.499,
+    "mobile_satellite": 0.499,
+    "notebook_hopper": 0.5,
+    "org": 0.499,
+    "parallel_agents": 0.5,
+    "privacy_relay": 0.5,
+    "release_crowd": 0.5,
+    "researcher": 0.499,
+    "teammate_repost": 0.499
+   },
+   "planted_leak_rf": {
+    "auroc": 1.0,
+    "ci95": [
+     0.999,
+     1.0
+    ],
+    "leak": "that population's timestamps rounded to whole seconds",
+    "population": "library"
+   },
+   "too_few_accounts_rf": {
+    "ci_shared_token": 0.5,
+    "hosted_sandbox": 0.5,
+    "inference_fleet": 0.5,
+    "leak_scanner": 0.599,
+    "mirror_proxy": 0.298,
+    "retry_wave": 0.499,
+    "solo_scraper": 0.43,
+    "tor_vpn": 0.501
+   },
+   "unit": "rows (5,000 per side), cross-validated by session",
+   "worst": {
+    "auroc": 0.5,
+    "population": "notebook_hopper"
+   }
+  },
+  "fields": {
+   "events": {
+    "account": "same generator: hub-issued u_ + 12 hex for everyone",
+    "action": "deliberate signal: the hub's route category (gap 4)",
+    "body": "deliberate signal: request bodies (checked by the bag-of-words test)",
+    "chain": "same generator: hub-issued chain ID or null when anonymous",
+    "endpoint": "deliberate signal: the hub's route name",
+    "headers": "same generator: the shared emulator sends none",
+    "host": "deliberate signal: the link host the client used (markers come back)",
+    "http_fp": "same generator: deterministic function of client family, method, auth, language",
+    "key_id": "same generator: last 8 characters of a hub-issued key",
+    "key_state": "deliberate signal: the hub's verdict on the key (current, grace, reused, ...)",
+    "markers_served": "deliberate signal: the canary markers the hub served",
+    "method": "deliberate signal: what the client did (shared emulator sets it the same way)",
+    "origin_asn": "same generator: one shuffled range of private ASNs",
+    "origin_class": "same generator: the 4.1 confusion matrix for everyone, swarm included",
+    "origin_net": "same generator: one shuffled pool of synthetic /24 IDs (origin-model 10)",
+    "params": "deliberate signal: request parameters",
+    "path": "deliberate signal: what was requested",
+    "probes_served": "deliberate signal: the probe families the hub served",
+    "req": "same generator: the hub's request counter",
+    "resp_bytes": "deliberate signal: response size",
+    "rtt_gap_ms": "same generator: one gap model per path type; null for HTTP/3",
+    "seq": "same generator: the hub's global row counter",
+    "session": "same generator: the key chain (kc_ + 10 hex) or a hub cookie (ck_ + 12 hex)",
+    "signed_agent": "deliberate signal: Web Bot Auth signature (agent page fetchers only)",
+    "status": "deliberate signal: the hub's answer",
+    "t": "same generator: simulated time, continuous for every population, rounded to ms by the hub",
+    "tls_fp": "same generator: the client stack's fingerprint (shared table)",
+    "ts": "same generator: the hub's ISO rendering of t",
+    "ua": "same generator: hub.client.UA_FAMILIES for everyone"
+   },
+   "keys": {
+    "account": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "age_s": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "asn": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "chain": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "index": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "key_id": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "latest_index": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "origin": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "origin_class": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "parent_chain": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "reason": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "reporter": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "req": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "seq": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "t": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "type": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)",
+    "valid": "deliberate signal: the key ledger (issue, use, grace, reuse, child, report)"
+   },
+   "orgs": {
+    "account": "deliberate signal: declared organisation membership (gap 5)",
+    "action": "deliberate signal: declared organisation membership (gap 5)",
+    "by": "deliberate signal: declared organisation membership (gap 5)",
+    "org": "deliberate signal: declared organisation membership (gap 5)",
+    "repo": "deliberate signal: declared organisation membership (gap 5)",
+    "req": "deliberate signal: declared organisation membership (gap 5)",
+    "seats": "deliberate signal: declared organisation membership (gap 5)",
+    "seq": "deliberate signal: declared organisation membership (gap 5)",
+    "t": "deliberate signal: declared organisation membership (gap 5)"
+   },
+   "served": {
+    "account": "deliberate signal: what the hub served to whom (the canary trap)",
+    "family": "deliberate signal: what the hub served to whom (the canary trap)",
+    "kind": "deliberate signal: what the hub served to whom (the canary trap)",
+    "notice": "deliberate signal: what the hub served to whom (the canary trap)",
+    "repo": "deliberate signal: what the hub served to whom (the canary trap)",
+    "req": "deliberate signal: what the hub served to whom (the canary trap)",
+    "seq": "deliberate signal: what the hub served to whom (the canary trap)",
+    "session": "deliberate signal: what the hub served to whom (the canary trap)",
+    "t": "deliberate signal: what the hub served to whom (the canary trap)",
+    "value": "deliberate signal: what the hub served to whom (the canary trap)",
+    "variant": "deliberate signal: what the hub served to whom (the canary trap)"
+   }
+  },
+  "headline": "construction audit (no swarm in this run)",
+  "pass_mark": "construction: every gating population's held-out AUROC <= 0.65 and the planted leak >= 0.95; target (with a swarm): AUROC <= 0.6 (gap 20)",
+  "status": "pass",
+  "target_audit": {
+   "auroc": 0.988,
+   "body_text": {
+    "accounts_with_bodies": 33,
+    "auroc": 0.499
+   },
+   "classifier": {
+    "logistic": {
+     "auroc": 0.952,
+     "ci95": [
+      0.917,
+      0.973
+     ]
+    },
+    "rf": {
+     "auroc": 0.988,
+     "ci95": [
+      0.98,
+      0.994
+     ]
+    }
+   },
+   "n": {
+    "other_accounts": 3730,
+    "target_accounts": 84
+   },
+   "support_overlap": {
+    "ok": true,
+    "unsupported": {}
+   },
+   "target": "parallel_agents (look-alike #4; stand-in, information only)",
+   "top_features": [
+    [
+     "cls_hosting",
+     0.16
+    ],
+    [
+     "ua_cli",
+     0.156
+    ],
+    [
+     "gap_0-20",
+     0.113
+    ],
+    [
+     "cls_residential",
+     0.099
+    ],
+    [
+     "t_int",
+     0.087
+    ]
+   ]
+  },
+  "unmarked_fields": {}
+ },
+ "run": "runs/A0/101",
+ "summary": {
+  "fail": 4,
+  "not run": 4,
+  "pass": 24
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "window_s": 86400.0,
+ "emulate": true,
+ "who": "deny",
+ "stretch": null,
+ "runs": [
+  {
+   "run": "runs/A0null/401",
+   "best": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 5,
+    "covered": 14,
+    "E": 1.806,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 7
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/402",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 6,
+    "covered": 15,
+    "E": 1.656,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 10
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/403",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 6,
+    "covered": 14,
+    "E": 0.967,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 15
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/404",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 5,
+    "covered": 6,
+    "E": 1.056,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 20
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/405",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 7,
+    "covered": 7,
+    "E": 1.716,
+    "swarm_in_family": 0,
+    "honest_in_family": 7,
+    "window_accounts": 12
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/406",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 6,
+    "covered": 13,
+    "E": 0.853,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 13
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/407",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 6,
+    "covered": 14,
+    "E": 1.413,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 8
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/408",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 6,
+    "covered": 6,
+    "E": 1.114,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 12
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/409",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 4,
+    "covered": 6,
+    "E": 0.998,
+    "swarm_in_family": 0,
+    "honest_in_family": 4,
+    "window_accounts": 26
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/410",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 5,
+    "covered": 6,
+    "E": 1.056,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 29
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/411",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 5,
+    "covered": 7,
+    "E": 1.533,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 17
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/412",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 5,
+    "covered": 7,
+    "E": 1.533,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 23
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/413",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 8,
+    "covered": 14,
+    "E": 1.057,
+    "swarm_in_family": 0,
+    "honest_in_family": 8,
+    "window_accounts": 15
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/414",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 4,
+    "covered": 6,
+    "E": 0.998,
+    "swarm_in_family": 0,
+    "honest_in_family": 4,
+    "window_accounts": 11
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/415",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 6,
+    "covered": 6,
+    "E": 1.114,
+    "swarm_in_family": 0,
+    "honest_in_family": 6,
+    "window_accounts": 13
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/416",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 9,
+    "covered": 17,
+    "E": 1.637,
+    "swarm_in_family": 0,
+    "honest_in_family": 9,
+    "window_accounts": 21
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/417",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 5,
+    "covered": 15,
+    "E": 1.12,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 21
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/418",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 8,
+    "covered": 16,
+    "E": 1.392,
+    "swarm_in_family": 0,
+    "honest_in_family": 8,
+    "window_accounts": 30
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/419",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 4,
+    "covered": 14,
+    "E": 1.174,
+    "swarm_in_family": 0,
+    "honest_in_family": 4,
+    "window_accounts": 7
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/420",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 5,
+    "covered": 12,
+    "E": 0.911,
+    "swarm_in_family": 0,
+    "honest_in_family": 5,
+    "window_accounts": 13
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/421",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 7,
+    "covered": 7,
+    "E": 1.716,
+    "swarm_in_family": 0,
+    "honest_in_family": 7,
+    "window_accounts": 10
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/422",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 7,
+    "covered": 16,
+    "E": 1.957,
+    "swarm_in_family": 0,
+    "honest_in_family": 7,
+    "window_accounts": 9
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/423",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 4,
+    "covered": 11,
+    "E": 0.714,
+    "swarm_in_family": 0,
+    "honest_in_family": 4,
+    "window_accounts": 15
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/424",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 3,
+    "covered": 7,
+    "E": 1.417,
+    "swarm_in_family": 0,
+    "honest_in_family": 3,
+    "window_accounts": 14
+   },
+   "swarm_family": null
+  }
+ ]
+}

@@ -1,0 +1,2396 @@
+{
+ "contamination": {
+  "branches": 290,
+  "duplicate_issues": [],
+  "episodes": 230,
+  "hits": [
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re011",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr064",
+    "planned_repost": true,
+    "value": "04536f8",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re020",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr087",
+    "planned_repost": true,
+    "value": "07017ec",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re003",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr001",
+    "planned_repost": true,
+    "value": "102532c",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re020",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr087",
+    "planned_repost": true,
+    "value": "1109c46",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re002",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr008",
+    "planned_repost": true,
+    "value": "162e6ff",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re008",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr008",
+    "planned_repost": true,
+    "value": "162e6ff",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re018",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr011",
+    "planned_repost": true,
+    "value": "188e849",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re003",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr001",
+    "planned_repost": true,
+    "value": "1bb6841",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re011",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr033",
+    "planned_repost": true,
+    "value": "1f1659b",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re001",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr004",
+    "planned_repost": true,
+    "value": "234fb50",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re002",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr005",
+    "planned_repost": true,
+    "value": "236f88a",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re016",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr025",
+    "planned_repost": true,
+    "value": "244049b",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re007",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr047",
+    "planned_repost": true,
+    "value": "2c5dd7a",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re007",
+    "owner_branches": [
+     "prefix"
+    ],
+    "owner_episode": "pr040",
+    "planned_repost": true,
+    "value": "2ca333c",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re011",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr033",
+    "planned_repost": true,
+    "value": "2f6ed2b",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re019",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr137",
+    "planned_repost": true,
+    "value": "30d4404",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re004",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr009",
+    "planned_repost": true,
+    "value": "324cac9",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re004",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr010",
+    "planned_repost": true,
+    "value": "328f058",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re003",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr002",
+    "planned_repost": true,
+    "value": "338e101",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re005",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr002",
+    "planned_repost": true,
+    "value": "338e101",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re010",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr093",
+    "planned_repost": true,
+    "value": "33a8388",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re016",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr025",
+    "planned_repost": true,
+    "value": "379c532",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re015",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr032",
+    "planned_repost": true,
+    "value": "392b7b3",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re006",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr013",
+    "planned_repost": true,
+    "value": "46144f4",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re008",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr051",
+    "planned_repost": true,
+    "value": "4a6d945",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re013",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr020",
+    "planned_repost": true,
+    "value": "4b2cbf0",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re005",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr012",
+    "planned_repost": true,
+    "value": "56660a8",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re012",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr078",
+    "planned_repost": true,
+    "value": "5a4f80b",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re020",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr078",
+    "planned_repost": true,
+    "value": "5a4f80b",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re007",
+    "owner_branches": [
+     "prefix"
+    ],
+    "owner_episode": "pr040",
+    "planned_repost": true,
+    "value": "5b28354",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re019",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr046",
+    "planned_repost": true,
+    "value": "5c11170",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re010",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "65f3407",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re014",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "65f3407",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re016",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "65f3407",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re002",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr008",
+    "planned_repost": true,
+    "value": "6a07eec",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re008",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr008",
+    "planned_repost": true,
+    "value": "6a07eec",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re017",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr089",
+    "planned_repost": true,
+    "value": "6d1ee11",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re013",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr020",
+    "planned_repost": true,
+    "value": "6f9bb1e",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re002",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr005",
+    "planned_repost": true,
+    "value": "78e7c00",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re006",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr039",
+    "planned_repost": true,
+    "value": "7a36a51",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re012",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr078",
+    "planned_repost": true,
+    "value": "7d95a73",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re020",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr078",
+    "planned_repost": true,
+    "value": "7d95a73",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re013",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr103",
+    "planned_repost": true,
+    "value": "7f146c2",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re009",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr017",
+    "planned_repost": true,
+    "value": "848e35e",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re014",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr105",
+    "planned_repost": true,
+    "value": "92ce6f5",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re015",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr032",
+    "planned_repost": true,
+    "value": "95b31fc",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re017",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr089",
+    "planned_repost": true,
+    "value": "9861e2c",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re018",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr114",
+    "planned_repost": true,
+    "value": "9f558c8",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re017",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr118",
+    "planned_repost": true,
+    "value": "a0c4fae",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re009",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr072",
+    "planned_repost": true,
+    "value": "a2f46be",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re004",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr010",
+    "planned_repost": true,
+    "value": "b38b270",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re001",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr004",
+    "planned_repost": true,
+    "value": "b65393f",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re010",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "bb870b1",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re014",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "bb870b1",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re016",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr059",
+    "planned_repost": true,
+    "value": "bb870b1",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re006",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr013",
+    "planned_repost": true,
+    "value": "c3829c0",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re008",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr051",
+    "planned_repost": true,
+    "value": "c3b0075",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re011",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr064",
+    "planned_repost": true,
+    "value": "c995299",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re009",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr072",
+    "planned_repost": true,
+    "value": "cdc244d",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re019",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr046",
+    "planned_repost": true,
+    "value": "cf1681e",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re018",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr011",
+    "planned_repost": true,
+    "value": "cf3de41",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re019",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr137",
+    "planned_repost": true,
+    "value": "d39b84d",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re010",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr093",
+    "planned_repost": true,
+    "value": "d8998e1",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re005",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr012",
+    "planned_repost": true,
+    "value": "dd20c6e",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re007",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr047",
+    "planned_repost": true,
+    "value": "dddc074",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re003",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr002",
+    "planned_repost": true,
+    "value": "de3a67a",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re005",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr002",
+    "planned_repost": true,
+    "value": "de3a67a",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re009",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr017",
+    "planned_repost": true,
+    "value": "e364723",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re013",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr103",
+    "planned_repost": true,
+    "value": "ed64385",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re018",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr114",
+    "planned_repost": true,
+    "value": "ee467c5",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re001",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr006",
+    "planned_repost": true,
+    "value": "ee89858",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re014",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr105",
+    "planned_repost": true,
+    "value": "f2257b3",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re015",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr083",
+    "planned_repost": true,
+    "value": "f4179f2",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re001",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr006",
+    "planned_repost": true,
+    "value": "f82f46f",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re004",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr009",
+    "planned_repost": true,
+    "value": "f9334f2",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re012",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr068",
+    "planned_repost": true,
+    "value": "f977306",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re017",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr118",
+    "planned_repost": true,
+    "value": "fa25460",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re012",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr068",
+    "planned_repost": true,
+    "value": "faa2450",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re015",
+    "owner_branches": [
+     "full_history",
+     "summary",
+     "task_string"
+    ],
+    "owner_episode": "pr083",
+    "planned_repost": true,
+    "value": "fd0466c",
+    "where": [
+     "events.body"
+    ]
+   },
+   {
+    "found_in_branches": [
+     "task_string"
+    ],
+    "found_in_episode": "re006",
+    "owner_branches": [
+     "task_string"
+    ],
+    "owner_episode": "pr039",
+    "planned_repost": true,
+    "value": "fe2d863",
+    "where": [
+     "events.body"
+    ]
+   }
+  ],
+  "planned_hits": 80,
+  "unplanned_hits": 0,
+  "values": 1260
+ },
+ "design_sha256": "777e4c6a41f0d39f61232123982f5a222ba8abdf689284bbaaeedf9a3b2af874",
+ "dry_run": false,
+ "experiment": "H1",
+ "false_links_merged": {
+  "accounts": 712,
+  "baselines": {
+   "one_detail": {
+    "cross_pairs": 252053,
+    "false_links": 252053,
+    "true_links": 1063,
+    "within_pairs": 1063
+   },
+   "same_origin": {
+    "cross_pairs": 252053,
+    "false_links": 12,
+    "true_links": 433,
+    "within_pairs": 1063
+   },
+   "same_ua_family": {
+    "cross_pairs": 252053,
+    "false_links": 252053,
+    "true_links": 1063,
+    "within_pairs": 1063
+   },
+   "signup_sweep": {
+    "15": {
+     "cross_pairs": 252053,
+     "false_links": 3921,
+     "true_links": 435,
+     "within_pairs": 1063
+    },
+    "1800": {
+     "cross_pairs": 252053,
+     "false_links": 179913,
+     "true_links": 1060,
+     "within_pairs": 1063
+    },
+    "300": {
+     "cross_pairs": 252053,
+     "false_links": 37099,
+     "true_links": 534,
+     "within_pairs": 1063
+    },
+    "60": {
+     "cross_pairs": 252053,
+     "false_links": 9221,
+     "true_links": 441,
+     "within_pairs": 1063
+    }
+   },
+   "signup_window_s": 60.0,
+   "signup_within": {
+    "cross_pairs": 252053,
+    "false_links": 9221,
+    "true_links": 441,
+    "within_pairs": 1063
+   },
+   "two_detail": {
+    "cross_pairs": 252053,
+    "false_links": 9233,
+    "true_links": 441,
+    "within_pairs": 1063
+   }
+  },
+  "content": {
+   "with_rule": {
+    "one_detail": {
+     "cross_pairs": 252053,
+     "false_links": 0,
+     "true_links": 278,
+     "within_pairs": 1063
+    },
+    "two_detail": {
+     "cross_pairs": 252053,
+     "false_links": 0,
+     "true_links": 278,
+     "within_pairs": 1063
+    }
+   },
+   "without_rule": {
+    "one_detail": {
+     "cross_pairs": 252053,
+     "false_links": 0,
+     "true_links": 278,
+     "within_pairs": 1063
+    },
+    "two_detail": {
+     "cross_pairs": 252053,
+     "false_links": 0,
+     "true_links": 278,
+     "within_pairs": 1063
+    }
+   }
+  },
+  "max_offset_s": 3600.0,
+  "note": "content links use the monitor's echo detector over H1 values; with_rule drops values the destination saw on a public page before first use (gap 18). The baselines' results follow from the harness's settings: an illustration.",
+  "offsets": [
+   1728.2398499958267,
+   3530.3827304195,
+   1260.6151769429398,
+   1488.8576533087955,
+   3345.1616947809503,
+   2297.4539632865717,
+   569.1825040628501,
+   4.411118028412364,
+   243.4394673467286,
+   1529.0141544024953,
+   2209.4762714917188,
+   3299.5525366766524,
+   2950.9697266403496,
+   178.247864874842,
+   2506.520926567372,
+   834.1940596589219,
+   3538.3429679014753,
+   525.1323843364393,
+   2039.6999599736669,
+   3473.241839074977,
+   443.02200619629133,
+   1555.6547068044354,
+   1923.806894123663,
+   422.1649870162982,
+   1247.510189526814,
+   1485.2806301381727,
+   5.5241850422525385,
+   1177.9393124282794,
+   278.9915572691784,
+   1046.3846827227312,
+   941.3625818861481,
+   441.8653108501155,
+   2072.3391604507924,
+   1694.0637898140844,
+   2958.694125316773,
+   2225.5414530238277,
+   3149.218498115719,
+   2724.7422310681786,
+   608.8969071149629,
+   2394.5758632821558,
+   3212.824537976744,
+   2200.5843437025783,
+   3360.3064019820467,
+   1700.8615443587964,
+   163.51157412639208,
+   2712.47301226095,
+   2365.046140217256,
+   1757.3034804433291,
+   603.4054317421359,
+   856.3968037332093,
+   3188.6700128379084,
+   44.392924868716264,
+   1228.3465788044632,
+   2282.7725240188743,
+   1634.8466502953188,
+   651.9903133523164,
+   3178.232876843414,
+   2043.6523666853236,
+   2812.0224993981215,
+   54.93850995950642,
+   3583.3473479692857,
+   1659.4092082100785,
+   3447.7700262690705,
+   3105.8927599110366,
+   2420.690243903519,
+   672.284075384807,
+   2189.6773924172935,
+   3501.592859533932,
+   88.33579695385647,
+   1977.7121483890126,
+   3355.7990242318433,
+   238.2324026829993,
+   1653.4412913064489,
+   1994.0541957989014,
+   3569.7842926183016,
+   2087.1199090653427,
+   1439.554092482705,
+   1743.5025376034498,
+   2633.758130720763,
+   743.8155476713407,
+   2050.3632164934393,
+   1509.0226586841654,
+   2230.6160236009196,
+   2956.8317836108595,
+   743.7409140896415,
+   3189.0580606709414,
+   1264.6088405168587,
+   2714.779138271406,
+   3280.779133943991,
+   2356.727808219311,
+   484.98435459124573,
+   648.4647941771836,
+   2988.695659805268,
+   694.2463206878244,
+   1364.372693397407,
+   2054.8687569684243,
+   485.75594791906246,
+   420.65172842466455,
+   1271.6373742593253,
+   2256.382975477325,
+   478.89042808853003,
+   798.1250680192139,
+   1220.2702507189822,
+   988.4875639491627,
+   739.7924421208531,
+   1436.2380350853216,
+   3511.2336347759788,
+   966.1587340466584,
+   500.5162691050878,
+   64.13652898547673,
+   1961.0924827146337,
+   1337.115645966157,
+   498.64524436990723,
+   1342.244110272709,
+   1779.920667192863,
+   3119.9436670270893,
+   2196.297000721807,
+   2174.6108966244615,
+   3483.6229298235094,
+   1051.8915707933725,
+   2002.2692290363636,
+   2641.4292586921392,
+   1056.8520424831597,
+   3043.930612158934,
+   3578.188161340783,
+   2982.280071340029,
+   3416.0234035146027,
+   1538.500297535933,
+   427.45946881237313,
+   2915.2144880936708,
+   1313.9579200894682,
+   2936.874238880281,
+   1604.0027233237706,
+   813.881604869932,
+   2583.5686020665016,
+   1517.521887571669,
+   334.49868390025796,
+   3189.9225050890054,
+   818.5909574595263,
+   408.13582935655893,
+   1328.5768078097442,
+   1381.1583607850796,
+   1298.732646460129,
+   126.85402761278617,
+   1879.0737076800335,
+   2783.6493002319185,
+   2024.1982933971922,
+   3374.021607626377,
+   2022.8032443664658,
+   2963.575123228469,
+   3423.0274428527146,
+   1214.3480431067292,
+   1263.256446873741,
+   2024.0975530279452,
+   1969.6335860728273,
+   3419.1924391420785,
+   2197.6618433347644,
+   1570.8399846010618,
+   196.6977982290649,
+   711.7023495677362,
+   1102.3377142459833,
+   840.7985171497852,
+   999.4670290479127,
+   122.68054109677612,
+   1142.2393529381125,
+   1536.1973199489025,
+   2167.683513297133,
+   1830.780207248411,
+   2807.9877831737213,
+   1527.029300026153,
+   940.0686741458778,
+   1031.993821124827,
+   1687.753917815761,
+   1759.816220148225,
+   1281.4116622803422,
+   743.2083264273184,
+   1725.2379594245385,
+   206.69290707324208,
+   490.9971574768224
+  ],
+  "seed": 280330068,
+  "unknown_accounts": 0,
+  "worlds": [
+   "pr001/task_string",
+   "pr002/task_string",
+   "pr003/task_string",
+   "pr004/task_string",
+   "pr005/task_string",
+   "pr006/task_string",
+   "pr007/task_string",
+   "pr008/task_string",
+   "pr009/task_string",
+   "pr010/task_string",
+   "pr011/task_string",
+   "pr012/task_string",
+   "pr013/task_string",
+   "pr014/task_string",
+   "pr015/task_string",
+   "pr016/task_string",
+   "pr017/task_string",
+   "pr018/task_string",
+   "pr019/task_string",
+   "pr020/task_string",
+   "pr021/task_string",
+   "pr022/task_string",
+   "pr023/task_string",
+   "pr024/task_string",
+   "pr025/task_string",
+   "pr026/task_string",
+   "pr027/task_string",
+   "pr028/task_string",
+   "pr029/task_string",
+   "pr030/task_string",
+   "pr031/task_string",
+   "pr032/task_string",
+   "pr033/task_string",
+   "pr034/task_string",
+   "pr035/task_string",
+   "pr036/task_string",
+   "pr037/task_string",
+   "pr038/task_string",
+   "pr039/task_string",
+   "pr041/task_string",
+   "pr042/task_string",
+   "pr043/task_string",
+   "pr044/task_string",
+   "pr045/task_string",
+   "pr046/task_string",
+   "pr047/task_string",
+   "pr048/task_string",
+   "pr049/task_string",
+   "pr050/task_string",
+   "pr051/task_string",
+   "pr052/task_string",
+   "pr053/task_string",
+   "pr054/task_string",
+   "pr055/task_string",
+   "pr056/task_string",
+   "pr057/task_string",
+   "pr058/task_string",
+   "pr059/task_string",
+   "pr060/task_string",
+   "pr061/task_string",
+   "pr062/task_string",
+   "pr063/task_string",
+   "pr064/task_string",
+   "pr065/task_string",
+   "pr066/task_string",
+   "pr067/task_string",
+   "pr068/task_string",
+   "pr069/task_string",
+   "pr070/task_string",
+   "pr071/task_string",
+   "pr072/task_string",
+   "pr073/task_string",
+   "pr074/task_string",
+   "pr075/task_string",
+   "pr076/task_string",
+   "pr077/task_string",
+   "pr078/task_string",
+   "pr079/task_string",
+   "pr080/task_string",
+   "pr081/task_string",
+   "pr082/task_string",
+   "pr083/task_string",
+   "pr084/task_string",
+   "pr085/task_string",
+   "pr086/task_string",
+   "pr087/task_string",
+   "pr088/task_string",
+   "pr089/task_string",
+   "pr090/task_string",
+   "pr091/task_string",
+   "pr092/task_string",
+   "pr093/task_string",
+   "pr094/task_string",
+   "pr095/task_string",
+   "pr096/task_string",
+   "pr097/task_string",
+   "pr098/task_string",
+   "pr099/task_string",
+   "pr100/task_string",
+   "pr101/task_string",
+   "pr102/task_string",
+   "pr103/task_string",
+   "pr104/task_string",
+   "pr105/task_string",
+   "pr106/task_string",
+   "pr107/task_string",
+   "pr108/task_string",
+   "pr109/task_string",
+   "pr110/task_string",
+   "pr111/task_string",
+   "pr112/task_string",
+   "pr113/task_string",
+   "pr114/task_string",
+   "pr115/task_string",
+   "pr116/task_string",
+   "pr117/task_string",
+   "pr118/task_string",
+   "pr119/task_string",
+   "pr120/task_string",
+   "pr121/task_string",
+   "pr122/task_string",
+   "pr123/task_string",
+   "pr124/task_string",
+   "pr125/task_string",
+   "pr126/task_string",
+   "pr127/task_string",
+   "pr128/task_string",
+   "pr129/task_string",
+   "pr130/task_string",
+   "pr131/task_string",
+   "pr132/task_string",
+   "pr133/task_string",
+   "pr134/task_string",
+   "pr135/task_string",
+   "pr136/task_string",
+   "pr137/task_string",
+   "pr138/task_string",
+   "pr139/task_string",
+   "pr140/task_string",
+   "pr141/task_string",
+   "pr142/task_string",
+   "pr143/task_string",
+   "pr144/task_string",
+   "pr145/task_string",
+   "pr146/task_string",
+   "pr147/task_string",
+   "pr148/task_string",
+   "pr149/task_string",
+   "pr150/task_string",
+   "pr151/task_string",
+   "pr152/task_string",
+   "pr153/task_string",
+   "pr154/task_string",
+   "pr155/task_string",
+   "pr156/task_string",
+   "pr157/task_string",
+   "pr158/task_string",
+   "pr159/task_string",
+   "pr160/task_string",
+   "pr161/task_string",
+   "pr162/task_string",
+   "pr163/task_string",
+   "pr164/task_string",
+   "pr165/task_string",
+   "pr166/task_string",
+   "pr167/task_string",
+   "pr168/task_string",
+   "pr169/task_string",
+   "pr170/task_string",
+   "pr171/task_string",
+   "pr172/task_string",
+   "pr173/task_string",
+   "pr174/task_string",
+   "pr175/task_string",
+   "pr176/task_string",
+   "pr177/task_string",
+   "pr178/task_string",
+   "pr179/task_string",
+   "pr180/task_string"
+  ]
+ },
+ "permutation_null": {
+  "episodes": 179,
+  "helpers": 533,
+  "needed": {
+   "max": 0,
+   "mean": 0.0,
+   "permutations_with_any": 0
+  },
+  "note": "a pipeline check, not a result: values are unique to each session, so it reads zero by construction",
+  "observed": {
+   "needed": 107,
+   "optional": 107
+  },
+  "optional": {
+   "max": 0,
+   "mean": 0.0,
+   "permutations_with_any": 0
+  },
+  "permutations": 1000,
+  "seed": 20261107,
+  "unassignable_helpers": 0,
+  "window_s": 1800.0
+ },
+ "reposts": {
+  "false_links": {
+   "with_rule": 0,
+   "without_rule": 0
+  },
+  "note": "false links between a donor's family and the repost world's family, on one timeline with no offsets (the donors ran first); with_rule drops values the account saw on a public page before first use",
+  "worlds": {
+   "re001": {
+    "donors": [
+     "pr004",
+     "pr006"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re002": {
+    "donors": [
+     "pr005",
+     "pr008"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re003": {
+    "donors": [
+     "pr001",
+     "pr002"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re004": {
+    "donors": [
+     "pr009",
+     "pr010"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 5,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 5,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 5,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 5,
+     "within_pairs": 18
+    }
+   },
+   "re005": {
+    "donors": [
+     "pr002",
+     "pr012"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re006": {
+    "donors": [
+     "pr039",
+     "pr013"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    }
+   },
+   "re007": {
+    "donors": [
+     "pr040",
+     "pr047"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 24,
+      "false_links": 0,
+      "true_links": 0,
+      "within_pairs": 12
+     },
+     "without_rule": {
+      "cross_pairs": 24,
+      "false_links": 0,
+      "true_links": 0,
+      "within_pairs": 12
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 24,
+     "false_links": 0,
+     "true_links": 0,
+     "within_pairs": 12
+    },
+    "without_rule": {
+     "cross_pairs": 24,
+     "false_links": 0,
+     "true_links": 0,
+     "within_pairs": 12
+    }
+   },
+   "re008": {
+    "donors": [
+     "pr051",
+     "pr008"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 5,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 5,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 5,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 5,
+     "within_pairs": 18
+    }
+   },
+   "re009": {
+    "donors": [
+     "pr017",
+     "pr072"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re010": {
+    "donors": [
+     "pr059",
+     "pr093"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    }
+   },
+   "re011": {
+    "donors": [
+     "pr064",
+     "pr033"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 1,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 1,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 1,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 1,
+     "within_pairs": 18
+    }
+   },
+   "re012": {
+    "donors": [
+     "pr068",
+     "pr078"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 8,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 8,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 8,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 8,
+     "within_pairs": 18
+    }
+   },
+   "re013": {
+    "donors": [
+     "pr103",
+     "pr020"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re014": {
+    "donors": [
+     "pr059",
+     "pr105"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 0,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 0,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 0,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 0,
+     "within_pairs": 18
+    }
+   },
+   "re015": {
+    "donors": [
+     "pr032",
+     "pr083"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 8,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 8,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 8,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 8,
+     "within_pairs": 18
+    }
+   },
+   "re016": {
+    "donors": [
+     "pr059",
+     "pr025"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 4,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 4,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 4,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 4,
+     "within_pairs": 18
+    }
+   },
+   "re017": {
+    "donors": [
+     "pr089",
+     "pr118"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 3,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 3,
+     "within_pairs": 18
+    }
+   },
+   "re018": {
+    "donors": [
+     "pr114",
+     "pr011"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 7,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 7,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 7,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 7,
+     "within_pairs": 18
+    }
+   },
+   "re019": {
+    "donors": [
+     "pr046",
+     "pr137"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   },
+   "re020": {
+    "donors": [
+     "pr078",
+     "pr087"
+    ],
+    "posts": 2,
+    "two_detail": {
+     "with_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     },
+     "without_rule": {
+      "cross_pairs": 48,
+      "false_links": 0,
+      "true_links": 6,
+      "within_pairs": 18
+     }
+    },
+    "with_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    },
+    "without_rule": {
+     "cross_pairs": 48,
+     "false_links": 0,
+     "true_links": 6,
+     "within_pairs": 18
+    }
+   }
+  }
+ },
+ "run_id": "h1-confirm-777e4c6a",
+ "scripted": {
+  "copy_all": true,
+  "copy_nothing": true
+ },
+ "texts_manifest_sha256": "7d3589ce8b781ac3dca13bb116c2be66f29706a08f0a0d613f7ea9bf9ee7ef88",
+ "written_utc": "2026-11-09T06:45:41+00:00"
+}

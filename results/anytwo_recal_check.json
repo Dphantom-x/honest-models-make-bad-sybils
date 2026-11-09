@@ -1,0 +1,78 @@
+{
+ "what": "Check of results/anytwo_recal.json: ties at theta* and the A1 account split.",
+ "calibration": {
+  "days": 132.0,
+  "budget_pages": 18,
+  "theta_star": 19.0,
+  "honest_pages_total": 715,
+  "max_honest_score": 19.0,
+  "honest_pages_tied_at_theta": 82,
+  "honest_pages_strictly_above_theta": 0,
+  "top_score_counts": [
+   [
+    19.0,
+    82
+   ],
+   [
+    18.5,
+    55
+   ],
+   [
+    18.0,
+    38
+   ],
+   [
+    17.5,
+    9
+   ],
+   [
+    17.0,
+    24
+   ],
+   [
+    16.5,
+    28
+   ],
+   [
+    16.0,
+    12
+   ],
+   [
+    15.5,
+    42
+   ]
+  ]
+ },
+ "A1_any_two": {
+  "swarm_family_scores": [
+   16.0,
+   11.5,
+   10.5,
+   10.0,
+   10.0,
+   9.5,
+   8.5,
+   7.5,
+   6.5,
+   5.5,
+   3.5,
+   2.5,
+   2.5
+  ],
+  "best_swarm_family_score": 16.0,
+  "honest_calib_pages_scoring_at_least_that": 248,
+  "honest_pages_per_week_if_cut_there": 13.15,
+  "budget_per_week": 1.0
+ },
+ "A1_two_plane": {
+  "swarm_labelled_families": 12,
+  "accounts_in_swarm_labelled_families": 13,
+  "of_which_by_population": {
+   "swarm": 12,
+   "lookalike": 1
+  },
+  "a1_swarm_accounts_in_truth": 12,
+  "non_swarm_families_also_paged_in_the_A1_run": 2
+ },
+ "reading": "Paging is strict (score > theta*). The honest calibration pages tie at the top any-two score in larger numbers than the budget allows, so theta* sits at the score ceiling and any-two at the matched budget pages nothing. A1's best any-two family scores below that ceiling: paging it would also page every honest calibration family scoring at least as much (the per-week rate above, against a budget of 1). So '0 vs 2,926' is not a threshold artefact: no any-two cutoff pages A1 within budget."
+}

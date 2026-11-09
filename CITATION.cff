@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Honest Models Make Bad Sybils: AI Swarms Confess When Asked, and Their Downloads Convict Them When They Lie"
+authors:
+  - family-names: Hidalgo
+    given-names: Aldo
+    email: aldomhidalgo@gmail.com
+date-released: 2026-11-09
+type: report
+url: "https://github.com/Dphantom-x/honest-models-make-bad-sybils"
+notes: "Swarm Alignment Sprint, Apart Research, November 2026."
+license: CC-BY-4.0

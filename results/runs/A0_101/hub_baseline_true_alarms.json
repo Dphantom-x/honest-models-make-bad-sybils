@@ -1,0 +1,26 @@
+{
+  "run": "A0/101",
+  "arm": "A0",
+  "seed": "101",
+  "metric": "true_alarms",
+  "value": {
+    "pages": 0,
+    "by_trigger": {},
+    "by_lookalike": {},
+    "pages_per_day": 0.0,
+    "pages_per_week": 0.0
+  },
+  "baseline": "today's hub (per-account rate limits + naive key-reuse rejection, no lineage)",
+  "days": 7.0,
+  "inputs": {
+    "config.yaml": "cd493645c77e4fd98784c18726f68289bed4e43e90f3db9f56759c88dde6434b",
+    "logs/events.jsonl": "020644961cda117552934ed151ef06742654bad2e1fb26c59882797e2be8f0fd",
+    "logs/keys.jsonl": "bc61ed11356c270162bcdcf23bee792d771cf1e4272f0bb4e01b03ca9467ec87",
+    "truth/sessions.json": "df45bb859f3d9bc0eacabba9478f60d77cd4f03321dcb00cd6f683772765114a",
+    "truth/truth.json": "f23191bdf24f9eb786a87c8823eb7ae250e8ef0fe979b6b7c165e53fdb3e489c"
+  },
+  "code": {
+    "eval/hub_baseline.py": "e13dfdbb0fd2ea8b770eef413f10dd67bc95c760287bcfca519a0aa0d27f84af"
+  },
+  "written_by": "eval.hub_baseline"
+}

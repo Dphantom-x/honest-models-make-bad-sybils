@@ -1,0 +1,27 @@
+{
+  "run": "A0/101",
+  "arm": "A0",
+  "seed": "101",
+  "metric": "coverage_paged",
+  "value": null,
+  "definition": "share of swarm accounts inside truly paged families at the end",
+  "days": 7.0,
+  "inputs": {
+    "config.yaml": "cd493645c77e4fd98784c18726f68289bed4e43e90f3db9f56759c88dde6434b",
+    "hub_baseline/summary.json": "3540f9aa59ad107c6eb6bcc052ab0dd20a9e1c0264612197c7e8fb39cfdd4904",
+    "monitor/actions.jsonl": "c2fc94311b2ddc738f9953bf366d44b5128a0a04c915c19102848cc2fbce98fd",
+    "monitor/alerts.jsonl": "1df82f47355eb196774b84680bc568a0164f3fa23896f8bc322c4862b44538a4",
+    "monitor/evidence.jsonl": "0d9c4282ea1e6764641aa283434a3de86d873e21309977ccf3e8565ddf818e35",
+    "monitor/monitor_run.json": "aa22d4daf01fb536cc2431d490e3695cc41a0f61f73cdb387c1c36c73ff7fb3a",
+    "monitor/tree_inferred.json": "c4a8e4c7c6becb4a11fb04bcc4d615b7d63909e3487d8e18fa475359d7867995",
+    "truth/sessions.json": "df45bb859f3d9bc0eacabba9478f60d77cd4f03321dcb00cd6f683772765114a",
+    "truth/tree_true.json": "df23954eaf47607aba5bec22ca176e2fb243d1835f6dec3ede1d41c78d984582",
+    "truth/truth.json": "f23191bdf24f9eb786a87c8823eb7ae250e8ef0fe979b6b7c165e53fdb3e489c"
+  },
+  "code": {
+    "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+    "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+    "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+  },
+  "written_by": "eval.score"
+}

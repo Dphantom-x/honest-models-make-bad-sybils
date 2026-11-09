@@ -1,0 +1,237 @@
+{
+  "rules": [
+    "two_plane",
+    "any_two_classes"
+  ],
+  "primary": {
+    "two_plane": {
+      "pages": 0,
+      "days": 7,
+      "per_week": 0.0,
+      "lower95": 0.0,
+      "upper95": 3.0,
+      "method": "rule of three (no false pages): 3/n per day",
+      "per_family_day_upper95": 0.00010604828732015978
+    },
+    "any_two_classes": {
+      "pages": 130,
+      "days": 7,
+      "per_week": 130.0,
+      "lower95": 92.0,
+      "upper95": 166.0,
+      "method": "bootstrap over 7 simulated days, 2000 resamples",
+      "per_family_day": 0.00459542578387359
+    },
+    "difference": {
+      "pages": 130,
+      "days": 7,
+      "per_week": 130.0,
+      "lower95": 92.0,
+      "upper95": 166.0,
+      "method": "bootstrap over 7 simulated days, 2000 resamples",
+      "net_pages": 130
+    }
+  },
+  "by_lookalike": {
+    "ci_shared_token": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 40,
+        "days": 7,
+        "per_week": 40.0,
+        "lower95": 18.0,
+        "upper95": 63.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "hosted_sandbox": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 27,
+        "days": 7,
+        "per_week": 27.0,
+        "lower95": 19.0,
+        "upper95": 34.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "inference_fleet": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 18,
+        "days": 7,
+        "per_week": 18.0,
+        "lower95": 10.0,
+        "upper95": 25.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "mirror_proxy": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 4,
+        "days": 7,
+        "per_week": 4.0,
+        "lower95": 0.0,
+        "upper95": 12.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "normal:ci": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 4,
+        "days": 7,
+        "per_week": 4.0,
+        "lower95": 0.0,
+        "upper95": 8.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "normal:researcher": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 4,
+        "days": 7,
+        "per_week": 4.0,
+        "lower95": 1.0,
+        "upper95": 6.025,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "parallel_agents": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 13,
+        "days": 7,
+        "per_week": 13.0,
+        "lower95": 4.0,
+        "upper95": 23.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "retry_wave": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 19,
+        "days": 7,
+        "per_week": 19.0,
+        "lower95": 10.0,
+        "upper95": 29.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    },
+    "solo_scraper": {
+      "two_plane": {
+        "pages": 0,
+        "days": 7,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 1,
+        "days": 7,
+        "per_week": 1.0,
+        "lower95": 0.0,
+        "upper95": 3.0,
+        "method": "bootstrap over 7 simulated days, 2000 resamples"
+      }
+    }
+  },
+  "runs": 1,
+  "days": 7,
+  "family_days": 28289,
+  "replay_faithful": true,
+  "runs_used": [
+    "A0/101"
+  ],
+  "per_run": [
+    {
+      "run": "A0/101",
+      "days": 7.0,
+      "family_days": 28289,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 130,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 2366,
+        "n_b": 2366,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "020644961cda117552934ed151ef06742654bad2e1fb26c59882797e2be8f0fd",
+        "monitor/alerts.jsonl": "1df82f47355eb196774b84680bc568a0164f3fa23896f8bc322c4862b44538a4",
+        "monitor/evidence.jsonl": "0d9c4282ea1e6764641aa283434a3de86d873e21309977ccf3e8565ddf818e35",
+        "monitor/family_days.jsonl": "6cfe2d45a19db105b62e089e324ceeb2c270bbab036c017645eeefe86721eaf1",
+        "monitor/monitor_run.json": "aa22d4daf01fb536cc2431d490e3695cc41a0f61f73cdb387c1c36c73ff7fb3a",
+        "truth/sessions.json": "df45bb859f3d9bc0eacabba9478f60d77cd4f03321dcb00cd6f683772765114a",
+        "truth/truth.json": "f23191bdf24f9eb786a87c8823eb7ae250e8ef0fe979b6b7c165e53fdb3e489c"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    }
+  ]
+}

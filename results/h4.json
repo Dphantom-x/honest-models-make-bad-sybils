@@ -1,0 +1,701 @@
+{
+  "scope_label": "POOLED WHOLE-RUN baseline for the any-two recalibration (judge ask c): A0cal 201-206 (in-sample) + A0hold 301-302 (held-out), WHOLE runs, NO 7-day warm-up exclusion -> 176 days, two-plane 0 vs any-two 7514. This is NOT the H4 held-out result (that is results/heldout_A0.json: held-out 301-302 only, days 7-21 after the warm-up, 0 vs 2926 = 1443+1483). Do not quote 7514/176 as H4.",
+  "config_parity": "A0cal 201-206 and A0hold 301-302 were replayed in the SAME monitor config (TimesFM on, A0_policy.json, rate_limit 12000) and same population config (scale 1.0), differing only in seed. So the 7x per-run any-two gap (A0cal 334-407 vs 301-302 2622/2740) is a seed-transfer finding, not a config artefact.",
+  "rules": [
+    "two_plane",
+    "any_two_classes"
+  ],
+  "primary": {
+    "two_plane": {
+      "pages": 0,
+      "days": 176,
+      "per_week": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.119318182,
+      "method": "rule of three (no false pages): 3/n per day",
+      "per_family_day_upper95": 4.811424245729059e-06
+    },
+    "any_two_classes": {
+      "pages": 7514,
+      "days": 176,
+      "per_week": 298.852272727,
+      "lower95": 233.107954545,
+      "upper95": 379.003267045,
+      "method": "bootstrap over 176 simulated days, 2000 resamples",
+      "per_family_day": 0.012051013927469384
+    },
+    "difference": {
+      "pages": 7514,
+      "days": 176,
+      "per_week": 298.852272727,
+      "lower95": 233.107954545,
+      "upper95": 379.003267045,
+      "method": "bootstrap over 176 simulated days, 2000 resamples",
+      "net_pages": 7514
+    }
+  },
+  "by_lookalike": {
+    "approved_lab": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 27,
+        "days": 176,
+        "per_week": 1.073863636,
+        "lower95": 0.397727273,
+        "upper95": 1.989630682,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "ci_shared_token": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 621,
+        "days": 176,
+        "per_week": 24.698863636,
+        "lower95": 21.715909091,
+        "upper95": 27.642045455,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "cohort": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 109,
+        "days": 176,
+        "per_week": 4.335227273,
+        "lower95": 1.75,
+        "upper95": 7.996306818,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "hosted_sandbox": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 628,
+        "days": 176,
+        "per_week": 24.977272727,
+        "lower95": 22.630681818,
+        "upper95": 27.403409091,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "inference_fleet": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 449,
+        "days": 176,
+        "per_week": 17.857954545,
+        "lower95": 16.1875,
+        "upper95": 19.529403409,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "lab_nat": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 141,
+        "days": 176,
+        "per_week": 5.607954545,
+        "lower95": 1.272727273,
+        "upper95": 11.296448864,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "leak_scanner": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 15,
+        "days": 176,
+        "per_week": 0.596590909,
+        "lower95": 0.278409091,
+        "upper95": 0.994318182,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "mirror_proxy": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 17,
+        "days": 176,
+        "per_week": 0.676136364,
+        "lower95": 0.318181818,
+        "upper95": 1.113636364,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "mobile_satellite": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 40,
+        "days": 176,
+        "per_week": 1.590909091,
+        "lower95": 0.994318182,
+        "upper95": 2.267045455,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:browser": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 92,
+        "days": 176,
+        "per_week": 3.659090909,
+        "lower95": 2.346590909,
+        "upper95": 5.25,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:ci": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 1889,
+        "days": 176,
+        "per_week": 75.130681818,
+        "lower95": 39.691193182,
+        "upper95": 119.286363636,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:cli": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 139,
+        "days": 176,
+        "per_week": 5.528409091,
+        "lower95": 3.538778409,
+        "upper95": 7.954545455,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:library": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 561,
+        "days": 176,
+        "per_week": 22.3125,
+        "lower95": 15.869318182,
+        "upper95": 29.790767045,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:org": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 161,
+        "days": 176,
+        "per_week": 6.403409091,
+        "lower95": 0.675142045,
+        "upper95": 14.875994318,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "normal:researcher": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 753,
+        "days": 176,
+        "per_week": 29.948863636,
+        "lower95": 23.106960227,
+        "upper95": 37.784090909,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "notebook_hopper": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 168,
+        "days": 176,
+        "per_week": 6.681818182,
+        "lower95": 4.732954545,
+        "upper95": 8.790767045,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "parallel_agents": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 834,
+        "days": 176,
+        "per_week": 33.170454545,
+        "lower95": 28.994318182,
+        "upper95": 37.665767045,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "privacy_relay": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 5,
+        "days": 176,
+        "per_week": 0.198863636,
+        "lower95": 0.039772727,
+        "upper95": 0.4375,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "release_crowd": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 104,
+        "days": 176,
+        "per_week": 4.136363636,
+        "lower95": 2.186505682,
+        "upper95": 6.681818182,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "retry_wave": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 183,
+        "days": 176,
+        "per_week": 7.278409091,
+        "lower95": 6.124005682,
+        "upper95": 8.552130682,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "solo_scraper": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 518,
+        "days": 176,
+        "per_week": 20.602272727,
+        "lower95": 15.152414773,
+        "upper95": 26.290767045,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "teammate_repost": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 11,
+        "days": 176,
+        "per_week": 0.4375,
+        "lower95": 0.159090909,
+        "upper95": 0.795454545,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    },
+    "tor_vpn": {
+      "two_plane": {
+        "pages": 0,
+        "days": 176,
+        "per_week": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.119318182,
+        "method": "rule of three (no false pages): 3/n per day"
+      },
+      "any_two_classes": {
+        "pages": 49,
+        "days": 176,
+        "per_week": 1.948863636,
+        "lower95": 0.795454545,
+        "upper95": 3.5,
+        "method": "bootstrap over 176 simulated days, 2000 resamples"
+      }
+    }
+  },
+  "runs": 8,
+  "days": 176,
+  "family_days": 623516,
+  "replay_faithful": true,
+  "runs_used": [
+    "A0/201",
+    "A0/202",
+    "A0/203",
+    "A0/204",
+    "A0/205",
+    "A0/206",
+    "A0/301",
+    "A0/302"
+  ],
+  "per_run": [
+    {
+      "run": "A0/201",
+      "days": 22.0,
+      "family_days": 76315,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 367,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6551,
+        "n_b": 6551,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "1c2c253675c076473a225532a6e0c0faa5c01eaacc458795ed0790e864c519c1",
+        "monitor/alerts.jsonl": "b0504b396b70555eadd9cbe9a39185879e4050194a16a9d856e07136770d5288",
+        "monitor/evidence.jsonl": "7c1c423e386507816accdda55e51c31ceed8a6a96e65f53e2c5194a603ce9a19",
+        "monitor/family_days.jsonl": "90c6c52df12477899278f14d898c3cbde67e02012e4923b9b4dc68924ff2f3f3",
+        "monitor/monitor_run.json": "687a1d6a8bfb28467ee546d5e902afc97948f3edfecb3dad88368b75665a35a5",
+        "truth/sessions.json": "f9aa2d9f8342e6005cfe48660f4906cbce01e8128413d8934841e35f34487508",
+        "truth/truth.json": "50c3c43d95daab3a4d1e6b3cf23c06409f9e90f2b26396b1b71bb40b2a8ec069"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/202",
+      "days": 22.0,
+      "family_days": 73337,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 342,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6346,
+        "n_b": 6346,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "bf65212f9f23ef04f011c06efc648e59509e932518f5d6cc04134fd7077d32d3",
+        "monitor/alerts.jsonl": "5cb46d8c0dbc97510817a339874c278de0360652551fda2f9b72bd54ddfebee3",
+        "monitor/evidence.jsonl": "6b6c2fc96283f6697d067c8b039a7aee3d756962e7c67e3e8feb3520ff27e520",
+        "monitor/family_days.jsonl": "16eb7be615a26765de06e26baf8d802319cdfbcc28997d3f56a9d68584bf6e3a",
+        "monitor/monitor_run.json": "119b78a4161e7f0a9a32651b2bf83d5c1430b800cf937243961cb03ab36c0c91",
+        "truth/sessions.json": "53164c5bf7b86c4b27465ed778342dd2c52f5307c9ed55881726a3a5cda2b803",
+        "truth/truth.json": "5e56e145e0fd7e8b1a41963d11823d8e8124e8d8ce4957e51ba146d0985d82d7"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/203",
+      "days": 22.0,
+      "family_days": 75188,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 334,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6289,
+        "n_b": 6289,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "3c75e5dd97276474f8a2e6109ee4f6cf6fcb0964012a251c72e72f1c60a38ba4",
+        "monitor/alerts.jsonl": "50745c87a7822b26aeb063d037175d61ac247c16da68d360b8a460e148f0625d",
+        "monitor/evidence.jsonl": "9a3f947565338f5b78d206d92071f4dd4f10c3e497d5f23507a64ca3790b9ad9",
+        "monitor/family_days.jsonl": "28f2488cd48c17fe145b429ca2cff1006e361ba77134b576de364688fb84ddc5",
+        "monitor/monitor_run.json": "dcf9ea6b27d8b0f6be77fef22f7a5186d3d3590dff1e6d9060340025f28e4fa3",
+        "truth/sessions.json": "dfe1ed46c0faaac270941b1514804769dc5aa90a5e19e4abf5fdb2531261b072",
+        "truth/truth.json": "c86d5fe6653bd099f93b937edddbf2efd152561a5cc4827e2cc041de11d0e408"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/204",
+      "days": 22.0,
+      "family_days": 72593,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 345,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6367,
+        "n_b": 6367,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "8ae9ebce0a2af1bbe1334db3e8755777d95533e2ca6a2091c94940077bf93c14",
+        "monitor/alerts.jsonl": "0809bc2410480679c7136fc140e4d302eedb9e5bae086dabefcef8af1c8f6e39",
+        "monitor/evidence.jsonl": "03828646ad1d48147bf7895e81e691509f29bf2be6d9a516aaa4b382f4b7b34e",
+        "monitor/family_days.jsonl": "db7e0e74bb044ae6b2c6f1f4ffdaff2b0862071bf8f4ae8f1261c13bcfbd1d57",
+        "monitor/monitor_run.json": "cde32ecdace36e7f6c94c4c3a4a1866c4f1ee76a4364006858cc570b501829f6",
+        "truth/sessions.json": "aee7ffafc67912a21001494af90ef004d1a6f7663811e52c622a7e428ae7947f",
+        "truth/truth.json": "afc78ccbebb070a125f05143700f483e70798b00377c7eb68dcad77e6e752c4d"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/205",
+      "days": 22.0,
+      "family_days": 94461,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 407,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6710,
+        "n_b": 6710,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "48d83a22f5536d349c408909c1c4bf0b92cfa55cc27fcc5c4ed0719a0bc71526",
+        "monitor/alerts.jsonl": "34eddc132453974b4abd7604d3892684a31670ee0bc782674df7cab4410c21ee",
+        "monitor/evidence.jsonl": "02f5d5e8d5e7d3645246e4b46069a1903684bc54f18b3b177d3b44dd668aaeed",
+        "monitor/family_days.jsonl": "f47f2960ef4e1d68395218b936c8dfd97e7e935b042ac60edf7804cde16982f0",
+        "monitor/monitor_run.json": "a95bc97ae961e94199be9548f6b17c04bc63ffb8309ecd04f1784ccf3cca7b70",
+        "truth/sessions.json": "b8a1980a8cef6aea555168a61c2a6d493dadaf208a38ad495e734fa61d43aad2",
+        "truth/truth.json": "5a5a25d14499a636b1f07a184ba8f0da567cd56ea64e5e2225558a89c3936083"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/206",
+      "days": 22.0,
+      "family_days": 71648,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 357,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 6337,
+        "n_b": 6337,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "43245735b93a3e5fde351ace8b98724d93093e9ac116bfdc9a924b983dec0960",
+        "monitor/alerts.jsonl": "0031072b52026ee79d59df9e212ca796f882ac2e43676144b081e4edeee56f89",
+        "monitor/evidence.jsonl": "4525f008a91a3aab7c30b21b62456e82472ba9be355084ab031e40fe8429ed54",
+        "monitor/family_days.jsonl": "6fa878b6a1a0cd29b19d37468be4c25e3cb2e04542d55e083b662ba19cb92b15",
+        "monitor/monitor_run.json": "37a145d0661763c19b98257750a117fe2197251a904d015d6e94ea23560812dc",
+        "truth/sessions.json": "b3e609187cc4ffa36282f7abf13529d865856b2404448f6a6b6f7f0517c633c3",
+        "truth/truth.json": "ee42c1d20146e452d861d2e3de0435685c80067865803f902b47403e4a1166ec"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/301",
+      "days": 22.0,
+      "family_days": 76829,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 2622,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 181,
+        "n_b": 181,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "2a2706cb8851bebaea944ff981c08a573f8976b041be5e8cefd5ddaf2a9c0aa8",
+        "monitor/alerts.jsonl": "1e074834d5d1e68cb2655774239ddcd157064e35d8ba276af62a15c77cdfa084",
+        "monitor/evidence.jsonl": "020afffc738ad677f12a6bf1cca7bca3bae377abe6e46cec5634f8ae68455ffe",
+        "monitor/family_days.jsonl": "13b5f8e7c12c0a68071a3765b3e898cbd8c9903401304106e25c7d7c18b159d9",
+        "monitor/monitor_run.json": "eac28f0efe3b0d027a6869f1640abbb5527071f59bf3b9790cf89740ff94ed20",
+        "truth/sessions.json": "2e0b7c958d0434fadd5e273f1f46a50e30f8ede7a6f952c27605f747bac3a40a",
+        "truth/truth.json": "a536ac769602c47020ea7182c4f34de59b29438968543c56588c0985d40db58e"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    },
+    {
+      "run": "A0/302",
+      "days": 22.0,
+      "family_days": 83145,
+      "two_plane_pages": 0,
+      "any_two_classes_pages": 2740,
+      "replay_check": {
+        "identical": true,
+        "exact": false,
+        "relabeling_only": true,
+        "n_a": 207,
+        "n_b": 207,
+        "first_diff": null
+      },
+      "inputs": {
+        "logs/events.jsonl": "05a6790f4451e1f2d2c79da1ca0980dc3facf7561dd1f8e1baa4f46c75d1e622",
+        "monitor/alerts.jsonl": "6cad7ed7ba451488482370976c02dfcd006ebfb432de74a3de579723e5bd95b0",
+        "monitor/evidence.jsonl": "060eea2bae38f5ca8bd55cb11822c772ebb7936da3d3727df2d6c8424923386a",
+        "monitor/family_days.jsonl": "d3385921a16ca89d0d45c073f7ad1d47bbb744566f14f0e83e665bf039e5a330",
+        "monitor/monitor_run.json": "8fe64eca063aab9546091f157f19d2560dc0dc630ade8ebb11651c7b3b42a977",
+        "truth/sessions.json": "e7258067ecee616c7cecff91a251765e06848d065e54e73f7a42ac0acd00a80a",
+        "truth/truth.json": "a47ba49fbe21c9a7236ab0db18b2dcf06bb43c9a2987cd1f7b9cc01c0980a08e"
+      },
+      "code": {
+        "eval/h4.py": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+        "eval/score.py": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8",
+        "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1"
+      }
+    }
+  ]
+}

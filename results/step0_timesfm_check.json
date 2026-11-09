@@ -1,0 +1,27 @@
+{
+  "check": "BUILD.md step 0: TimesFM 2.5 on CPU",
+  "model": "google/timesfm-2.5-200m-pytorch",
+  "series": 13,
+  "context_bins": 1024,
+  "horizon_bins": 12,
+  "seed": 7,
+  "load_s": 39.49,
+  "forecast_first_s": 1.36,
+  "forecast_second_s": 1.34,
+  "limit_s": 60.0,
+  "point_shape": [
+    13,
+    12
+  ],
+  "quantile_shape": [
+    13,
+    12,
+    10
+  ],
+  "all_finite": true,
+  "repeatable": true,
+  "mae_timesfm": 11.328,
+  "mae_seasonal_naive": 38.0,
+  "passed": true,
+  "note": "Synthetic Poisson series with a daily cycle; a load and speed check, not H2."
+}

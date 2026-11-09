@@ -1,0 +1,15 @@
+{
+ "branches": 36,
+ "design_sha256": "1bdf5b8e810bc6deff0b718fd7c07e672220b9b300fd6a22ba5d09c1868206a1",
+ "dry_run": false,
+ "duplicate_issues": [],
+ "episodes": 12,
+ "experiment": "H1",
+ "hits": [],
+ "planned_hits": 0,
+ "run_id": "h1-pilot-1bdf5b8e",
+ "texts_manifest_sha256": "7d3589ce8b781ac3dca13bb116c2be66f29706a08f0a0d613f7ea9bf9ee7ef88",
+ "unplanned_hits": 0,
+ "values": 70,
+ "written_utc": "2026-11-09T06:23:03+00:00"
+}

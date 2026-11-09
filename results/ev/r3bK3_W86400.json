@@ -1,0 +1,713 @@
+{
+ "window_s": 86400.0,
+ "emulate": true,
+ "who": "deny",
+ "stretch": [
+  3,
+  61.0
+ ],
+ "runs": [
+  {
+   "run": "runs/A2a-pa-deepseek/171",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 14,
+    "covered": 25,
+    "E": 4.135,
+    "swarm_in_family": 10,
+    "honest_in_family": 4,
+    "window_accounts": 21
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/173",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 27,
+    "E": 4.95,
+    "swarm_in_family": 9,
+    "honest_in_family": 4,
+    "window_accounts": 25
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/178",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 14,
+    "covered": 28,
+    "E": 5.472,
+    "swarm_in_family": 11,
+    "honest_in_family": 3,
+    "window_accounts": 26
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/179",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 10,
+    "covered": 30,
+    "E": 11.443,
+    "swarm_in_family": 10,
+    "honest_in_family": 0,
+    "window_accounts": 16
+   },
+   "swarm_family": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 10,
+    "accounts": 10,
+    "covered": 30,
+    "E": 11.443,
+    "curve": [
+     [
+      3,
+      0.0
+     ],
+     [
+      6,
+      0.142
+     ],
+     [
+      9,
+      0.445
+     ],
+     [
+      12,
+      0.929
+     ],
+     [
+      15,
+      1.626
+     ],
+     [
+      18,
+      2.577
+     ],
+     [
+      21,
+      3.843
+     ],
+     [
+      24,
+      5.527
+     ],
+     [
+      27,
+      7.835
+     ],
+     [
+      30,
+      11.443
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/193",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 25,
+    "E": 4.124,
+    "swarm_in_family": 11,
+    "honest_in_family": 2,
+    "window_accounts": 18
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/194",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 9,
+    "covered": 17,
+    "E": 1.648,
+    "swarm_in_family": 8,
+    "honest_in_family": 1,
+    "window_accounts": 15
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/195",
+   "best": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 11,
+    "covered": 20,
+    "E": 5.025,
+    "swarm_in_family": 7,
+    "honest_in_family": 4,
+    "window_accounts": 20
+   },
+   "swarm_family": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 9.111,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.077
+     ],
+     [
+      6,
+      0.239
+     ],
+     [
+      8,
+      0.496
+     ],
+     [
+      10,
+      0.857
+     ],
+     [
+      12,
+      1.339
+     ],
+     [
+      14,
+      1.961
+     ],
+     [
+      16,
+      2.748
+     ],
+     [
+      18,
+      3.742
+     ],
+     [
+      20,
+      5.007
+     ],
+     [
+      22,
+      6.67
+     ],
+     [
+      24,
+      9.111
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/196",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 23,
+    "E": 3.366,
+    "swarm_in_family": 10,
+    "honest_in_family": 2,
+    "window_accounts": 21
+   },
+   "swarm_family": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 3.726,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.045
+     ],
+     [
+      6,
+      0.138
+     ],
+     [
+      8,
+      0.281
+     ],
+     [
+      10,
+      0.478
+     ],
+     [
+      12,
+      0.731
+     ],
+     [
+      14,
+      1.046
+     ],
+     [
+      16,
+      1.426
+     ],
+     [
+      18,
+      1.877
+     ],
+     [
+      20,
+      2.406
+     ],
+     [
+      22,
+      3.019
+     ],
+     [
+      24,
+      3.726
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/197",
+   "best": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 12,
+    "covered": 21,
+    "E": 5.804,
+    "swarm_in_family": 8,
+    "honest_in_family": 4,
+    "window_accounts": 18
+   },
+   "swarm_family": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 9.111,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.077
+     ],
+     [
+      6,
+      0.239
+     ],
+     [
+      8,
+      0.496
+     ],
+     [
+      10,
+      0.857
+     ],
+     [
+      12,
+      1.339
+     ],
+     [
+      14,
+      1.961
+     ],
+     [
+      16,
+      2.748
+     ],
+     [
+      18,
+      3.742
+     ],
+     [
+      20,
+      5.007
+     ],
+     [
+      22,
+      6.67
+     ],
+     [
+      24,
+      9.111
+     ]
+    ]
+   }
+  },
+  {
+   "run": "runs/A2a-pa-deepseek/198",
+   "best": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 12,
+    "covered": 24,
+    "E": 9.111,
+    "swarm_in_family": 11,
+    "honest_in_family": 1,
+    "window_accounts": 22
+   },
+   "swarm_family": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 12,
+    "accounts": 12,
+    "covered": 24,
+    "E": 9.111,
+    "curve": [
+     [
+      2,
+      0.0
+     ],
+     [
+      4,
+      0.077
+     ],
+     [
+      6,
+      0.239
+     ],
+     [
+      8,
+      0.496
+     ],
+     [
+      10,
+      0.857
+     ],
+     [
+      12,
+      1.339
+     ],
+     [
+      14,
+      1.961
+     ],
+     [
+      16,
+      2.748
+     ],
+     [
+      18,
+      3.742
+     ],
+     [
+      20,
+      5.007
+     ],
+     [
+      22,
+      6.67
+     ],
+     [
+      24,
+      9.111
+     ]
+    ]
+   }
+  }
+ ]
+}

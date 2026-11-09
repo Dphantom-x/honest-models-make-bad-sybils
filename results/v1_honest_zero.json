@@ -1,0 +1,21 @@
+{
+  "what": "Why v1's honest page count is zero (F04): the honest zero is decided by the IMPACT plane. No honest run produced a single impact-class item, so v1's two-plane rule (relation AND impact) can never page honest traffic -- before relations or thresholds matter.",
+  "re_derived": "read-only count of each runs/<run>/monitor/evidence.jsonl 'signal' field. Classes at monitor/points.py: IMPACT_B = {coverage_split, combined_rate, refusals, short_lived_uploads}; CONTEXT_B = {breadth}; LINKING_C (relation) = {pooled, multi_origin, replay}. Backs facts-55.md F04.",
+  "honest_runs": "A0cal 201-206, A0hold 301-303, A0/101 (10 runs).",
+  "impact_items_total": 0,
+  "per_run": {
+    "A0cal/201": {"impact": 0, "multi_origin": 465, "replay": 178, "pooled": 0, "breadth": 257},
+    "A0cal/202": {"impact": 0, "multi_origin": 407, "replay": 84, "pooled": 0, "breadth": 270},
+    "A0cal/203": {"impact": 0, "multi_origin": 440, "replay": 156, "pooled": 0, "breadth": 252},
+    "A0cal/204": {"impact": 0, "multi_origin": 420, "replay": 245, "pooled": 0, "breadth": 242},
+    "A0cal/205": {"impact": 0, "multi_origin": 388, "replay": 162, "pooled": 0, "breadth": 257},
+    "A0cal/206": {"impact": 0, "multi_origin": 345, "replay": 126, "pooled": 0, "breadth": 226},
+    "A0hold/301": {"impact": 0, "multi_origin": 364, "replay": 214, "pooled": 0, "breadth": 286},
+    "A0hold/302": {"impact": 0, "multi_origin": 338, "replay": 154, "pooled": 0, "breadth": 267},
+    "A0hold/303": {"impact": 0, "multi_origin": 369, "replay": 162, "pooled": 0, "breadth": 243},
+    "A0/101": {"impact": 0, "multi_origin": 154, "replay": 56, "pooled": 0, "breadth": 366}
+  },
+  "ranges": "impact 0/0; multi_origin 154-465; replay 56-245; pooled 0; context breadth 226-366 -- per run.",
+  "takeaway": "The relation plane is busy on honest traffic (multi_origin + replay fire hundreds of times/run from honest key hopping and NAT), but the IMPACT plane never fires (0 coverage_split / combined_rate / refusals / short_lived_uploads). Requiring BOTH planes is what makes v1's honest page count 0; the swarm defeats v1 precisely because a compartmentalized swarm also emits no impact-class item (each account stays in quota).",
+  "spend": "$0 (read-only count of existing monitor outputs)."
+}

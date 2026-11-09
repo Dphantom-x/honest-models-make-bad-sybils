@@ -1,0 +1,75 @@
+{
+ "experiment": "H1",
+ "format": 1,
+ "cell": {
+  "branch": "task_string",
+  "hint": false,
+  "model": "claude-haiku-5-5"
+ },
+ "dataset_rule": "task_dataset",
+ "n": 20,
+ "a": 9,
+ "b": 0,
+ "c": 0,
+ "d": 11,
+ "rates": {
+  "needed": 0.45,
+  "optional": 0.45
+ },
+ "difference": 0.0,
+ "test": {
+  "name": "exact McNemar",
+  "alternative": "needed > optional, one-sided",
+  "p": 1.0,
+  "alpha": 0.025,
+  "rejects": false
+ },
+ "interval": {
+  "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+  "level": 0.95,
+  "lower": -0.016112515805281988,
+  "upper": 0.016112515805281988
+ },
+ "bootstrap": {
+  "descriptive": true,
+  "unit": "parent episode",
+  "clusters": 20,
+  "resamples": 2000,
+  "seed": 20261107,
+  "level": 0.95,
+  "lower": 0.0,
+  "upper": 0.0
+ },
+ "outcome": "inconclusive",
+ "outcome_label": "inconclusive",
+ "outcome_order": [
+  "little_lineage",
+  "supported",
+  "tie",
+  "inconclusive"
+ ],
+ "launched": 20,
+ "exclusions": {
+  "not_delegated": 0,
+  "partial_run": 0,
+  "role_mismatch": 0,
+  "same_session_violation": 0,
+  "not_exposed": 0
+ },
+ "run_validity": {
+  "passed": true,
+  "same_session_violations": 0,
+  "episodes": 20,
+  "share": 0.0,
+  "max_share": 0.01
+ },
+ "hub_relays": {
+  "needed": 0,
+  "optional": 0
+ },
+ "code": {
+  "eval/carryover.py": "32926dc7c76f7ca1d78eb2e9617556d7ed14bd6f67f03c10e0f48a83556ad258",
+  "eval/stats.py": "da20699c328255c6a64689deda2353782fb0b801904f06b1c13d8c3fcd8fca20",
+  "monitor/echo.py": "e31bc0da0df534f6fb3b81fdbaef49d4cb51c765c9ab5f7c32ed7951cbf48fd3"
+ }
+}

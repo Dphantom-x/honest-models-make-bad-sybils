@@ -1,0 +1,12 @@
+{
+  "what": "Judge ask (b): v1 at ONE operating point. The honest held-out weeks (301-302) were originally monitored with TimesFM ON + configs/A0_policy.json, but the Gemini attack episodes were monitored in the ATTACK config (TimesFM OFF + the built-in policy: 1,200/300 req/hr). All 4 judges flagged this config mismatch -- the false-page rate and the detections came from different configs. This re-runs 301-302 in the SAME attack config so one operating point carries both.",
+  "config": "monitor.run --timesfm off, built-in policy (no --policy; monitor/policy.json defaults 1200/300 req/hr), frozen thresholds monitor/thresholds.json (8a8598cc). New output folders runs/A0hold_attackcfg/301-302; the held-out TimesFM-on outputs are untouched.",
+  "honest_false_pages": {
+    "A0hold/301": "0 pages (Sev-1/Sev-2); 201 alert lines (105 Sev-3, 96 Sev-4)",
+    "A0hold/302": "0 pages (Sev-1/Sev-2); 239 alert lines (125 Sev-3, 114 Sev-4)",
+    "summary": "0 honest false pages on both held-out weeks at the attack operating point."
+  },
+  "detections_same_config": "In this same attack config (TimesFM off, built-in limits), v1 MISSED the compartmentalized Gemini swarm (0 of 7 held-out attack episodes paged -- the headline negative, results/h7_heldout.json) and pages the A1 scripted single-credential replay (12/12). So the one operating point carries both a false-page rate (0 on 301-302) AND its detection behaviour (swarm miss / A1 catch).",
+  "takeaway": "v1's '0 false pages' is not a TimesFM-on artefact: at the attack operating point (TimesFM off, built-in limits) it still pages 0 honest Sev-1/2 on 301-302, while missing the swarm and catching A1 in that same config. This closes the config-mismatch the judges flagged.",
+  "spend": "$0 (CPU monitor re-run, TimesFM off)."
+}

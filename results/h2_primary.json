@@ -1,0 +1,613 @@
+{
+  "experiment": "H2",
+  "ticket": "T017",
+  "question": "On surges injected into honest A0 traffic, does TimesFM 2.5 detect a surge sooner than a seasonal-naive forecast (same time yesterday) at the same false-alarm rate?",
+  "prediction": {
+    "written": "7 Nov 2026, 19:46 Eastern, before any H2 run (predictions.md, H2)",
+    "text": "the median detection-time difference (TimesFM minus seasonal naive) at a matched false-alarm rate, paired across injected surges, is below 0"
+  },
+  "primary_number": {
+    "what": "median of paired detection delays, TimesFM minus seasonal naive, minutes, over surges both detected; matched false-alarm rate of 1 alarm episode per simulated week on the clean series; 95% percentile cluster bootstrap over placements",
+    "n_surges": 2700,
+    "n_pairs": 9,
+    "only_a": 18,
+    "only_b": 35,
+    "neither": 2638,
+    "estimate": 0.0,
+    "lower": -100.0,
+    "upper": 150.0,
+    "level": 0.95,
+    "resamples": 2000,
+    "seed": 20261107,
+    "n_clusters": 5,
+    "mean_difference": 16.666666666666668,
+    "share_a_sooner": 0.4444444444444444,
+    "share_tied": 0.1111111111111111,
+    "share_b_sooner": 0.4444444444444444,
+    "outcome": "tie",
+    "prediction_held": false
+  },
+  "matched_false_alarm_rate": {
+    "rule": "alarm episodes on clean evaluation bins: runs of A >= h merged when fewer than 12 bins (2 h) apart; h = smallest threshold whose every higher threshold also gives <= floor(1 x weeks) episodes",
+    "clean_days": 83.25,
+    "detectors": {
+      "timesfm": {
+        "threshold": 1.01915863154667,
+        "attainable": true,
+        "episodes": 11,
+        "target_episodes": 11,
+        "target_alarm_on_share": null,
+        "per_week": 0.924924924924925,
+        "alarm_on_share": 0.004254254254254255,
+        "episodes_per_run": [
+          5,
+          0,
+          2,
+          0,
+          3,
+          1
+        ],
+        "tau": [
+          57.3867864238705,
+          69.15383386832649,
+          159.2361670703743,
+          75.7519652805452,
+          5.456202933563698,
+          147.88506125951412,
+          97.98623006112334,
+          803.429870807866,
+          741.0213493570028,
+          67.65834390691687,
+          53.6323302277851,
+          972.7156548051216,
+          116.68638993165297
+        ]
+      },
+      "seasonal_naive": {
+        "threshold": 1.0001607263537373,
+        "attainable": true,
+        "episodes": 11,
+        "target_episodes": 11,
+        "target_alarm_on_share": null,
+        "per_week": 0.924924924924925,
+        "alarm_on_share": 0.008758758758758759,
+        "episodes_per_run": [
+          0,
+          6,
+          1,
+          0,
+          3,
+          1
+        ],
+        "tau": [
+          161.38046823586177,
+          100.70224955782916,
+          150.75356247923875,
+          238.16939212276745,
+          5.5,
+          128.29996769189302,
+          268.2036114707096,
+          53.62745280737831,
+          172.5521024842248,
+          245.9228294386269,
+          237.6021061592197,
+          3070.436107857727,
+          79.21412516391635
+        ]
+      }
+    }
+  },
+  "misses": {
+    "timesfm": {
+      "missed": 2673,
+      "of": 2700
+    },
+    "seasonal_naive": {
+      "missed": 2656,
+      "of": 2700
+    }
+  },
+  "censored_sensitivity": {
+    "n_surges": 62,
+    "n_pairs": 62,
+    "only_a": 0,
+    "only_b": 0,
+    "neither": 0,
+    "estimate": 30.0,
+    "lower": -50.0,
+    "upper": 70.0,
+    "level": 0.95,
+    "resamples": 2000,
+    "seed": 20261107,
+    "n_clusters": 26,
+    "mean_difference": 31.129032258064516,
+    "share_a_sooner": 0.3548387096774194,
+    "share_tied": 0.016129032258064516,
+    "share_b_sooner": 0.6290322580645161,
+    "outcome": "tie",
+    "prediction_held": false,
+    "censored_at": "window end + 10 min"
+  },
+  "method": {
+    "series": "monitor.baselines.SERIES via TimingDetector (record-only) from logs/ only",
+    "context_bins": 1024,
+    "refresh_bins": 6,
+    "horizon_bins": 6,
+    "cusum_k": 0.5,
+    "first_scored_bin": 1026,
+    "eval_start_bin": 1170,
+    "detectors": [
+      "timesfm",
+      "seasonal_naive",
+      "ewma",
+      "iforest",
+      "median3"
+    ],
+    "alarm": "A = max over series of CUSUM_s / tau_s, tau_s = clean 99.9th percentile (>= 1)",
+    "false_alarm_rates_per_week": {
+      "primary": 1.0,
+      "per_day": 7.0
+    },
+    "refractory_bins": 12,
+    "sizes": [
+      0.2,
+      0.5,
+      1.0
+    ],
+    "durations_bins": [
+      3,
+      12,
+      36
+    ],
+    "size_base": "median of the same bin over the 7 previous days of the clean series",
+    "excess": "floor(size x base + 0.5) whole counts on one series",
+    "injectable_rule": "clean median per bin >= 5.0",
+    "placements_per_run": 50,
+    "grid_seed": 20261117,
+    "detection": "first surge bin with the injected alarm on and the clean alarm off",
+    "delay": "minutes from the surge's start to the end of the detecting bin",
+    "bootstrap": {
+      "resamples": 2000,
+      "seed": 20261107,
+      "cluster": "placement"
+    },
+    "iforest": {
+      "seed": 0,
+      "trees": 100,
+      "refit_bins": 6,
+      "train_bins": 1024
+    }
+  },
+  "inputs": {
+    "runs": [
+      {
+        "run": "runs\\A0cal\\201",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "3ef09e6486579c7d9eccefe136bd2a13f126108d5a85c2e01f3ab61907b772d6",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\201\\logs\\events.jsonl",
+            "bytes": 2070667946,
+            "mtime": 1794099486.9147203,
+            "sha256": "1c2c253675c076473a225532a6e0c0faa5c01eaacc458795ed0790e864c519c1"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\201\\logs\\keys.jsonl",
+            "bytes": 537733139,
+            "mtime": 1794099486.9147203,
+            "sha256": "e646497fc481b3cb62e8b6228f89beaba448ede875eeb79efa36abaae50cb126"
+          },
+          "served": {
+            "path": "runs\\A0cal\\201\\logs\\served.jsonl",
+            "bytes": 269218197,
+            "mtime": 1794099486.9147203,
+            "sha256": "dca02f34261d093f917a5b3832f9489a23a2905b33c75fde3dcbdb0b1589ab15"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\201\\logs\\orgs.jsonl",
+            "bytes": 1753,
+            "mtime": 1794099486.9152179,
+            "sha256": "cd506dc04742a63573f5344016cfa9fa8426887f0529e12f1b70089a3c554200"
+          }
+        }
+      },
+      {
+        "run": "runs\\A0cal\\202",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "127f8761f11f54f2af04641194324914ed6eed5a9c3c58aadec4f95035495cd5",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\202\\logs\\events.jsonl",
+            "bytes": 2005352254,
+            "mtime": 1794099481.33504,
+            "sha256": "bf65212f9f23ef04f011c06efc648e59509e932518f5d6cc04134fd7077d32d3"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\202\\logs\\keys.jsonl",
+            "bytes": 523073735,
+            "mtime": 1794099481.3355384,
+            "sha256": "0d941186f4ccf42f3cd11c4d06217556ec53d68fa7f83f1e0560a4556d3ddffc"
+          },
+          "served": {
+            "path": "runs\\A0cal\\202\\logs\\served.jsonl",
+            "bytes": 267272155,
+            "mtime": 1794099481.33504,
+            "sha256": "87fbe43f112c4430229add8ddd080bd7d41dbed9652f0eeea3cb19b6216f4c6d"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\202\\logs\\orgs.jsonl",
+            "bytes": 1895,
+            "mtime": 1794099481.3355384,
+            "sha256": "22f3f0710385d89645994c6bcd15665b5a14194634fa6c11ce13ae5325411379"
+          }
+        }
+      },
+      {
+        "run": "runs\\A0cal\\203",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "bfbf07bd44966bb73069a14fabf3ecfb129268f663ee1fa647149afe59130a4b",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\203\\logs\\events.jsonl",
+            "bytes": 2083876523,
+            "mtime": 1794099489.2661543,
+            "sha256": "3c75e5dd97276474f8a2e6109ee4f6cf6fcb0964012a251c72e72f1c60a38ba4"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\203\\logs\\keys.jsonl",
+            "bytes": 542862335,
+            "mtime": 1794099489.266652,
+            "sha256": "4ef238d27f39bb1723b9888d8500cb6de24f4ce4a309d8aafccb9ce60f16a3cc"
+          },
+          "served": {
+            "path": "runs\\A0cal\\203\\logs\\served.jsonl",
+            "bytes": 270659523,
+            "mtime": 1794099489.2661543,
+            "sha256": "265ff0e93f50f10d9eb9295415319b06784c32f1007328029b6c27aace31618f"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\203\\logs\\orgs.jsonl",
+            "bytes": 2304,
+            "mtime": 1794099489.266652,
+            "sha256": "ed132a4f98f606a5e93e2e131d187499d62801bcc5dd7a232817e17ad4b41243"
+          }
+        }
+      },
+      {
+        "run": "runs\\A0cal\\204",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "f391714f7f0b32df090ba4cc7571f5c8ca9abaa2103359d7b2118ddf059a3cd8",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\204\\logs\\events.jsonl",
+            "bytes": 2023909948,
+            "mtime": 1794099481.5109227,
+            "sha256": "8ae9ebce0a2af1bbe1334db3e8755777d95533e2ca6a2091c94940077bf93c14"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\204\\logs\\keys.jsonl",
+            "bytes": 529717124,
+            "mtime": 1794099481.5109227,
+            "sha256": "5cc5960bd4ba21457c941c8f32fe7fc5850ac6fc7d119ef3640928a02f34f765"
+          },
+          "served": {
+            "path": "runs\\A0cal\\204\\logs\\served.jsonl",
+            "bytes": 266402830,
+            "mtime": 1794099481.5109227,
+            "sha256": "280bc9863f2254c23039c3f196beff6115ce94de74d8d178c0d757b5f64e6c7c"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\204\\logs\\orgs.jsonl",
+            "bytes": 2583,
+            "mtime": 1794099481.5109227,
+            "sha256": "4975a8c987859d56f9f6e77235ab4dbe4cb4da13ad7acdd53a0e90fb988319eb"
+          }
+        }
+      },
+      {
+        "run": "runs\\A0cal\\205",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "d2a8946cac147f9c4d1a33386c7039609331d3f97d7f45f10fdbe643551ba452",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\205\\logs\\events.jsonl",
+            "bytes": 2232162524,
+            "mtime": 1794099704.1250417,
+            "sha256": "48d83a22f5536d349c408909c1c4bf0b92cfa55cc27fcc5c4ed0719a0bc71526"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\205\\logs\\keys.jsonl",
+            "bytes": 537577201,
+            "mtime": 1794099704.1250417,
+            "sha256": "1ab4a48e2bbb1384a1b2d3e85c91f3a7d1524cf7318384454f17fe668f99c428"
+          },
+          "served": {
+            "path": "runs\\A0cal\\205\\logs\\served.jsonl",
+            "bytes": 276617725,
+            "mtime": 1794099704.1250417,
+            "sha256": "e032019f0e8d2dc534deeff055c546264e865c3897d7fa1a0616d22e0c5053c0"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\205\\logs\\orgs.jsonl",
+            "bytes": 2443,
+            "mtime": 1794099704.1255457,
+            "sha256": "d6c728172cecb8d22ad64c044d8e1a2ae933950e1b887b6b880eabe039222400"
+          }
+        }
+      },
+      {
+        "run": "runs\\A0cal\\206",
+        "n_bins": 3168,
+        "days": 22.0,
+        "series_sha256": "78b6072f3d03188917fc05409946cde9a5eebea3e897ae1e53589ef918b5a993",
+        "files": {
+          "events": {
+            "path": "runs\\A0cal\\206\\logs\\events.jsonl",
+            "bytes": 2049549150,
+            "mtime": 1794099692.2481046,
+            "sha256": "43245735b93a3e5fde351ace8b98724d93093e9ac116bfdc9a924b983dec0960"
+          },
+          "keys": {
+            "path": "runs\\A0cal\\206\\logs\\keys.jsonl",
+            "bytes": 542123305,
+            "mtime": 1794099692.2485983,
+            "sha256": "aa1d7d2bc8dda6299d7e1c249cc2a8077ad3fc0a9398db5bf9e31dd07db9bacb"
+          },
+          "served": {
+            "path": "runs\\A0cal\\206\\logs\\served.jsonl",
+            "bytes": 263370604,
+            "mtime": 1794099692.2481046,
+            "sha256": "2db36f540a451c1dff3325a531b6fd5e7d0fdc9401917a79a46cc7d65a507766"
+          },
+          "orgs": {
+            "path": "runs\\A0cal\\206\\logs\\orgs.jsonl",
+            "bytes": 2306,
+            "mtime": 1794099692.2485983,
+            "sha256": "bb7a5d50565d95573da400bca96dc34d66e2cdbedeced79f92b34336e1a6fae3"
+          }
+        }
+      }
+    ],
+    "skipped_runs": [],
+    "code_sha256": {
+      "eval/h2.py": "88b21392e4ce5470bddd133038995c45ad061589f4826dbd7b68cfedd93208cf",
+      "eval/stats.py": "da20699c328255c6a64689deda2353782fb0b801904f06b1c13d8c3fcd8fca20",
+      "monitor/baselines.py": "66b66bf872b95d687cf062331ec62102e95ad62f6fef35b15c09539ade9c219a",
+      "monitor/forecast_timesfm.py": "15de5b900964a6b8f612f6e2a1d84abb48d5c5c185726376126d6f6a5cffb738",
+      "monitor/stream.py": "a79b32c7b527ce4ae2eafcc92dc2b3fb838649f2231db625343a0aedb5770471",
+      "monitor/rows.py": "606eb2ab8df05f59cc24a589f1008e323ba71475e3f28b2bce262ede00461a7d"
+    },
+    "timesfm": {
+      "name": "timesfm",
+      "model": "google/timesfm-2.5-200m-pytorch",
+      "status": "loaded",
+      "reason": null,
+      "checkpoint": "C:\\Users\\aldom\\.cache\\timesfm-2.5\\models--google--timesfm-2.5-200m-pytorch\\snapshots\\1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+      "cache_dir": "C:\\Users\\aldom\\.cache\\timesfm-2.5",
+      "local_files_only": true,
+      "torch_compile": false,
+      "device": "cpu",
+      "context_bins": 1024,
+      "min_context_bins": 144,
+      "max_horizon": 128,
+      "band": "quantile head q10-q90 (80%), half-width floored at 1.28 x max(1, sqrt(median))",
+      "fallback": "seasonal_naive",
+      "load_s": 8.196,
+      "forecasts": 46,
+      "forecast_s_mean": 50.4508,
+      "forecast_s_max": 143.7858,
+      "forecast_s_total": 2320.735
+    },
+    "computed_at": "2026-11-07 21:06:48 Eastern Standard Time",
+    "timesfm_weights_sha256": "2f776efe6245e42b24bc4153ffdf61810140210e4bd3b01fb21f7aa779ab6ce8",
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "timesfm_clean_source": {
+      "A0cal_201": {
+        "tag": "A0cal_201",
+        "source": "monitor forecast.csv",
+        "spot_check_refreshes": [
+          1026,
+          1452,
+          1878,
+          2310,
+          2736,
+          3162
+        ],
+        "spot_check_max_rel_gap": 4.99472618102903e-05,
+        "tolerance": 0.0001,
+        "csv_sha256": "db5a7d4bc71ac0cf8cba728785dc53a71f2becdd9c7e30f131a9dee94fe73099",
+        "monitor_forecaster": {
+          "name": "timesfm",
+          "model": "google/timesfm-2.5-200m-pytorch",
+          "status": "loaded",
+          "reason": null,
+          "checkpoint": "C:\\Users\\aldom\\.cache\\timesfm-2.5\\models--google--timesfm-2.5-200m-pytorch\\snapshots\\1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+          "cache_dir": "C:\\Users\\aldom\\.cache\\timesfm-2.5",
+          "local_files_only": true,
+          "torch_compile": false,
+          "device": "cpu",
+          "context_bins": 1024,
+          "min_context_bins": 144,
+          "max_horizon": 128,
+          "band": "quantile head q10-q90 (80%), half-width floored at 1.28 x max(1, sqrt(median))",
+          "fallback": "seasonal_naive",
+          "load_s": 5.141,
+          "forecasts": 504,
+          "forecast_s_mean": 4.2765,
+          "forecast_s_max": 9.1997,
+          "forecast_s_total": 2155.341,
+          "fallback_short_history": 29,
+          "refresh_bins": 6,
+          "bin_s": 600.0,
+          "history_bins": 1024,
+          "baselines_in_csv": [
+            "ewma",
+            "m3",
+            "sn",
+            "iforest"
+          ]
+        },
+        "used": true
+      },
+      "A0cal_202": {
+        "tag": "A0cal_202",
+        "source": "monitor forecast.csv",
+        "spot_check_refreshes": [
+          1026,
+          1452,
+          1878,
+          2310,
+          2736,
+          3162
+        ],
+        "spot_check_max_rel_gap": 4.984887093305587e-05,
+        "tolerance": 0.0001,
+        "csv_sha256": "40d9b3c463e6810e42bf030e0d68f23c8089854753c432a01b8462672af0e0a9",
+        "monitor_forecaster": {
+          "name": "timesfm",
+          "model": "google/timesfm-2.5-200m-pytorch",
+          "status": "loaded",
+          "reason": null,
+          "checkpoint": "C:\\Users\\aldom\\.cache\\timesfm-2.5\\models--google--timesfm-2.5-200m-pytorch\\snapshots\\1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+          "cache_dir": "C:\\Users\\aldom\\.cache\\timesfm-2.5",
+          "local_files_only": true,
+          "torch_compile": false,
+          "device": "cpu",
+          "context_bins": 1024,
+          "min_context_bins": 144,
+          "max_horizon": 128,
+          "band": "quantile head q10-q90 (80%), half-width floored at 1.28 x max(1, sqrt(median))",
+          "fallback": "seasonal_naive",
+          "load_s": 4.886,
+          "forecasts": 504,
+          "forecast_s_mean": 4.2695,
+          "forecast_s_max": 8.8029,
+          "forecast_s_total": 2151.83,
+          "fallback_short_history": 29,
+          "refresh_bins": 6,
+          "bin_s": 600.0,
+          "history_bins": 1024,
+          "baselines_in_csv": [
+            "ewma",
+            "m3",
+            "sn",
+            "iforest"
+          ]
+        },
+        "used": true
+      },
+      "A0cal_203": {
+        "tag": "A0cal_203",
+        "source": "monitor forecast.csv",
+        "spot_check_refreshes": [
+          1026,
+          1452,
+          1878,
+          2310,
+          2736,
+          3162
+        ],
+        "spot_check_max_rel_gap": 4.9667835235578384e-05,
+        "tolerance": 0.0001,
+        "csv_sha256": "ab9accee3451d8bcaf9fc943593566ed558d62ba54323324b4ca4e33faa84239",
+        "monitor_forecaster": {
+          "name": "timesfm",
+          "model": "google/timesfm-2.5-200m-pytorch",
+          "status": "loaded",
+          "reason": null,
+          "checkpoint": "C:\\Users\\aldom\\.cache\\timesfm-2.5\\models--google--timesfm-2.5-200m-pytorch\\snapshots\\1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+          "cache_dir": "C:\\Users\\aldom\\.cache\\timesfm-2.5",
+          "local_files_only": true,
+          "torch_compile": false,
+          "device": "cpu",
+          "context_bins": 1024,
+          "min_context_bins": 144,
+          "max_horizon": 128,
+          "band": "quantile head q10-q90 (80%), half-width floored at 1.28 x max(1, sqrt(median))",
+          "fallback": "seasonal_naive",
+          "load_s": 4.752,
+          "forecasts": 504,
+          "forecast_s_mean": 4.3011,
+          "forecast_s_max": 8.4305,
+          "forecast_s_total": 2167.741,
+          "fallback_short_history": 29,
+          "refresh_bins": 6,
+          "bin_s": 600.0,
+          "history_bins": 1024,
+          "baselines_in_csv": [
+            "ewma",
+            "m3",
+            "sn",
+            "iforest"
+          ]
+        },
+        "used": true
+      },
+      "A0cal_204": {
+        "tag": "A0cal_204",
+        "source": "monitor forecast.csv",
+        "spot_check_refreshes": [
+          1026,
+          1452,
+          1878,
+          2310,
+          2736,
+          3162
+        ],
+        "spot_check_max_rel_gap": 4.975747540593148e-05,
+        "tolerance": 0.0001,
+        "csv_sha256": "5c286e85d2dfcdacdf39770c66700cf05b7eac5d71f193f9be27d7ea321a48fc",
+        "monitor_forecaster": {
+          "name": "timesfm",
+          "model": "google/timesfm-2.5-200m-pytorch",
+          "status": "loaded",
+          "reason": null,
+          "checkpoint": "C:\\Users\\aldom\\.cache\\timesfm-2.5\\models--google--timesfm-2.5-200m-pytorch\\snapshots\\1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+          "cache_dir": "C:\\Users\\aldom\\.cache\\timesfm-2.5",
+          "local_files_only": true,
+          "torch_compile": false,
+          "device": "cpu",
+          "context_bins": 1024,
+          "min_context_bins": 144,
+          "max_horizon": 128,
+          "band": "quantile head q10-q90 (80%), half-width floored at 1.28 x max(1, sqrt(median))",
+          "fallback": "seasonal_naive",
+          "load_s": 4.7,
+          "forecasts": 504,
+          "forecast_s_mean": 4.2933,
+          "forecast_s_max": 8.4382,
+          "forecast_s_total": 2163.834,
+          "fallback_short_history": 29,
+          "refresh_bins": 6,
+          "bin_s": 600.0,
+          "history_bins": 1024,
+          "baselines_in_csv": [
+            "ewma",
+            "m3",
+            "sn",
+            "iforest"
+          ]
+        },
+        "used": true
+      },
+      "A0cal_205": {
+        "source": "computed by eval/h2.py"
+      },
+      "A0cal_206": {
+        "source": "computed by eval/h2.py"
+      }
+    },
+    "sklearn": "1.8.0",
+    "torch": "2.15.0+cpu"
+  },
+  "wall_s": 2952.1,
+  "written": "2026-11-07 21:12:09 Eastern Standard Time",
+  "script": "eval/h2.py"
+}

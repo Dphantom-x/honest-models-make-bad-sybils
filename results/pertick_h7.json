@@ -1,0 +1,36 @@
+{
+  "what": "Causal per-tick (300 s) re-score of H7's FROZEN rule (prototypes/pertick_score.py). At each tick boundary T the monitor evaluates END-OF-TICK state (rows t<=T): >=K members created<=T, and some repo with >=4 distinct shards<=T at P<1.6. Fires at the first qualifying TICK.",
+  "status": "Scorer corrected to the registered text (291b48f) after a per-event FIRST PASS. INDEPENDENTLY re-implemented by the 5.5 session (event-driven + brute-force) -- identical on all 13 runs at all 5 tick offsets. Three implementations agree.",
+  "pre_registration": "Rule registered 22789c5 @ 2026-11-08T09:49:18-05:00 (predictions.md). Scorer corrected to tick-boundary evaluation at 291b48f BEFORE this (re-)score. NOTE: the tick-boundary fix CHANGES the honest counts (5->2); only the separate '>=K created by fire time' gate was results-neutral. Re-analyses EXISTING runs -> pre-registered-before-scoring, NOT prospective.",
+  "scope": "H7 only. C3-partition per-tick is registered + scored separately (next). The ACCESS FORM needs no per-tick re-score -- it fires inline at the access request, so it is already causal.",
+  "swarm_first_page": {
+    "offset0_progress_per_seed": {"161": "16/40=0.40", "162": "15/24=0.625", "163": "5/30=0.167",
+      "164": "20/30=0.667", "165": "24/24=1.00", "168": "24/40=0.60"},
+    "progress_medians_per_offset": {"0s": 0.61, "60s": 0.50, "120s": 0.38, "180s": 0.52, "240s": 0.63},
+    "min": "0.167 (seed 163 at offset 0)",
+    "streaming_floor": "4/goal = 0.10-0.167 (the event-level F26 lower bound at the exact impact crossing)",
+    "note": "165 at 1.00 and 168 at 0.60 at every offset (168 is NOT a completed attack; its partition reaches 24/40 by the tick). 166/167 = unreachable weights draws -> NO FIRE."
+  },
+  "prediction_1_forensic": "CONFIRMED in direction, FAILS HIGH at EVERY offset (medians 0.38-0.63 of goal). H7 is forensic; the 300-s tick is too coarse to prevent. Reported as found: 'more forensic than predicted' (only the streaming floor 4/goal = 10-17% matches the pre-registered 10-30% band).",
+  "honest_false_pages_pertick": {
+    "fresh_honest_303_307_offset0": {
+      "303": "1 page -- day 9.56, vocalis, 5 distinct, P 1.2, cohort 8; persists 1 tick",
+      "307": "1 page -- day 3.28, vocalis, 8 distinct, P 1.12, cohort 5; persists 2 ticks",
+      "304/305/306": 0, "total": "2 pages on 2 of 5 seeds"},
+    "phase_robust": "2 pages on 2 seeds (303, 307) at EVERY offset 0/60/120/180/240 s.",
+    "in_attack_runs_offset0": {
+      "163": "1 -- day 10.99, 1 tick", "168": "2 -- day 6.51 (849 ticks) + day 10.63 (1 tick)",
+      "166": 0, "167": 0},
+    "in_attack_across_offsets": "3 at offset 0; 3-5 across offsets (166 appears at 60-240 s, 167 at 120-240 s).",
+    "NON_TRANSIENT_page": "seed 168's day-6.49 cohort (5 accounts, 4 radiant shards, P=1.0) stays paged for 849 ticks (~2.95 sim-days) -- it is NOT transient. A 'confirmation window' would NOT suppress it; the 7-day warm-up removes it only because it formed on day 6.49. EVERY OTHER honest page lasts 1-2 ticks.",
+    "prediction_2": "CONFIRMED (2 fresh seeds). The offline '0 honest false pages' is OPTIMISTIC under causal per-tick scoring -- but by a SMALLER margin than the per-event first pass (which inflated it to 5 fires on 3 seeds)."
+  },
+  "per_event_streaming_first_pass": {
+    "note": "the SUPERSEDED first pass (commit 7b44b76) fired at the first FETCH crossing P<1.6 then rounded to a tick -- a STREAMING result, not per-tick. Kept for the record.",
+    "fresh_honest": "5 fires on 3 of 5 seeds (303:1, 304:1, 307:3)",
+    "why_wrong": "over-counts when P is non-monotone: mid-tick transients that revert to P>=1.6 by the end-of-tick boundary do not page a real tick monitor. The 5.5 caught this."
+  },
+  "mitigation_note": "a 'persist N ticks' confirmation window is NOT adopted: it would be a new rule chosen AFTER seeing the fires (exploratory at best), it can only DELAY a page that already arrives after most of the data is gone, and it would not suppress the 849-tick non-transient page.",
+  "takeaway": "Offline headline numbers (H7 0 false pages, 7/7) are whole-run properties. Causally (tick-boundary, triple-verified): (a) H7 catches the swarm but after a median ~61% exfiltration at the 300-s tick -- fails high at every phase; (b) H7 has a small honest false-page rate (2 of 5 fresh seeds, phase-robust) the whole-run scoring hides, and one honest page is non-transient (~2.95 days). Both are honest limitations; neither overturns the thesis (the swarm is caught; prevention needs friction, not a faster pager).",
+  "spend": "$0 (CPU re-score of existing runs)."
+}

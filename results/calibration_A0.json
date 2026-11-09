@@ -1,0 +1,336 @@
+{
+  "thresholds": {
+    "fast": {
+      "theta2": 0.5,
+      "theta1": 0.5
+    },
+    "slow": {
+      "theta2": 0.5,
+      "theta1": 0.5
+    }
+  },
+  "theta3": 10.0,
+  "breadth": {
+    "repos_per_hour": 526.0,
+    "endpoints_per_hour": 8.0
+  },
+  "calibrated": true,
+  "calibration": {
+    "family_days": 320334,
+    "days": 90,
+    "runs": 6,
+    "seeds": [
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206"
+    ],
+    "runs_used": [
+      "A0cal/201",
+      "A0cal/202",
+      "A0cal/203",
+      "A0cal/204",
+      "A0cal/205",
+      "A0cal/206"
+    ],
+    "families_per_day": 3559.2667,
+    "families_per_day_measured": {
+      "mean": 3559.2667,
+      "min": 2395,
+      "max": 5262
+    },
+    "effective_independent_days": {
+      "simulated_days": 90,
+      "runs": 6
+    },
+    "effective_days_note": "independent simulated days are the (run, day) units; days within one run share accounts and may be correlated, so runs (seeds) are the most conservative count",
+    "alpha": {
+      "2": 4.0136678394216104e-05,
+      "1": 9.365224958650425e-06
+    },
+    "alpha_per_pair": {
+      "2": 2.0068339197108052e-05,
+      "1": 4.682612479325212e-06
+    },
+    "pair_alpha": "split",
+    "per_pair": {
+      "fast": {
+        "2": {
+          "theta": 0.5,
+          "n": 320334,
+          "alpha": 2.0068339197108052e-05,
+          "p": 3.12173193687858e-06,
+          "allowed_at_or_above": 5,
+          "needed": 49829,
+          "calibrated": true,
+          "nonzero": 0,
+          "at_floor": true,
+          "note": "no calibration family-day met this level's plane rule at a fresh tick: theta is the score lattice's floor, so on honest traffic the plane rule alone decides"
+        },
+        "1": {
+          "theta": 0.5,
+          "n": 320334,
+          "alpha": 4.682612479325212e-06,
+          "p": 3.12173193687858e-06,
+          "allowed_at_or_above": 0,
+          "needed": 213556,
+          "calibrated": true,
+          "nonzero": 0,
+          "at_floor": true,
+          "note": "no calibration family-day met this level's plane rule at a fresh tick: theta is the score lattice's floor, so on honest traffic the plane rule alone decides"
+        }
+      },
+      "slow": {
+        "2": {
+          "theta": 0.5,
+          "n": 320334,
+          "alpha": 2.0068339197108052e-05,
+          "p": 3.12173193687858e-06,
+          "allowed_at_or_above": 5,
+          "needed": 49829,
+          "calibrated": true,
+          "nonzero": 0,
+          "at_floor": true,
+          "note": "no calibration family-day met this level's plane rule at a fresh tick: theta is the score lattice's floor, so on honest traffic the plane rule alone decides"
+        },
+        "1": {
+          "theta": 0.5,
+          "n": 320334,
+          "alpha": 4.682612479325212e-06,
+          "p": 3.12173193687858e-06,
+          "allowed_at_or_above": 0,
+          "needed": 213556,
+          "calibrated": true,
+          "nonzero": 0,
+          "at_floor": true,
+          "note": "no calibration family-day met this level's plane rule at a fresh tick: theta is the score lattice's floor, so on honest traffic the plane rule alone decides"
+        }
+      }
+    },
+    "score_step": 0.5,
+    "budget_days": {
+      "2": 7,
+      "1": 30
+    },
+    "sev3": {
+      "theta": 10.0,
+      "n": 320334,
+      "alpha": 0.0028095674875951273,
+      "p": 0.0024474378385128067,
+      "allowed_at_or_above": 899,
+      "needed": 355,
+      "at_cap": 0,
+      "nonzero": 114176,
+      "calibrated": true,
+      "budget_per_day": 10,
+      "at_cap_per_day": 0.0,
+      "hub_sev3_per_day": 0.0,
+      "days": 90,
+      "note": "statistic: each family-day's highest 24 h score at a tick where the family gained evidence; since T013 the monitor has no cap rule and writes at_cap 0, and at-cap family-days in older inputs count as at or above any theta3 (the rule they were recorded under); hub-wide Sev-3 lines are reported, not budgeted"
+    },
+    "breadth": {
+      "calibrated": true,
+      "quantile": 0.999,
+      "family_hours": 601330,
+      "repos_per_hour": 526.0,
+      "endpoints_per_hour": 8.0,
+      "above": {
+        "repos": 596,
+        "endpoints": 394
+      },
+      "share_above": {
+        "repos": 0.000991136314502852,
+        "endpoints": 0.0006552142750236975
+      },
+      "thin": false,
+      "method": "nearest-rank quantile of each family-hour's most distinct repositories (and, separately, endpoints) in a trailing hour; the detector fires above it",
+      "starting": {
+        "repos_per_hour": 50.0,
+        "endpoints_per_hour": 15.0
+      }
+    },
+    "method": "split conformal: p = (1 + #{calibration scores >= s}) / (n + 1)"
+  },
+  "freeze": {
+    "frozen_at": "2026-11-08T02:20:59+00:00",
+    "inputs": [
+      {
+        "run": "A0cal/201",
+        "file": "family_days.jsonl",
+        "sha256": "90c6c52df12477899278f14d898c3cbde67e02012e4923b9b4dc68924ff2f3f3"
+      },
+      {
+        "run": "A0cal/202",
+        "file": "family_days.jsonl",
+        "sha256": "16eb7be615a26765de06e26baf8d802319cdfbcc28997d3f56a9d68584bf6e3a"
+      },
+      {
+        "run": "A0cal/203",
+        "file": "family_days.jsonl",
+        "sha256": "28f2488cd48c17fe145b429ca2cff1006e361ba77134b576de364688fb84ddc5"
+      },
+      {
+        "run": "A0cal/204",
+        "file": "family_days.jsonl",
+        "sha256": "db7e0e74bb044ae6b2c6f1f4ffdaff2b0862071bf8f4ae8f1261c13bcfbd1d57"
+      },
+      {
+        "run": "A0cal/205",
+        "file": "family_days.jsonl",
+        "sha256": "f47f2960ef4e1d68395218b936c8dfd97e7e935b042ac60edf7804cde16982f0"
+      },
+      {
+        "run": "A0cal/206",
+        "file": "family_days.jsonl",
+        "sha256": "6fa878b6a1a0cd29b19d37468be4c25e3cb2e04542d55e083b662ba19cb92b15"
+      }
+    ],
+    "inputs_sha256": "4e5ac9122704b0d02ef9837a62f5727b89f94ce15991bc3340f4dce20a0a282f",
+    "calibrate_py_sha256": "4483f0f72c88a4b2774cd90e17b44547c3170604372ecfef6f82fca74a931272"
+  },
+  "refused": [],
+  "uncalibrated": [],
+  "bounds": {
+    "scripted": null,
+    "llm": null
+  },
+  "side_by_side": {
+    "sources": [],
+    "2": {
+      "false_pages": [],
+      "family_days": [],
+      "days": [],
+      "per_family_day_upper95": [],
+      "per_day_upper95": []
+    },
+    "1": {
+      "false_pages": [],
+      "family_days": [],
+      "days": [],
+      "per_family_day_upper95": [],
+      "per_day_upper95": []
+    },
+    "3": {
+      "queue_per_day": [],
+      "per_day_upper95": []
+    }
+  },
+  "thresholds_file": "monitor/thresholds.json",
+  "t013": {
+    "what": "T013 calibration: 6 seeds x 22 simulated days of A0 (7 warm-up days dropped, 15 evaluation days each), two monitor passes",
+    "stages": [
+      "1. fast pass (echo, keys, lineage, behaviour; TimesFM off), starting values: the families and their breadth histograms only; the breadth cut-off is fitted on them",
+      "2. full pass (all detectors, TimesFM on), starting thetas, with that breadth cut-off (the provisional file), so theta3, theta2 and theta1 are fitted on scores computed with the cut-off that is frozen beside them"
+    ],
+    "breadth_histograms_identical_in_both_passes": true,
+    "breadth_histogram_differences": [],
+    "family_count_differences": [
+      {
+        "seed": 205,
+        "day": 5,
+        "fast": 3348,
+        "full": 3349
+      }
+    ],
+    "family_count_note": "the day's family count also includes families with evidence but no request that day, so the full pass (more detectors) can count a few more; the breadth histograms come from requests only",
+    "provisional_thresholds": {
+      "path": "runs/A0cal/provisional_thresholds.json",
+      "sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731"
+    },
+    "policy": {
+      "path": "configs/A0_policy.json",
+      "sha256": "5ea0210d11f42fa87e8bdbd947a23b7844f80357f0c6ea4cf76527e5ee696921"
+    },
+    "monitor_runs": {
+      "201": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      },
+      "202": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      },
+      "203": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      },
+      "204": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      },
+      "205": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      },
+      "206": {
+        "thresholds_sha256": "b09d2ceb4a18e28c28fd43e633aca1a504c9f8a85a4b9b8dfd489e3292c36731",
+        "breadth": 526.0,
+        "breadth_endpoints": 8.0,
+        "forecaster": "loaded",
+        "forecasts": 504,
+        "ticks": {
+          "n": 6336,
+          "first": 300,
+          "last": 1900800
+        },
+        "policy_path": "configs\\A0_policy.json"
+      }
+    },
+    "code_sha256": {
+      "monitor/alarm.py": "1dba67067b52698f6836647fe91e40ea7de366efec03e3d98bc745c83799d2b1",
+      "monitor/familydays.py": "67572a21ad058abbd5878b6b5cc1f26fe94e00a8c74861c0ba4c33257b34bd63",
+      "monitor/behaviour.py": "6569065b390cc3518b78c1f0366ad6f54b0a378bfc0967443e51da622a027b72",
+      "eval/calibrate.py": "4483f0f72c88a4b2774cd90e17b44547c3170604372ecfef6f82fca74a931272",
+      "scripts/t013.py": "15dd5805c5ed8196e97e72414cb74104e915922b33d71b51cb3df5d6b9c347e5",
+      "configs/A0.yaml": "3959ab198b972e6ab1bac26dd769502aa3e22bcbdd14084a561ca9cc4b9623b5"
+    },
+    "annotated_at": "2026-11-08T02:21:08+00:00"
+  }
+}

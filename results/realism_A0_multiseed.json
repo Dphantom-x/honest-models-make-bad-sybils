@@ -1,0 +1,3055 @@
+{
+  "what": "eval/realism.py on every T013 seed (calibration and held-out): per check, statuses across seeds and the mean and spread of each numeric value",
+  "runs": [
+    "A0cal/201",
+    "A0cal/202",
+    "A0cal/203",
+    "A0cal/204",
+    "A0cal/205",
+    "A0cal/206",
+    "A0hold/301",
+    "A0hold/302"
+  ],
+  "seeds": 8,
+  "summary": {
+    "all_pass": [
+      "O11",
+      "O16",
+      "O3",
+      "O5",
+      "O6",
+      "O7",
+      "V1",
+      "V10",
+      "V11",
+      "V12",
+      "V3",
+      "V4",
+      "V5"
+    ],
+    "some_fail": [
+      "O1",
+      "O10",
+      "O12",
+      "O13",
+      "O14",
+      "O15",
+      "O2",
+      "O4",
+      "O9",
+      "V13",
+      "V2",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ],
+    "not_run": [
+      "O8",
+      "V14",
+      "V15",
+      "V16"
+    ],
+    "on_multiseed_mean": {
+      "V2": "fail",
+      "V3": "pass",
+      "O1": "fail",
+      "O9": "fail"
+    }
+  },
+  "checks": [
+    {
+      "id": "V1",
+      "check": "busiest/quietest hour (people)",
+      "target": "1.5-2.5 global; 5-9 per region",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "global": {
+          "mean": 1.8375000000000001,
+          "sd": 0.07629828681843762,
+          "min": 1.74,
+          "max": 1.99,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.79,
+            "A0cal/202": 1.83,
+            "A0cal/203": 1.78,
+            "A0cal/204": 1.74,
+            "A0cal/205": 1.99,
+            "A0cal/206": 1.86,
+            "A0hold/301": 1.83,
+            "A0hold/302": 1.88
+          }
+        },
+        "region_median": {
+          "mean": 7.001875,
+          "sd": 0.44642178566271357,
+          "min": 6.15,
+          "max": 7.470000000000001,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 6.765000000000001,
+            "A0cal/202": 7.470000000000001,
+            "A0cal/203": 6.664999999999999,
+            "A0cal/204": 7.22,
+            "A0cal/205": 7.105,
+            "A0cal/206": 7.42,
+            "A0hold/301": 6.15,
+            "A0hold/302": 7.220000000000001
+          }
+        },
+        "regions.-3.0": {
+          "mean": 8.301428571428572,
+          "sd": 1.1783523605926562,
+          "min": 7.56,
+          "max": 10.87,
+          "n": 7,
+          "by_run": {
+            "A0cal/201": 7.88,
+            "A0cal/202": 7.7,
+            "A0cal/203": 7.56,
+            "A0cal/204": 8.56,
+            "A0cal/205": 10.87,
+            "A0hold/301": 7.85,
+            "A0hold/302": 7.69
+          }
+        },
+        "regions.-5.0": {
+          "mean": 6.50375,
+          "sd": 0.8253473294836025,
+          "min": 5.57,
+          "max": 7.82,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 7.22,
+            "A0cal/202": 5.83,
+            "A0cal/203": 5.59,
+            "A0cal/204": 7.1,
+            "A0cal/205": 6.43,
+            "A0cal/206": 7.82,
+            "A0hold/301": 5.57,
+            "A0hold/302": 6.47
+          }
+        },
+        "regions.-8.0": {
+          "mean": 6.237500000000001,
+          "sd": 0.7358911021922431,
+          "min": 5.29,
+          "max": 7.08,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 7.03,
+            "A0cal/202": 6.72,
+            "A0cal/203": 5.29,
+            "A0cal/204": 6.58,
+            "A0cal/205": 5.33,
+            "A0cal/206": 7.08,
+            "A0hold/301": 5.62,
+            "A0hold/302": 6.25
+          }
+        },
+        "regions.0.0": {
+          "mean": 6.994999999999999,
+          "sd": 0.6580707734409292,
+          "min": 5.68,
+          "max": 7.72,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 5.68,
+            "A0cal/202": 7.72,
+            "A0cal/203": 7.02,
+            "A0cal/204": 7.22,
+            "A0cal/205": 6.95,
+            "A0cal/206": 7.63,
+            "A0hold/301": 6.49,
+            "A0hold/302": 7.25
+          }
+        },
+        "regions.1.0": {
+          "mean": 6.6875,
+          "sd": 0.410739750763355,
+          "min": 6.27,
+          "max": 7.42,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 6.49,
+            "A0cal/202": 6.27,
+            "A0cal/203": 6.31,
+            "A0cal/204": 6.62,
+            "A0cal/205": 6.69,
+            "A0cal/206": 7.42,
+            "A0hold/301": 6.51,
+            "A0hold/302": 7.19
+          }
+        },
+        "regions.2.0": {
+          "mean": 7.6850000000000005,
+          "sd": 0.8769753213664075,
+          "min": 6.65,
+          "max": 9.62,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 6.65,
+            "A0cal/202": 7.24,
+            "A0cal/203": 7.77,
+            "A0cal/204": 9.62,
+            "A0cal/205": 7.96,
+            "A0cal/206": 7.44,
+            "A0hold/301": 7.22,
+            "A0hold/302": 7.58
+          }
+        },
+        "regions.3.0": {
+          "mean": 8.567142857142859,
+          "sd": 1.1902900806906174,
+          "min": 6.84,
+          "max": 10.82,
+          "n": 7,
+          "by_run": {
+            "A0cal/201": 8.29,
+            "A0cal/202": 8.65,
+            "A0cal/203": 8.22,
+            "A0cal/205": 8.23,
+            "A0cal/206": 8.92,
+            "A0hold/301": 6.84,
+            "A0hold/302": 10.82
+          }
+        },
+        "regions.5.5": {
+          "mean": 7.3475,
+          "sd": 0.9286357120605939,
+          "min": 5.81,
+          "max": 8.4,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 6.38,
+            "A0cal/202": 8.14,
+            "A0cal/203": 7.21,
+            "A0cal/204": 7.64,
+            "A0cal/205": 8.4,
+            "A0cal/206": 6.98,
+            "A0hold/301": 5.81,
+            "A0hold/302": 8.22
+          }
+        },
+        "regions.8.0": {
+          "mean": 6.516249999999999,
+          "sd": 1.0002419350194376,
+          "min": 5.03,
+          "max": 7.74,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 5.6,
+            "A0cal/202": 7.74,
+            "A0cal/203": 5.6,
+            "A0cal/204": 7.47,
+            "A0cal/205": 7.26,
+            "A0cal/206": 6.91,
+            "A0hold/301": 5.03,
+            "A0hold/302": 6.52
+          }
+        },
+        "regions.9.0": {
+          "mean": 6.359999999999999,
+          "sd": 0.4750037593836195,
+          "min": 5.8,
+          "max": 6.97,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 6.88,
+            "A0cal/202": 6.91,
+            "A0cal/203": 6.02,
+            "A0cal/204": 6.08,
+            "A0cal/205": 6.08,
+            "A0cal/206": 6.14,
+            "A0hold/301": 5.8,
+            "A0hold/302": 6.97
+          }
+        }
+      },
+      "notes": [
+        "global on requests; per region on visit starts (requests per region are dominated by a few heavy users), regions with 20+ visits in every hour"
+      ]
+    },
+    {
+      "id": "V2",
+      "check": "weekday/weekend by population",
+      "target": "browser 1.05-1.15; developers 1.35-1.45; CI about 2.5 (2.0-3.0)",
+      "passes": 0,
+      "fails": 8,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.0,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "fail",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "browser": {
+          "mean": 0.9406249999999999,
+          "sd": 0.12889523708367637,
+          "min": 0.652,
+          "max": 1.093,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.973,
+            "A0cal/202": 0.971,
+            "A0cal/203": 0.652,
+            "A0cal/204": 0.999,
+            "A0cal/205": 0.973,
+            "A0cal/206": 1.093,
+            "A0hold/301": 0.972,
+            "A0hold/302": 0.892
+          }
+        },
+        "browser_utc_visits": {
+          "mean": 0.9781249999999999,
+          "sd": 0.13064175388114957,
+          "min": 0.674,
+          "max": 1.106,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.039,
+            "A0cal/202": 1.0,
+            "A0cal/203": 0.674,
+            "A0cal/204": 1.046,
+            "A0cal/205": 0.995,
+            "A0cal/206": 1.106,
+            "A0hold/301": 1.01,
+            "A0hold/302": 0.955
+          }
+        },
+        "ci": {
+          "mean": 2.6107500000000003,
+          "sd": 0.14950656937310236,
+          "min": 2.416,
+          "max": 2.8,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2.495,
+            "A0cal/202": 2.416,
+            "A0cal/203": 2.8,
+            "A0cal/204": 2.632,
+            "A0cal/205": 2.778,
+            "A0cal/206": 2.577,
+            "A0hold/301": 2.454,
+            "A0hold/302": 2.734
+          }
+        },
+        "developer_utc_requests": {
+          "mean": 1.357125,
+          "sd": 0.1517746802712118,
+          "min": 0.992,
+          "max": 1.462,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.401,
+            "A0cal/202": 1.462,
+            "A0cal/203": 0.992,
+            "A0cal/204": 1.459,
+            "A0cal/205": 1.414,
+            "A0cal/206": 1.377,
+            "A0hold/301": 1.388,
+            "A0hold/302": 1.364
+          }
+        },
+        "developer_utc_visits": {
+          "mean": 1.2000000000000002,
+          "sd": 0.15195582064722443,
+          "min": 0.838,
+          "max": 1.312,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.27,
+            "A0cal/202": 1.312,
+            "A0cal/203": 0.838,
+            "A0cal/204": 1.249,
+            "A0cal/205": 1.266,
+            "A0cal/206": 1.278,
+            "A0hold/301": 1.204,
+            "A0hold/302": 1.183
+          }
+        },
+        "developers": {
+          "mean": 1.17075,
+          "sd": 0.16187627550517886,
+          "min": 0.789,
+          "max": 1.29,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.207,
+            "A0cal/202": 1.277,
+            "A0cal/203": 0.789,
+            "A0cal/204": 1.232,
+            "A0cal/205": 1.247,
+            "A0cal/206": 1.29,
+            "A0hold/301": 1.138,
+            "A0hold/302": 1.186
+          }
+        }
+      },
+      "notes": [
+        "people on visit starts in their own local days (UTC days smear each zone's weekend and lower the ratio by about 5%, reported alongside); CI on UTC requests (cron schedules run in UTC)"
+      ],
+      "on_multiseed_mean": {
+        "status": "fail",
+        "mean": {
+          "browser": 0.9406249999999999,
+          "developers": 1.17075,
+          "ci": 2.6107500000000003
+        },
+        "rule": "browser 1.05-1.15, developers 1.35-1.45, CI 2.0-3.0 (all three)"
+      }
+    },
+    {
+      "id": "V3",
+      "check": "session starts are Poisson within an hour",
+      "target": "dispersion of per-minute session starts about 1 (0.8-1.25); requests over-dispersed",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "hours": {
+          "mean": 528.0,
+          "sd": 0.0,
+          "min": 528.0,
+          "max": 528.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 528.0,
+            "A0cal/202": 528.0,
+            "A0cal/203": 528.0,
+            "A0cal/204": 528.0,
+            "A0cal/205": 528.0,
+            "A0cal/206": 528.0,
+            "A0hold/301": 528.0,
+            "A0hold/302": 528.0
+          }
+        },
+        "requests": {
+          "mean": 16.6875,
+          "sd": 0.4454131308603922,
+          "min": 16.2,
+          "max": 17.4,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 16.2,
+            "A0cal/202": 16.6,
+            "A0cal/203": 17.4,
+            "A0cal/204": 16.4,
+            "A0cal/205": 16.9,
+            "A0cal/206": 16.2,
+            "A0hold/301": 17.2,
+            "A0hold/302": 16.6
+          }
+        },
+        "starts": {
+          "mean": 1.026875,
+          "sd": 0.011764808297873556,
+          "min": 1.01,
+          "max": 1.05,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.028,
+            "A0cal/202": 1.01,
+            "A0cal/203": 1.05,
+            "A0cal/204": 1.022,
+            "A0cal/205": 1.035,
+            "A0cal/206": 1.022,
+            "A0hold/301": 1.027,
+            "A0hold/302": 1.021
+          }
+        }
+      },
+      "notes": [
+        "visits: a session ID's requests with gaps under 30 min (people)"
+      ],
+      "on_multiseed_mean": {
+        "status": "pass",
+        "mean": {
+          "starts": 1.026875,
+          "requests": 16.6875
+        },
+        "rule": "session-start dispersion 0.8-1.25 and request dispersion above 1.5"
+      }
+    },
+    {
+      "id": "V4",
+      "check": "self-similarity of request counts",
+      "target": "H 0.7-0.85 (variance-time, 1 s to 10 min, busy hours)",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "H": {
+          "mean": 0.735125,
+          "sd": 0.0021671244937540115,
+          "min": 0.731,
+          "max": 0.738,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.737,
+            "A0cal/202": 0.738,
+            "A0cal/203": 0.735,
+            "A0cal/204": 0.731,
+            "A0cal/205": 0.736,
+            "A0cal/206": 0.734,
+            "A0hold/301": 0.734,
+            "A0hold/302": 0.736
+          }
+        },
+        "hours": {
+          "mean": 175.25,
+          "sd": 0.4629100498862757,
+          "min": 175.0,
+          "max": 176.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 175.0,
+            "A0cal/202": 176.0,
+            "A0cal/203": 176.0,
+            "A0cal/204": 175.0,
+            "A0cal/205": 175.0,
+            "A0cal/206": 175.0,
+            "A0hold/301": 175.0,
+            "A0hold/302": 175.0
+          }
+        }
+      },
+      "notes": [
+        "per busy hour, 1-second bins aggregated up to 6 minutes; median over hours"
+      ]
+    },
+    {
+      "id": "V5",
+      "check": "think-time tail",
+      "target": "think-time tail alpha about 1.5 (1.3-1.7)",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "alpha": {
+          "mean": 1.3900000000000001,
+          "sd": 0.009812528434899694,
+          "min": 1.378,
+          "max": 1.409,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.389,
+            "A0cal/202": 1.409,
+            "A0cal/203": 1.391,
+            "A0cal/204": 1.381,
+            "A0cal/205": 1.397,
+            "A0cal/206": 1.384,
+            "A0hold/301": 1.391,
+            "A0hold/302": 1.378
+          }
+        },
+        "gaps": {
+          "mean": 34885.375,
+          "sd": 1563.4522184210537,
+          "min": 32886.0,
+          "max": 37251.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 35028.0,
+            "A0cal/202": 34466.0,
+            "A0cal/203": 35286.0,
+            "A0cal/204": 32945.0,
+            "A0cal/205": 37251.0,
+            "A0cal/206": 32886.0,
+            "A0hold/301": 36693.0,
+            "A0hold/302": 34528.0
+          }
+        }
+      },
+      "notes": [
+        "gaps between a person's consecutive requests after a page or API answer (not a file transfer), from 30 s (Crovella's think times) to 10 min (beyond that, mostly between visits); truncated-Pareto MLE"
+      ]
+    },
+    {
+      "id": "V6",
+      "check": "per-entity inter-arrival CV",
+      "target": "a mixture: cron and loops near 0, people and agents above 1, few near 1",
+      "passes": 7,
+      "fails": 1,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.875,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "entities": {
+          "mean": 4919.125,
+          "sd": 100.31299232188934,
+          "min": 4801.0,
+          "max": 5056.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 4830.0,
+            "A0cal/202": 4877.0,
+            "A0cal/203": 5007.0,
+            "A0cal/204": 4801.0,
+            "A0cal/205": 5034.0,
+            "A0cal/206": 4913.0,
+            "A0hold/301": 5056.0,
+            "A0hold/302": 4835.0
+          }
+        },
+        "min_cv": {
+          "mean": 0.040125,
+          "sd": 0.10864810497328388,
+          "min": 0.001,
+          "max": 0.309,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.309,
+            "A0cal/202": 0.001,
+            "A0cal/203": 0.001,
+            "A0cal/204": 0.001,
+            "A0cal/205": 0.004,
+            "A0cal/206": 0.001,
+            "A0hold/301": 0.001,
+            "A0hold/302": 0.003
+          }
+        },
+        "people_median_cv": {
+          "mean": 1.76375,
+          "sd": 0.015979898086569366,
+          "min": 1.74,
+          "max": 1.79,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.74,
+            "A0cal/202": 1.77,
+            "A0cal/203": 1.76,
+            "A0cal/204": 1.78,
+            "A0cal/205": 1.76,
+            "A0cal/206": 1.76,
+            "A0hold/301": 1.75,
+            "A0hold/302": 1.79
+          }
+        },
+        "share_0.8_1.2": {
+          "mean": 0.13337500000000002,
+          "sd": 0.013876367371490686,
+          "min": 0.113,
+          "max": 0.152,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.13,
+            "A0cal/202": 0.141,
+            "A0cal/203": 0.122,
+            "A0cal/204": 0.142,
+            "A0cal/205": 0.121,
+            "A0cal/206": 0.113,
+            "A0hold/301": 0.152,
+            "A0hold/302": 0.146
+          }
+        },
+        "share_below_0.3": {
+          "mean": 0.0005,
+          "sd": 0.0005345224838248487,
+          "min": 0.0,
+          "max": 0.001,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0,
+            "A0cal/202": 0.001,
+            "A0cal/203": 0.0,
+            "A0cal/204": 0.001,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.0,
+            "A0hold/301": 0.001,
+            "A0hold/302": 0.001
+          }
+        }
+      },
+      "notes": [
+        "CV of burst-start gaps (bursts split by 30 s of silence), entities with 10+ bursts"
+      ]
+    },
+    {
+      "id": "V7",
+      "check": "popularity exponent",
+      "target": "rank exponent 0.8-1.0 (head); 1.5-1.8 for ranks 1k-10k",
+      "passes": 7,
+      "fails": 1,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.875,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "fail",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "head_exponent": {
+          "mean": 0.937875,
+          "sd": 0.03426550743823877,
+          "min": 0.912,
+          "max": 1.007,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.97,
+            "A0cal/202": 0.917,
+            "A0cal/203": 0.912,
+            "A0cal/204": 1.007,
+            "A0cal/205": 0.913,
+            "A0cal/206": 0.944,
+            "A0hold/301": 0.918,
+            "A0hold/302": 0.922
+          }
+        },
+        "repos": {
+          "mean": 809.625,
+          "sd": 3.420004177106889,
+          "min": 806.0,
+          "max": 817.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 811.0,
+            "A0cal/202": 807.0,
+            "A0cal/203": 810.0,
+            "A0cal/204": 806.0,
+            "A0cal/205": 810.0,
+            "A0cal/206": 808.0,
+            "A0hold/301": 817.0,
+            "A0hold/302": 808.0
+          }
+        }
+      },
+      "notes": [
+        "snapshot calls per repository, ranks 3-300; the tail check can't run with about 800 repositories (gap 9)"
+      ]
+    },
+    {
+      "id": "V8",
+      "check": "downloads of new repositories",
+      "target": "about 2% of downloads go to repositories under 30 days old (1-4%)",
+      "passes": 7,
+      "fails": 1,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.875,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "fail",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "new_repos": {
+          "mean": 7.25,
+          "sd": 3.24037034920393,
+          "min": 3.0,
+          "max": 14.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 8.0,
+            "A0cal/202": 5.0,
+            "A0cal/203": 8.0,
+            "A0cal/204": 3.0,
+            "A0cal/205": 8.0,
+            "A0cal/206": 6.0,
+            "A0hold/301": 14.0,
+            "A0hold/302": 6.0
+          }
+        },
+        "share": {
+          "mean": 0.01885,
+          "sd": 0.008040078180145835,
+          "min": 0.0078,
+          "max": 0.0353,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0209,
+            "A0cal/202": 0.0144,
+            "A0cal/203": 0.0224,
+            "A0cal/204": 0.0078,
+            "A0cal/205": 0.0191,
+            "A0cal/206": 0.0154,
+            "A0hold/301": 0.0353,
+            "A0hold/302": 0.0155
+          }
+        }
+      },
+      "notes": [
+        "repositories created inside the logged window are all under 30 days old"
+      ]
+    },
+    {
+      "id": "V9",
+      "check": "flash-crowd shape",
+      "target": "half of peak in 1-20 min; decay p 0.6-1.4; 40-80% of prefixes seen before",
+      "passes": 7,
+      "fails": 1,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.875,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "passing": {
+          "mean": 4.25,
+          "sd": 2.052872551885702,
+          "min": 2.0,
+          "max": 8.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2.0,
+            "A0cal/202": 3.0,
+            "A0cal/203": 5.0,
+            "A0cal/204": 2.0,
+            "A0cal/205": 6.0,
+            "A0cal/206": 4.0,
+            "A0hold/301": 8.0,
+            "A0hold/302": 4.0
+          }
+        }
+      },
+      "notes": [
+        "each repository created in the window with 300+ requests; half-peak on 10-min smoothed counts; decay p on 10-min counts from twice the time to peak (30 min at least) to 24 h; pass when most releases pass"
+      ]
+    },
+    {
+      "id": "V10",
+      "check": "client mechanics",
+      "target": "bursts of about 40 requests in under 2 s, at most 8 concurrent; mostly HEAD; 302 present; 404s mostly on first loads",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "404_first_load_share": {
+          "mean": 0.998,
+          "sd": 0.0,
+          "min": 0.998,
+          "max": 0.998,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.998,
+            "A0cal/202": 0.998,
+            "A0cal/203": 0.998,
+            "A0cal/204": 0.998,
+            "A0cal/205": 0.998,
+            "A0cal/206": 0.998,
+            "A0hold/301": 0.998,
+            "A0hold/302": 0.998
+          }
+        },
+        "bursts": {
+          "mean": 20001.375,
+          "sd": 0.7440238091428449,
+          "min": 20001.0,
+          "max": 20003.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 20003.0,
+            "A0cal/202": 20001.0,
+            "A0cal/203": 20001.0,
+            "A0cal/204": 20001.0,
+            "A0cal/205": 20001.0,
+            "A0cal/206": 20001.0,
+            "A0hold/301": 20002.0,
+            "A0hold/302": 20001.0
+          }
+        },
+        "head_share": {
+          "mean": 0.8888750000000001,
+          "sd": 0.0033139316313320157,
+          "min": 0.884,
+          "max": 0.895,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.888,
+            "A0cal/202": 0.89,
+            "A0cal/203": 0.891,
+            "A0cal/204": 0.888,
+            "A0cal/205": 0.884,
+            "A0cal/206": 0.889,
+            "A0hold/301": 0.895,
+            "A0hold/302": 0.886
+          }
+        },
+        "median_size": {
+          "mean": 8.0,
+          "sd": 0.0,
+          "min": 8.0,
+          "max": 8.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 8.0,
+            "A0cal/202": 8.0,
+            "A0cal/203": 8.0,
+            "A0cal/204": 8.0,
+            "A0cal/205": 8.0,
+            "A0cal/206": 8.0,
+            "A0hold/301": 8.0,
+            "A0hold/302": 8.0
+          }
+        },
+        "p95_size": {
+          "mean": 14.5,
+          "sd": 0.9258200997725514,
+          "min": 13.0,
+          "max": 15.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 15.0,
+            "A0cal/202": 15.0,
+            "A0cal/203": 15.0,
+            "A0cal/204": 15.0,
+            "A0cal/205": 13.0,
+            "A0cal/206": 15.0,
+            "A0hold/301": 15.0,
+            "A0hold/302": 13.0
+          }
+        },
+        "p99_requests_per_20ms": {
+          "mean": 8.0,
+          "sd": 0.0,
+          "min": 8.0,
+          "max": 8.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 8.0,
+            "A0cal/202": 8.0,
+            "A0cal/203": 8.0,
+            "A0cal/204": 8.0,
+            "A0cal/205": 8.0,
+            "A0cal/206": 8.0,
+            "A0hold/301": 8.0,
+            "A0hold/302": 8.0
+          }
+        },
+        "share_under_2s": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.0,
+            "A0cal/202": 1.0,
+            "A0cal/203": 1.0,
+            "A0cal/204": 1.0,
+            "A0cal/205": 1.0,
+            "A0cal/206": 1.0,
+            "A0hold/301": 1.0,
+            "A0hold/302": 1.0
+          }
+        }
+      },
+      "notes": [
+        "size follows the catalogue's file counts (3-11 files, so 7-25 requests; a 26-file repository gives 42, tests/test_sim_client_emulator.py); concurrency estimated as requests starting within 20 ms"
+      ]
+    },
+    {
+      "id": "V11",
+      "check": "retry structure",
+      "target": "retry gaps 1, 2, 4, 8, 8 s; after a 429, resume at reset + 1 s",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "429s_checked": {
+          "mean": 20000.0,
+          "sd": 0.0,
+          "min": 20000.0,
+          "max": 20000.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 20000.0,
+            "A0cal/202": 20000.0,
+            "A0cal/203": 20000.0,
+            "A0cal/204": 20000.0,
+            "A0cal/205": 20000.0,
+            "A0cal/206": 20000.0,
+            "A0hold/301": 20000.0,
+            "A0hold/302": 20000.0
+          }
+        },
+        "resumed_at_reset_plus_1s": {
+          "mean": 0.9999625,
+          "sd": 7.44023809142763e-05,
+          "min": 0.9998,
+          "max": 1.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.0,
+            "A0cal/202": 1.0,
+            "A0cal/203": 1.0,
+            "A0cal/204": 1.0,
+            "A0cal/205": 0.9999,
+            "A0cal/206": 1.0,
+            "A0hold/301": 1.0,
+            "A0hold/302": 0.9998
+          }
+        }
+      },
+      "notes": [
+        "the hub serves no 5xx, so the 1-2-4-8-8 s back-off is checked by tests/test_sim_client_emulator.py (known answer t0+1, +3, +7, +15, +23)"
+      ]
+    },
+    {
+      "id": "V12",
+      "check": "agent signatures",
+      "target": "harness mix as in 2.6; fan-out bursts of 10-20 calls about every 10 s",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "median_burst": {
+          "mean": 12.0,
+          "sd": 0.0,
+          "min": 12.0,
+          "max": 12.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 12.0,
+            "A0cal/202": 12.0,
+            "A0cal/203": 12.0,
+            "A0cal/204": 12.0,
+            "A0cal/205": 12.0,
+            "A0cal/206": 12.0,
+            "A0hold/301": 12.0,
+            "A0hold/302": 12.0
+          }
+        },
+        "median_gap_s": {
+          "mean": 14.7375,
+          "sd": 0.13024701806293232,
+          "min": 14.6,
+          "max": 14.9,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 14.8,
+            "A0cal/202": 14.9,
+            "A0cal/203": 14.6,
+            "A0cal/204": 14.8,
+            "A0cal/205": 14.9,
+            "A0cal/206": 14.7,
+            "A0hold/301": 14.6,
+            "A0hold/302": 14.6
+          }
+        }
+      },
+      "notes": [
+        "the harness mix can't be checked: hub.client.UA_FAMILIES has no agent/<harness> tag"
+      ]
+    },
+    {
+      "id": "V13",
+      "check": "benign correlation null",
+      "target": "benign pairwise correlations have a heavy upper tail from look-alikes 1-8",
+      "passes": 1,
+      "fails": 7,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.125,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "pass",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "fail",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "accounts": {
+          "mean": 2903.125,
+          "sd": 49.38026644607858,
+          "min": 2833.0,
+          "max": 2976.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2886.0,
+            "A0cal/202": 2889.0,
+            "A0cal/203": 2884.0,
+            "A0cal/204": 2947.0,
+            "A0cal/205": 2860.0,
+            "A0cal/206": 2976.0,
+            "A0hold/301": 2950.0,
+            "A0hold/302": 2833.0
+          }
+        },
+        "enrichment_vs_all_pairs": {
+          "mean": 0.565,
+          "sd": 0.33423687066852115,
+          "min": 0.0,
+          "max": 1.05,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.51,
+            "A0cal/202": 0.61,
+            "A0cal/203": 0.71,
+            "A0cal/204": 0.88,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.25,
+            "A0hold/301": 0.51,
+            "A0hold/302": 1.05
+          }
+        },
+        "pairs_r_ge_0.8": {
+          "mean": 7.75,
+          "sd": 2.2519832529192065,
+          "min": 5.0,
+          "max": 11.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 9.0,
+            "A0cal/202": 5.0,
+            "A0cal/203": 11.0,
+            "A0cal/204": 10.0,
+            "A0cal/205": 6.0,
+            "A0cal/206": 6.0,
+            "A0hold/301": 6.0,
+            "A0hold/302": 9.0
+          }
+        },
+        "q99.9": {
+          "mean": 0.3695,
+          "sd": 0.004309458036856677,
+          "min": 0.364,
+          "max": 0.377,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.368,
+            "A0cal/202": 0.371,
+            "A0cal/203": 0.366,
+            "A0cal/204": 0.377,
+            "A0cal/205": 0.371,
+            "A0cal/206": 0.373,
+            "A0hold/301": 0.364,
+            "A0hold/302": 0.366
+          }
+        },
+        "share_from_lookalike_behaviours_1_8": {
+          "mean": 0.369375,
+          "sd": 0.21714967681960096,
+          "min": 0.0,
+          "max": 0.667,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.333,
+            "A0cal/202": 0.4,
+            "A0cal/203": 0.455,
+            "A0cal/204": 0.6,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.167,
+            "A0hold/301": 0.333,
+            "A0hold/302": 0.667
+          }
+        }
+      },
+      "notes": [
+        "Pearson correlation of hourly request counts, accounts with 20+ requests in 6+ distinct hours (sparse accounts correlate by coincidence); pass when at least 10 benign pairs reach 0.8 and most of them involve look-alike behaviours 1-8 (the normal population's CI bots count with CI)"
+      ]
+    },
+    {
+      "id": "V14",
+      "check": "real-versus-simulated discriminator",
+      "target": "AUROC near 0.5",
+      "passes": 0,
+      "fails": 0,
+      "not_run": 8,
+      "seeds": 8,
+      "pass_share": null,
+      "status_by_run": {
+        "A0cal/201": "not run",
+        "A0cal/202": "not run",
+        "A0cal/203": "not run",
+        "A0cal/204": "not run",
+        "A0cal/205": "not run",
+        "A0cal/206": "not run",
+        "A0hold/301": "not run",
+        "A0hold/302": "not run"
+      },
+      "values": {},
+      "notes": [
+        "needs real reference traces (Wikimedia, WorldCup, NASA, PyPI): a download that needs the user's OK (gap 12)"
+      ]
+    },
+    {
+      "id": "V15",
+      "check": "blended background",
+      "target": "one arm with a real human timing trace",
+      "passes": 0,
+      "fails": 0,
+      "not_run": 8,
+      "seeds": 8,
+      "pass_share": null,
+      "status_by_run": {
+        "A0cal/201": "not run",
+        "A0cal/202": "not run",
+        "A0cal/203": "not run",
+        "A0cal/204": "not run",
+        "A0cal/205": "not run",
+        "A0cal/206": "not run",
+        "A0hold/301": "not run",
+        "A0hold/302": "not run"
+      },
+      "values": {},
+      "notes": [
+        "needs a real trace (gap 12)"
+      ]
+    },
+    {
+      "id": "V16",
+      "check": "population ablations",
+      "target": "false alarms rise with look-alikes present",
+      "passes": 0,
+      "fails": 0,
+      "not_run": 8,
+      "seeds": 8,
+      "pass_share": null,
+      "status_by_run": {
+        "A0cal/201": "not run",
+        "A0cal/202": "not run",
+        "A0cal/203": "not run",
+        "A0cal/204": "not run",
+        "A0cal/205": "not run",
+        "A0cal/206": "not run",
+        "A0hold/301": "not run",
+        "A0hold/302": "not run"
+      },
+      "values": {},
+      "notes": [
+        "needs the monitor's alarm (T006) and one run per ablation"
+      ]
+    },
+    {
+      "id": "O1",
+      "check": "origin-class shares per bucket",
+      "target": "every cell with a median of 1% or more inside the 3.3 median +-50%; mobile 15-35% of human pages; Tor at most 0.3%; relay at most 1% of pages; hosting at least 50% of resolvers",
+      "passes": 1,
+      "fails": 7,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.125,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "pass",
+        "A0hold/301": "fail",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "hosting_resolvers": {
+          "mean": 0.496,
+          "sd": 0.03498571136907179,
+          "min": 0.456,
+          "max": 0.565,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.498,
+            "A0cal/202": 0.49,
+            "A0cal/203": 0.515,
+            "A0cal/204": 0.47,
+            "A0cal/205": 0.565,
+            "A0cal/206": 0.509,
+            "A0hold/301": 0.456,
+            "A0hold/302": 0.465
+          }
+        },
+        "mobile_share_human_pages": {
+          "mean": 0.17325,
+          "sd": 0.005700877125495682,
+          "min": 0.164,
+          "max": 0.179,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.164,
+            "A0cal/202": 0.179,
+            "A0cal/203": 0.17,
+            "A0cal/204": 0.169,
+            "A0cal/205": 0.179,
+            "A0cal/206": 0.177,
+            "A0hold/301": 0.17,
+            "A0hold/302": 0.178
+          }
+        },
+        "relay_pages": {
+          "mean": 0.0056500000000000005,
+          "sd": 0.0003964124835860461,
+          "min": 0.0048,
+          "max": 0.0061,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.006,
+            "A0cal/202": 0.0055,
+            "A0cal/203": 0.0056,
+            "A0cal/204": 0.0058,
+            "A0cal/205": 0.0061,
+            "A0cal/206": 0.0048,
+            "A0hold/301": 0.0057,
+            "A0hold/302": 0.0057
+          }
+        },
+        "shares_pct.api/enterprise": {
+          "mean": 8.67625,
+          "sd": 1.8020697425856909,
+          "min": 6.1,
+          "max": 11.57,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 8.86,
+            "A0cal/202": 9.06,
+            "A0cal/203": 9.97,
+            "A0cal/204": 11.57,
+            "A0cal/205": 7.11,
+            "A0cal/206": 9.64,
+            "A0hold/301": 6.1,
+            "A0hold/302": 7.1
+          }
+        },
+        "shares_pct.api/hosting": {
+          "mean": 54.94375,
+          "sd": 9.501526099226677,
+          "min": 32.34,
+          "max": 61.54,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 60.42,
+            "A0cal/202": 58.13,
+            "A0cal/203": 32.34,
+            "A0cal/204": 54.59,
+            "A0cal/205": 56.24,
+            "A0cal/206": 61.54,
+            "A0hold/301": 60.89,
+            "A0hold/302": 55.4
+          }
+        },
+        "shares_pct.api/hub_internal": {
+          "mean": 2.13625,
+          "sd": 0.5212604915011304,
+          "min": 1.34,
+          "max": 2.79,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2.49,
+            "A0cal/202": 2.25,
+            "A0cal/203": 1.59,
+            "A0cal/204": 2.19,
+            "A0cal/205": 1.34,
+            "A0cal/206": 2.79,
+            "A0hold/301": 1.78,
+            "A0hold/302": 2.66
+          }
+        },
+        "shares_pct.api/mobile": {
+          "mean": 2.0175,
+          "sd": 0.21412613105363862,
+          "min": 1.78,
+          "max": 2.41,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2.25,
+            "A0cal/202": 1.86,
+            "A0cal/203": 1.92,
+            "A0cal/204": 1.78,
+            "A0cal/205": 2.06,
+            "A0cal/206": 2.41,
+            "A0hold/301": 1.88,
+            "A0hold/302": 1.98
+          }
+        },
+        "shares_pct.api/public_proxy": {
+          "mean": 0.11750000000000001,
+          "sd": 0.08697290218387399,
+          "min": 0.01,
+          "max": 0.24,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.11,
+            "A0cal/202": 0.24,
+            "A0cal/203": 0.09,
+            "A0cal/204": 0.1,
+            "A0cal/205": 0.23,
+            "A0cal/206": 0.15,
+            "A0hold/301": 0.01,
+            "A0hold/302": 0.01
+          }
+        },
+        "shares_pct.api/residential": {
+          "mean": 24.090000000000003,
+          "sd": 3.760980115418244,
+          "min": 18.12,
+          "max": 29.48,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 21.41,
+            "A0cal/202": 23.95,
+            "A0cal/203": 22.42,
+            "A0cal/204": 25.42,
+            "A0cal/205": 29.48,
+            "A0cal/206": 18.12,
+            "A0hold/301": 23.17,
+            "A0hold/302": 28.75
+          }
+        },
+        "shares_pct.api/suspected_resi_proxy": {
+          "mean": 0.70625,
+          "sd": 0.3489550728348033,
+          "min": 0.39,
+          "max": 1.29,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.39,
+            "A0cal/202": 0.67,
+            "A0cal/203": 0.45,
+            "A0cal/204": 0.61,
+            "A0cal/205": 0.45,
+            "A0cal/206": 1.29,
+            "A0hold/301": 1.21,
+            "A0hold/302": 0.58
+          }
+        },
+        "shares_pct.api/tor": {
+          "mean": 0.26625000000000004,
+          "sd": 0.21751436734156204,
+          "min": 0.03,
+          "max": 0.59,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.14,
+            "A0cal/202": 0.59,
+            "A0cal/203": 0.26,
+            "A0cal/204": 0.4,
+            "A0cal/205": 0.04,
+            "A0cal/206": 0.14,
+            "A0hold/301": 0.53,
+            "A0hold/302": 0.03
+          }
+        },
+        "shares_pct.api/vpn": {
+          "mean": 7.0425,
+          "sd": 9.666421630720293,
+          "min": 3.05,
+          "max": 30.94,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 3.92,
+            "A0cal/202": 3.25,
+            "A0cal/203": 30.94,
+            "A0cal/204": 3.34,
+            "A0cal/205": 3.05,
+            "A0cal/206": 3.91,
+            "A0hold/301": 4.44,
+            "A0hold/302": 3.49
+          }
+        },
+        "shares_pct.pages/consumer_relay": {
+          "mean": 0.565,
+          "sd": 0.03964124835860459,
+          "min": 0.48,
+          "max": 0.61,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.6,
+            "A0cal/202": 0.55,
+            "A0cal/203": 0.56,
+            "A0cal/204": 0.58,
+            "A0cal/205": 0.61,
+            "A0cal/206": 0.48,
+            "A0hold/301": 0.57,
+            "A0hold/302": 0.57
+          }
+        },
+        "shares_pct.pages/enterprise": {
+          "mean": 4.9175,
+          "sd": 0.6745527618885186,
+          "min": 3.92,
+          "max": 5.93,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 5.14,
+            "A0cal/202": 5.17,
+            "A0cal/203": 5.93,
+            "A0cal/204": 5.41,
+            "A0cal/205": 3.92,
+            "A0cal/206": 4.88,
+            "A0hold/301": 4.87,
+            "A0hold/302": 4.02
+          }
+        },
+        "shares_pct.pages/hosting": {
+          "mean": 35.07875,
+          "sd": 1.2990704093972067,
+          "min": 33.71,
+          "max": 37.55,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 37.55,
+            "A0cal/202": 34.83,
+            "A0cal/203": 35.38,
+            "A0cal/204": 36.29,
+            "A0cal/205": 33.81,
+            "A0cal/206": 34.51,
+            "A0hold/301": 34.55,
+            "A0hold/302": 33.71
+          }
+        },
+        "shares_pct.pages/mobile": {
+          "mean": 14.563749999999999,
+          "sd": 1.0827470025026948,
+          "min": 13.19,
+          "max": 16.13,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 13.23,
+            "A0cal/202": 15.36,
+            "A0cal/203": 14.42,
+            "A0cal/204": 14.16,
+            "A0cal/205": 15.67,
+            "A0cal/206": 13.19,
+            "A0hold/301": 14.35,
+            "A0hold/302": 16.13
+          }
+        },
+        "shares_pct.pages/public_proxy": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0,
+            "A0cal/202": 0.0,
+            "A0cal/203": 0.0,
+            "A0cal/204": 0.0,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.0,
+            "A0hold/301": 0.0,
+            "A0hold/302": 0.0
+          }
+        },
+        "shares_pct.pages/residential": {
+          "mean": 36.79625,
+          "sd": 1.277809928857072,
+          "min": 35.04,
+          "max": 38.78,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 35.04,
+            "A0cal/202": 36.33,
+            "A0cal/203": 36.13,
+            "A0cal/204": 35.92,
+            "A0cal/205": 38.78,
+            "A0cal/206": 36.39,
+            "A0hold/301": 37.43,
+            "A0hold/302": 38.35
+          }
+        },
+        "shares_pct.pages/suspected_resi_proxy": {
+          "mean": 3.8062500000000004,
+          "sd": 0.6662247046926865,
+          "min": 2.83,
+          "max": 4.94,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 4.15,
+            "A0cal/202": 3.57,
+            "A0cal/203": 3.82,
+            "A0cal/204": 3.41,
+            "A0cal/205": 3.35,
+            "A0cal/206": 4.94,
+            "A0hold/301": 4.38,
+            "A0hold/302": 2.83
+          }
+        },
+        "shares_pct.pages/tor": {
+          "mean": 0.13,
+          "sd": 0.06324555320336758,
+          "min": 0.04,
+          "max": 0.21,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.13,
+            "A0cal/202": 0.17,
+            "A0cal/203": 0.08,
+            "A0cal/204": 0.19,
+            "A0cal/205": 0.21,
+            "A0cal/206": 0.06,
+            "A0hold/301": 0.04,
+            "A0hold/302": 0.16
+          }
+        },
+        "shares_pct.pages/vpn": {
+          "mean": 4.1425,
+          "sd": 0.6084112800682492,
+          "min": 3.66,
+          "max": 5.56,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 4.15,
+            "A0cal/202": 4.02,
+            "A0cal/203": 3.69,
+            "A0cal/204": 4.03,
+            "A0cal/205": 3.66,
+            "A0cal/206": 5.56,
+            "A0hold/301": 3.81,
+            "A0hold/302": 4.22
+          }
+        },
+        "shares_pct.resolvers/enterprise": {
+          "mean": 12.385,
+          "sd": 2.4658467105641426,
+          "min": 8.78,
+          "max": 15.75,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 13.72,
+            "A0cal/202": 13.8,
+            "A0cal/203": 13.58,
+            "A0cal/204": 12.71,
+            "A0cal/205": 8.82,
+            "A0cal/206": 15.75,
+            "A0hold/301": 11.92,
+            "A0hold/302": 8.78
+          }
+        },
+        "shares_pct.resolvers/hosting": {
+          "mean": 49.5975,
+          "sd": 3.4817144791446815,
+          "min": 45.58,
+          "max": 56.45,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 49.84,
+            "A0cal/202": 49.02,
+            "A0cal/203": 51.49,
+            "A0cal/204": 47.01,
+            "A0cal/205": 56.45,
+            "A0cal/206": 50.87,
+            "A0hold/301": 45.58,
+            "A0hold/302": 46.52
+          }
+        },
+        "shares_pct.resolvers/hub_internal": {
+          "mean": 1.5375,
+          "sd": 0.2588849716986843,
+          "min": 1.15,
+          "max": 1.93,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.32,
+            "A0cal/202": 1.64,
+            "A0cal/203": 1.15,
+            "A0cal/204": 1.68,
+            "A0cal/205": 1.29,
+            "A0cal/206": 1.61,
+            "A0hold/301": 1.93,
+            "A0hold/302": 1.68
+          }
+        },
+        "shares_pct.resolvers/mobile": {
+          "mean": 2.8325,
+          "sd": 0.27112200732722325,
+          "min": 2.6,
+          "max": 3.39,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 3.09,
+            "A0cal/202": 2.71,
+            "A0cal/203": 2.76,
+            "A0cal/204": 2.6,
+            "A0cal/205": 2.63,
+            "A0cal/206": 3.39,
+            "A0hold/301": 2.79,
+            "A0hold/302": 2.69
+          }
+        },
+        "shares_pct.resolvers/public_proxy": {
+          "mean": 0.03875000000000001,
+          "sd": 0.033139316313320136,
+          "min": 0.0,
+          "max": 0.1,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.04,
+            "A0cal/202": 0.06,
+            "A0cal/203": 0.0,
+            "A0cal/204": 0.02,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.04,
+            "A0hold/301": 0.05,
+            "A0hold/302": 0.1
+          }
+        },
+        "shares_pct.resolvers/residential": {
+          "mean": 29.68875,
+          "sd": 4.490760156779059,
+          "min": 24.16,
+          "max": 37.54,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 24.16,
+            "A0cal/202": 29.72,
+            "A0cal/203": 27.63,
+            "A0cal/204": 33.18,
+            "A0cal/205": 28.04,
+            "A0cal/206": 24.91,
+            "A0hold/301": 32.33,
+            "A0hold/302": 37.54
+          }
+        },
+        "shares_pct.resolvers/suspected_resi_proxy": {
+          "mean": 0.5625,
+          "sd": 0.14159802258506293,
+          "min": 0.39,
+          "max": 0.82,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.56,
+            "A0cal/202": 0.5,
+            "A0cal/203": 0.51,
+            "A0cal/204": 0.51,
+            "A0cal/205": 0.48,
+            "A0cal/206": 0.82,
+            "A0hold/301": 0.73,
+            "A0hold/302": 0.39
+          }
+        },
+        "shares_pct.resolvers/tor": {
+          "mean": 0.12125,
+          "sd": 0.054363196584243864,
+          "min": 0.06,
+          "max": 0.23,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.06,
+            "A0cal/202": 0.12,
+            "A0cal/203": 0.12,
+            "A0cal/204": 0.13,
+            "A0cal/205": 0.23,
+            "A0cal/206": 0.1,
+            "A0hold/301": 0.15,
+            "A0hold/302": 0.06
+          }
+        },
+        "shares_pct.resolvers/vpn": {
+          "mean": 3.23875,
+          "sd": 1.7870201653670759,
+          "min": 2.05,
+          "max": 7.21,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 7.21,
+            "A0cal/202": 2.44,
+            "A0cal/203": 2.77,
+            "A0cal/204": 2.17,
+            "A0cal/205": 2.05,
+            "A0cal/206": 2.51,
+            "A0hold/301": 4.52,
+            "A0hold/302": 2.24
+          }
+        },
+        "tor_max": {
+          "mean": 0.0030625,
+          "sd": 0.0017888044690718514,
+          "min": 0.0014,
+          "max": 0.0059,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0014,
+            "A0cal/202": 0.0059,
+            "A0cal/203": 0.0026,
+            "A0cal/204": 0.004,
+            "A0cal/205": 0.0023,
+            "A0cal/206": 0.0014,
+            "A0hold/301": 0.0053,
+            "A0hold/302": 0.0016
+          }
+        }
+      },
+      "notes": [
+        "the suspected_resi_proxy cells are left to O13: 3.3's medians (1.3/3.7/5.1%) need several times more real proxy traffic than O13's 'about 4 in 5 labelled requests are direct' allows, so the two can't both hold; the cells are reported"
+      ],
+      "on_multiseed_mean": {
+        "status": "fail",
+        "mean": {
+          "cells_within_50pct": "12/15",
+          "cells_outside": [
+            "api/hub_internal",
+            "api/vpn",
+            "resolvers/vpn"
+          ],
+          "mobile_share_human_pages": 0.17325,
+          "tor_max": 0.0030625,
+          "relay_pages": 0.0056500000000000005,
+          "hosting_resolvers": 0.496
+        },
+        "rule": "every cell with a median of 1% or more inside its median +-50%; mobile 15-35% of human pages; Tor at most 0.3%; relay at most 1% of pages; hosting at least 50% of resolvers"
+      }
+    },
+    {
+      "id": "O2",
+      "check": "weekend drop in hosting share",
+      "target": "weekend drop of 5-10 points in the hosting share of resolvers",
+      "passes": 2,
+      "fails": 6,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.25,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "pass",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "drop_points": {
+          "mean": 5.45125,
+          "sd": 5.298585896255717,
+          "min": -3.61,
+          "max": 11.93,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 7.02,
+            "A0cal/202": 3.81,
+            "A0cal/203": 11.93,
+            "A0cal/204": 2.24,
+            "A0cal/205": -3.61,
+            "A0cal/206": 1.99,
+            "A0hold/301": 9.25,
+            "A0hold/302": 10.98
+          }
+        },
+        "weekday": {
+          "mean": 0.494625,
+          "sd": 0.027815399126588654,
+          "min": 0.448,
+          "max": 0.532,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.498,
+            "A0cal/202": 0.502,
+            "A0cal/203": 0.532,
+            "A0cal/204": 0.448,
+            "A0cal/205": 0.525,
+            "A0cal/206": 0.499,
+            "A0hold/301": 0.486,
+            "A0hold/302": 0.467
+          }
+        },
+        "weekend": {
+          "mean": 0.44,
+          "sd": 0.061981564079283194,
+          "min": 0.357,
+          "max": 0.561,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.427,
+            "A0cal/202": 0.464,
+            "A0cal/203": 0.412,
+            "A0cal/204": 0.426,
+            "A0cal/205": 0.561,
+            "A0cal/206": 0.479,
+            "A0hold/301": 0.394,
+            "A0hold/302": 0.357
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O3",
+      "check": "token-hours with 3+ ASNs",
+      "target": "0.3-3% of honest token-hours; more than half from CI",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "from_ci": {
+          "mean": 0.811375,
+          "sd": 0.02912013294710623,
+          "min": 0.749,
+          "max": 0.841,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.804,
+            "A0cal/202": 0.824,
+            "A0cal/203": 0.749,
+            "A0cal/204": 0.804,
+            "A0cal/205": 0.837,
+            "A0cal/206": 0.806,
+            "A0hold/301": 0.841,
+            "A0hold/302": 0.826
+          }
+        },
+        "share": {
+          "mean": 0.0139875,
+          "sd": 0.001007737919444195,
+          "min": 0.0127,
+          "max": 0.0154,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0127,
+            "A0cal/202": 0.0144,
+            "A0cal/203": 0.0131,
+            "A0cal/204": 0.0136,
+            "A0cal/205": 0.0154,
+            "A0cal/206": 0.0139,
+            "A0hold/301": 0.0134,
+            "A0hold/302": 0.0154
+          }
+        },
+        "token_hours": {
+          "mean": 90035.375,
+          "sd": 1123.5600228737226,
+          "min": 88485.0,
+          "max": 91894.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 91375.0,
+            "A0cal/202": 89136.0,
+            "A0cal/203": 89647.0,
+            "A0cal/204": 88485.0,
+            "A0cal/205": 90065.0,
+            "A0cal/206": 89569.0,
+            "A0hold/301": 91894.0,
+            "A0hold/302": 90112.0
+          }
+        }
+      },
+      "notes": [
+        "token = root key chain (child chains grouped under their parent)"
+      ]
+    },
+    {
+      "id": "O4",
+      "check": "token-hours with 2+ classes",
+      "target": "0.5-3%",
+      "passes": 7,
+      "fails": 1,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.875,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "fail",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "share": {
+          "mean": 0.0229875,
+          "sd": 0.004177640311399316,
+          "min": 0.0189,
+          "max": 0.0309,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0211,
+            "A0cal/202": 0.027,
+            "A0cal/203": 0.0309,
+            "A0cal/204": 0.0245,
+            "A0cal/205": 0.0208,
+            "A0cal/206": 0.0214,
+            "A0hold/301": 0.0193,
+            "A0hold/302": 0.0189
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O5",
+      "check": "token-hours with 5+ short-lived origins",
+      "target": "0.1-2%, at least 80% from CI and agent sandboxes",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "from_ci_and_sandboxes": {
+          "mean": 0.99975,
+          "sd": 0.0007071067811865482,
+          "min": 0.998,
+          "max": 1.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.0,
+            "A0cal/202": 1.0,
+            "A0cal/203": 1.0,
+            "A0cal/204": 1.0,
+            "A0cal/205": 1.0,
+            "A0cal/206": 0.998,
+            "A0hold/301": 1.0,
+            "A0hold/302": 1.0
+          }
+        },
+        "share": {
+          "mean": 0.0048874999999999995,
+          "sd": 0.00024748737341529154,
+          "min": 0.0044,
+          "max": 0.0052,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0044,
+            "A0cal/202": 0.005,
+            "A0cal/203": 0.005,
+            "A0cal/204": 0.0047,
+            "A0cal/205": 0.005,
+            "A0cal/206": 0.0048,
+            "A0hold/301": 0.005,
+            "A0hold/302": 0.0052
+          }
+        }
+      },
+      "notes": [
+        "short-lived: an (ASN, /24) the token first used under 60 minutes earlier"
+      ]
+    },
+    {
+      "id": "O6",
+      "check": "/24s per human token per day",
+      "target": "median 1, p90 2, p99 3-4",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "median": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1.0,
+            "A0cal/202": 1.0,
+            "A0cal/203": 1.0,
+            "A0cal/204": 1.0,
+            "A0cal/205": 1.0,
+            "A0cal/206": 1.0,
+            "A0hold/301": 1.0,
+            "A0hold/302": 1.0
+          }
+        },
+        "p90": {
+          "mean": 2.0,
+          "sd": 0.0,
+          "min": 2.0,
+          "max": 2.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 2.0,
+            "A0cal/202": 2.0,
+            "A0cal/203": 2.0,
+            "A0cal/204": 2.0,
+            "A0cal/205": 2.0,
+            "A0cal/206": 2.0,
+            "A0hold/301": 2.0,
+            "A0hold/302": 2.0
+          }
+        },
+        "p99": {
+          "mean": 3.25,
+          "sd": 0.4629100498862757,
+          "min": 3.0,
+          "max": 4.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 3.0,
+            "A0cal/202": 4.0,
+            "A0cal/203": 4.0,
+            "A0cal/204": 3.0,
+            "A0cal/205": 3.0,
+            "A0cal/206": 3.0,
+            "A0hold/301": 3.0,
+            "A0hold/302": 3.0
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O7",
+      "check": "residential tokens on a new /24",
+      "target": "2-10% of residential tokens a day on a new /24",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "share": {
+          "mean": 0.0329875,
+          "sd": 0.005674362771020448,
+          "min": 0.0234,
+          "max": 0.0405,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0405,
+            "A0cal/202": 0.0234,
+            "A0cal/203": 0.0399,
+            "A0cal/204": 0.0281,
+            "A0cal/205": 0.034,
+            "A0cal/206": 0.0314,
+            "A0hold/301": 0.0342,
+            "A0hold/302": 0.0324
+          }
+        },
+        "token_days": {
+          "mean": 5578.625,
+          "sd": 116.06394481368572,
+          "min": 5387.0,
+          "max": 5738.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 5605.0,
+            "A0cal/202": 5638.0,
+            "A0cal/203": 5738.0,
+            "A0cal/204": 5438.0,
+            "A0cal/205": 5562.0,
+            "A0cal/206": 5387.0,
+            "A0hold/301": 5666.0,
+            "A0hold/302": 5595.0
+          }
+        }
+      },
+      "notes": [
+        "home lines only (residential /24s by their true class), active on consecutive days"
+      ]
+    },
+    {
+      "id": "O8",
+      "check": "long-run per-user entropy",
+      "target": "IP about 2 bits, ASN about 0.8 bits",
+      "passes": 0,
+      "fails": 0,
+      "not_run": 8,
+      "seeds": 8,
+      "pass_share": null,
+      "status_by_run": {
+        "A0cal/201": "not run",
+        "A0cal/202": "not run",
+        "A0cal/203": "not run",
+        "A0cal/204": "not run",
+        "A0cal/205": "not run",
+        "A0cal/206": "not run",
+        "A0hold/301": "not run",
+        "A0hold/302": "not run"
+      },
+      "values": {},
+      "notes": [
+        "needs 3-4 weeks of history"
+      ]
+    },
+    {
+      "id": "O9",
+      "check": "accounts per /24 per day",
+      "target": "at least 80% of active /24s have one account; 1-5% have 10 or more",
+      "passes": 0,
+      "fails": 8,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.0,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "fail",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "one_account": {
+          "mean": 0.867375,
+          "sd": 0.0031594529363709275,
+          "min": 0.863,
+          "max": 0.871,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.868,
+            "A0cal/202": 0.87,
+            "A0cal/203": 0.871,
+            "A0cal/204": 0.864,
+            "A0cal/205": 0.865,
+            "A0cal/206": 0.871,
+            "A0hold/301": 0.867,
+            "A0hold/302": 0.863
+          }
+        },
+        "ten_or_more": {
+          "mean": 0.008825,
+          "sd": 0.0005418223219575107,
+          "min": 0.0077,
+          "max": 0.0095,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0087,
+            "A0cal/202": 0.009,
+            "A0cal/203": 0.009,
+            "A0cal/204": 0.0085,
+            "A0cal/205": 0.0077,
+            "A0cal/206": 0.0091,
+            "A0hold/301": 0.0091,
+            "A0hold/302": 0.0095
+          }
+        }
+      },
+      "notes": [],
+      "on_multiseed_mean": {
+        "status": "fail",
+        "mean": {
+          "one_account": 0.867375,
+          "ten_or_more": 0.008825
+        },
+        "rule": "at least 80% of active /24s with one account; 1-5% with 10 or more"
+      }
+    },
+    {
+      "id": "O10",
+      "check": "round-trip gap",
+      "target": "hosting direct: P(<=20 ms) about 97%, P(<0) about 3%, P(>50 ms) about 0.04%; benign P(>50 ms) 0.2-1% resolvers and API, 1-4% pages; null on 20-30% of browser requests",
+      "passes": 1,
+      "fails": 7,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.125,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "fail",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "browser_null": {
+          "mean": 0.250375,
+          "sd": 0.007909081579334705,
+          "min": 0.241,
+          "max": 0.261,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.241,
+            "A0cal/202": 0.245,
+            "A0cal/203": 0.257,
+            "A0cal/204": 0.261,
+            "A0cal/205": 0.242,
+            "A0cal/206": 0.245,
+            "A0hold/301": 0.255,
+            "A0hold/302": 0.257
+          }
+        },
+        "gt50_by_bucket.api": {
+          "mean": 0.0105875,
+          "sd": 0.004782837621567945,
+          "min": 0.0058,
+          "max": 0.0199,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0073,
+            "A0cal/202": 0.0199,
+            "A0cal/203": 0.0099,
+            "A0cal/204": 0.0113,
+            "A0cal/205": 0.0065,
+            "A0cal/206": 0.009,
+            "A0hold/301": 0.015,
+            "A0hold/302": 0.0058
+          }
+        },
+        "gt50_by_bucket.pages": {
+          "mean": 0.0534625,
+          "sd": 0.01206801409867068,
+          "min": 0.0383,
+          "max": 0.0776,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0606,
+            "A0cal/202": 0.0459,
+            "A0cal/203": 0.0553,
+            "A0cal/204": 0.0483,
+            "A0cal/205": 0.0456,
+            "A0cal/206": 0.0776,
+            "A0hold/301": 0.0561,
+            "A0hold/302": 0.0383
+          }
+        },
+        "gt50_by_bucket.resolvers": {
+          "mean": 0.0060374999999999995,
+          "sd": 0.0012738440137742815,
+          "min": 0.0045,
+          "max": 0.0083,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0045,
+            "A0cal/202": 0.0049,
+            "A0cal/203": 0.0059,
+            "A0cal/204": 0.007,
+            "A0cal/205": 0.0066,
+            "A0cal/206": 0.0083,
+            "A0hold/301": 0.0062,
+            "A0hold/302": 0.0049
+          }
+        },
+        "hosting_gt50": {
+          "mean": 0.00040874999999999993,
+          "sd": 9.093757670590776e-05,
+          "min": 0.00026,
+          "max": 0.00049,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.00047,
+            "A0cal/202": 0.00049,
+            "A0cal/203": 0.00026,
+            "A0cal/204": 0.00029,
+            "A0cal/205": 0.00042,
+            "A0cal/206": 0.00047,
+            "A0hold/301": 0.00049,
+            "A0hold/302": 0.00038
+          }
+        },
+        "hosting_le20": {
+          "mean": 0.9690749999999999,
+          "sd": 0.0013708704221353973,
+          "min": 0.9669,
+          "max": 0.9707,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.9683,
+            "A0cal/202": 0.9669,
+            "A0cal/203": 0.97,
+            "A0cal/204": 0.97,
+            "A0cal/205": 0.9707,
+            "A0cal/206": 0.9676,
+            "A0hold/301": 0.9689,
+            "A0hold/302": 0.9702
+          }
+        },
+        "hosting_neg": {
+          "mean": 0.0288875,
+          "sd": 0.0009493418773023761,
+          "min": 0.0275,
+          "max": 0.0304,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0275,
+            "A0cal/202": 0.0304,
+            "A0cal/203": 0.0298,
+            "A0cal/204": 0.0295,
+            "A0cal/205": 0.0287,
+            "A0cal/206": 0.0286,
+            "A0hold/301": 0.0285,
+            "A0hold/302": 0.0281
+          }
+        }
+      },
+      "notes": [
+        "per request; connections carry several requests"
+      ]
+    },
+    {
+      "id": "O11",
+      "check": "fingerprint concentration",
+      "target": "top 10 tls_fp cover at least 90% of library and of browser requests",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "browser": {
+          "mean": 0.9879375,
+          "sd": 0.003217779846859817,
+          "min": 0.9831,
+          "max": 0.9936,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.9831,
+            "A0cal/202": 0.9846,
+            "A0cal/203": 0.9886,
+            "A0cal/204": 0.9936,
+            "A0cal/205": 0.9866,
+            "A0cal/206": 0.9891,
+            "A0hold/301": 0.9893,
+            "A0hold/302": 0.9886
+          }
+        },
+        "library": {
+          "mean": 0.922325,
+          "sd": 0.0077748220007185335,
+          "min": 0.908,
+          "max": 0.9307,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.9249,
+            "A0cal/202": 0.9162,
+            "A0cal/203": 0.9194,
+            "A0cal/204": 0.9307,
+            "A0cal/205": 0.9214,
+            "A0cal/206": 0.9306,
+            "A0hold/301": 0.908,
+            "A0hold/302": 0.9274
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O12",
+      "check": "UA versus TLS mismatch",
+      "target": "2-6% of browser traffic: a browser UA with a non-browser TLS fingerprint",
+      "passes": 5,
+      "fails": 3,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.625,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "fail",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "share": {
+          "mean": 0.022375000000000003,
+          "sd": 0.004506106967216823,
+          "min": 0.0149,
+          "max": 0.0274,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0269,
+            "A0cal/202": 0.0255,
+            "A0cal/203": 0.0183,
+            "A0cal/204": 0.0149,
+            "A0cal/205": 0.0249,
+            "A0cal/206": 0.0213,
+            "A0hold/301": 0.0198,
+            "A0hold/302": 0.0274
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O13",
+      "check": "suspected_resi_proxy labels",
+      "target": "0.5-3% of benign residential and mobile requests labelled suspected_resi_proxy; about 4 in 5 labelled requests direct",
+      "passes": 4,
+      "fails": 4,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.5,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "fail",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "benign_res_mobile_share": {
+          "mean": 0.0186625,
+          "sd": 0.006407347902436478,
+          "min": 0.0121,
+          "max": 0.0306,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0199,
+            "A0cal/202": 0.017,
+            "A0cal/203": 0.0146,
+            "A0cal/204": 0.0145,
+            "A0cal/205": 0.0149,
+            "A0cal/206": 0.0306,
+            "A0hold/301": 0.0257,
+            "A0hold/302": 0.0121
+          }
+        },
+        "labelled_direct": {
+          "mean": 0.641125,
+          "sd": 0.06051077235855258,
+          "min": 0.556,
+          "max": 0.705,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.705,
+            "A0cal/202": 0.675,
+            "A0cal/203": 0.556,
+            "A0cal/204": 0.585,
+            "A0cal/205": 0.576,
+            "A0cal/206": 0.645,
+            "A0hold/301": 0.682,
+            "A0hold/302": 0.705
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O14",
+      "check": "new tokens' first ASN",
+      "target": "20-50% of new tokens have a hosting or anonymiser first ASN",
+      "passes": 2,
+      "fails": 6,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.25,
+      "status_by_run": {
+        "A0cal/201": "fail",
+        "A0cal/202": "fail",
+        "A0cal/203": "pass",
+        "A0cal/204": "fail",
+        "A0cal/205": "fail",
+        "A0cal/206": "fail",
+        "A0hold/301": "pass",
+        "A0hold/302": "fail"
+      },
+      "values": {
+        "new_tokens": {
+          "mean": 1860.375,
+          "sd": 403.3364201967668,
+          "min": 1442.0,
+          "max": 2641.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 1601.0,
+            "A0cal/202": 1692.0,
+            "A0cal/203": 1542.0,
+            "A0cal/204": 1901.0,
+            "A0cal/205": 2641.0,
+            "A0cal/206": 2252.0,
+            "A0hold/301": 1442.0,
+            "A0hold/302": 1812.0
+          }
+        },
+        "share": {
+          "mean": 0.57875,
+          "sd": 0.10054671977316243,
+          "min": 0.404,
+          "max": 0.707,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.56,
+            "A0cal/202": 0.57,
+            "A0cal/203": 0.49,
+            "A0cal/204": 0.623,
+            "A0cal/205": 0.695,
+            "A0cal/206": 0.707,
+            "A0hold/301": 0.404,
+            "A0hold/302": 0.581
+          }
+        }
+      },
+      "notes": [
+        "new root tokens: sign-up issue rows (child keys are delegations, not new credentials)"
+      ]
+    },
+    {
+      "id": "O15",
+      "check": "signed-agent share",
+      "target": "0 on resolver and API library traffic; at most 1% of page requests",
+      "passes": 4,
+      "fails": 4,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 0.5,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "fail",
+        "A0cal/203": "pass",
+        "A0cal/204": "fail",
+        "A0cal/205": "pass",
+        "A0cal/206": "fail",
+        "A0hold/301": "fail",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "library": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0,
+            "A0cal/202": 0.0,
+            "A0cal/203": 0.0,
+            "A0cal/204": 0.0,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.0,
+            "A0hold/301": 0.0,
+            "A0hold/302": 0.0
+          }
+        },
+        "pages": {
+          "mean": 0.01891875,
+          "sd": 0.025501064648643317,
+          "min": 0.0,
+          "max": 0.07298,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 0.0,
+            "A0cal/202": 0.031,
+            "A0cal/203": 0.0,
+            "A0cal/204": 0.02548,
+            "A0cal/205": 0.0,
+            "A0cal/206": 0.02189,
+            "A0hold/301": 0.07298,
+            "A0hold/302": 0.0
+          }
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "O16",
+      "check": "a benign token exceeds every per-token origin threshold daily",
+      "target": "every day: some token with 3+ ASNs, some with 2+ classes, some with 5+ short-lived origins in an hour",
+      "passes": 8,
+      "fails": 0,
+      "not_run": 0,
+      "seeds": 8,
+      "pass_share": 1.0,
+      "status_by_run": {
+        "A0cal/201": "pass",
+        "A0cal/202": "pass",
+        "A0cal/203": "pass",
+        "A0cal/204": "pass",
+        "A0cal/205": "pass",
+        "A0cal/206": "pass",
+        "A0hold/301": "pass",
+        "A0hold/302": "pass"
+      },
+      "values": {
+        "days": {
+          "mean": 22.0,
+          "sd": 0.0,
+          "min": 22.0,
+          "max": 22.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 22.0,
+            "A0cal/202": 22.0,
+            "A0cal/203": 22.0,
+            "A0cal/204": 22.0,
+            "A0cal/205": 22.0,
+            "A0cal/206": 22.0,
+            "A0hold/301": 22.0,
+            "A0hold/302": 22.0
+          }
+        },
+        "days_ok": {
+          "mean": 22.0,
+          "sd": 0.0,
+          "min": 22.0,
+          "max": 22.0,
+          "n": 8,
+          "by_run": {
+            "A0cal/201": 22.0,
+            "A0cal/202": 22.0,
+            "A0cal/203": 22.0,
+            "A0cal/204": 22.0,
+            "A0cal/205": 22.0,
+            "A0cal/206": 22.0,
+            "A0hold/301": 22.0,
+            "A0hold/302": 22.0
+          }
+        }
+      },
+      "notes": []
+    }
+  ],
+  "leak_audit": {
+    "A0cal/201": {
+      "status": "pass",
+      "auroc": 0.502,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0cal/202": {
+      "status": "pass",
+      "auroc": 0.501,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0cal/203": {
+      "status": "pass",
+      "auroc": 0.501,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0cal/204": {
+      "status": "pass",
+      "auroc": 0.501,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0cal/205": {
+      "status": "pass",
+      "auroc": 0.502,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0cal/206": {
+      "status": "pass",
+      "auroc": 0.501,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0hold/301": {
+      "status": "pass",
+      "auroc": 0.506,
+      "headline": "construction audit (no swarm in this run)"
+    },
+    "A0hold/302": {
+      "status": "pass",
+      "auroc": 0.5,
+      "headline": "construction audit (no swarm in this run)"
+    }
+  },
+  "inputs": {
+    "A0cal/201": "d40131759159c4c174beeed92a1e23651738458dab66c3bbea58635f64ed9cab",
+    "A0cal/202": "d2ab6714b0dd401aa3a84ed162e8a91ec407e1f378e8cd6fe8209e7672c36197",
+    "A0cal/203": "9aeabdd42fd5ed05a98f041a38be1e6552af97600f33b735e77f2ae04b090c5c",
+    "A0cal/204": "464f29f08ff957c29b7298d33b237e9e78621bc677c1dcc5af96c37a4491325c",
+    "A0cal/205": "960847756cf4e1a8723e62f2af4d13a191ca814c20258f574cba60bd69c5ff78",
+    "A0cal/206": "e52de194cd1386fdb526387f13b15dd17590f86105845f4848392c62441d16ec",
+    "A0hold/301": "b65e3fc970c3b6e282fd26e431e6aa368d48af30521ea96b3acbe3c3ccaf06c5",
+    "A0hold/302": "a90d8a0fcd916e15b2f6709151586391f2a78cd5772dee431d7657b3737fec10"
+  },
+  "eval_realism_sha256": "5c1dff87560d2f247929631fd4d79df804b464690c55059a5f1e9295d5007ad5",
+  "script": {
+    "path": "scripts/t013.py",
+    "sha256": "15dd5805c5ed8196e97e72414cb74104e915922b33d71b51cb3df5d6b9c347e5"
+  },
+  "written_at": "2026-11-08T02:37:59+00:00",
+  "supplementary": {
+    "computed_by": "scripts/t013.py (eval/realism.py hard-codes O8 and V16 as 'not run'; these are T013's provisional versions, for the realism owner to adopt or replace)",
+    "O8": {
+      "id": "O8",
+      "check": "long-run per-user entropy (human page logins, 22 days)",
+      "target": "IP about 2 bits, ASN about 0.8 bits (0.76 in the anchor)",
+      "provisional_tolerance": "the multi-seed mean within 50% of each anchor",
+      "status": "pass",
+      "summary": {
+        "net_bits_mean": {
+          "mean": 1.6022899983014796,
+          "sd": 0.05400780198908545,
+          "min": 1.4936479250212775,
+          "max": 1.6581844147008675,
+          "n": 8
+        },
+        "asn_bits_mean": {
+          "mean": 0.8407162109305923,
+          "sd": 0.01881001199823173,
+          "min": 0.8166443181897053,
+          "max": 0.8643505978730868,
+          "n": 8
+        }
+      },
+      "by_run": {
+        "A0cal/201": {
+          "users": 246,
+          "users_with_logins": 4102,
+          "net_bits_mean": 1.654480879799092,
+          "net_bits_median": 1.596890866028746,
+          "asn_bits_mean": 0.8354548687253193,
+          "asn_bits_median": 0.8978909956164101
+        },
+        "A0cal/202": {
+          "users": 257,
+          "users_with_logins": 4004,
+          "net_bits_mean": 1.6219309038830596,
+          "net_bits_median": 1.61078454839968,
+          "asn_bits_mean": 0.8221072082873485,
+          "asn_bits_median": 0.9182958340544896
+        },
+        "A0cal/203": {
+          "users": 259,
+          "users_with_logins": 4290,
+          "net_bits_mean": 1.5987640192304877,
+          "net_bits_median": 1.322305788853309,
+          "asn_bits_mean": 0.8367248535706155,
+          "asn_bits_median": 0.863120568566631
+        },
+        "A0cal/204": {
+          "users": 227,
+          "users_with_logins": 3638,
+          "net_bits_mean": 1.4936479250212775,
+          "net_bits_median": 0.9912642605354288,
+          "asn_bits_mean": 0.8166443181897053,
+          "asn_bits_median": 0.8904916402194913
+        },
+        "A0cal/205": {
+          "users": 286,
+          "users_with_logins": 4178,
+          "net_bits_mean": 1.6581844147008675,
+          "net_bits_median": 1.7803110652412142,
+          "asn_bits_mean": 0.8626815405352403,
+          "asn_bits_median": 0.9741842059914201
+        },
+        "A0cal/206": {
+          "users": 232,
+          "users_with_logins": 3791,
+          "net_bits_mean": 1.5774922721591857,
+          "net_bits_median": 1.256226376638243,
+          "asn_bits_mean": 0.8588202389735635,
+          "asn_bits_median": 0.9519430091564567
+        },
+        "A0hold/301": {
+          "users": 276,
+          "users_with_logins": 4581,
+          "net_bits_mean": 1.6361579904681016,
+          "net_bits_median": 1.7184023931373646,
+          "asn_bits_mean": 0.8643505978730868,
+          "asn_bits_median": 0.9353677186265268
+        },
+        "A0hold/302": {
+          "users": 258,
+          "users_with_logins": 4023,
+          "net_bits_mean": 1.5776615811497652,
+          "net_bits_median": 1.3608382218182375,
+          "asn_bits_mean": 0.8289460612898598,
+          "asn_bits_median": 0.9182958340544896
+        }
+      },
+      "definition": "Long-run per-user origin entropy of human page sessions (eval/realism.py's O8;\n    research/origin-model.md V8: \"IP about 2 bits, ASN about 0.8 bits\" over 3-4 weeks).\n\n    A *login* is a person's first page request (a browser user agent) on a simulated day;\n    people are the realism scorecard's PEOPLE archetypes. For each person with at least 12\n    login-days, the Shannon entropy in bits of the logged /24 (`origin_net`, the hub's IP\n    field) and of the ASN over those logins. Truth only labels who is a person, as in\n    eval/realism.py; the statistic reads logged fields only."
+    },
+    "V16": {
+      "id": "V16",
+      "check": "population ablations (all look-alikes off)",
+      "target": "the false-alarm rate rises when look-alikes are present",
+      "status": "pass",
+      "per_seed": {
+        "301": {
+          "with_lookalikes": {
+            "days": 15,
+            "family_days": 54596,
+            "families_per_day": 3639.733333333333,
+            "false_alarms_any_level": 68,
+            "false_alarms_per_day": 4.533333333333333,
+            "pages": 0,
+            "sev3_queue_per_day": 4.533333333333333,
+            "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1"
+          },
+          "without_lookalikes": {
+            "days": 15,
+            "family_days": 33669,
+            "families_per_day": 2244.6,
+            "false_alarms_any_level": 6,
+            "false_alarms_per_day": 0.4,
+            "pages": 0,
+            "sev3_queue_per_day": 0.4,
+            "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1"
+          }
+        },
+        "302": {
+          "with_lookalikes": {
+            "days": 15,
+            "family_days": 57567,
+            "families_per_day": 3837.8,
+            "false_alarms_any_level": 72,
+            "false_alarms_per_day": 4.8,
+            "pages": 0,
+            "sev3_queue_per_day": 4.8,
+            "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1"
+          },
+          "without_lookalikes": {
+            "days": 15,
+            "family_days": 29998,
+            "families_per_day": 1999.8666666666666,
+            "false_alarms_any_level": 10,
+            "false_alarms_per_day": 0.6666666666666666,
+            "pages": 0,
+            "sev3_queue_per_day": 0.6666666666666666,
+            "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1"
+          }
+        }
+      },
+      "note": "the minimal version: one ablation with every look-alike off, on the held-out seeds, at the frozen thresholds (not one run per population); false alarms are entries into Sev-1, -2 or -3 on evaluation days"
+    }
+  }
+}

@@ -1,0 +1,1028 @@
+{
+ "baselines": {
+  "by_placement": {
+   "same_machine": {
+    "helpers": 34,
+    "same_origin": 34,
+    "same_ua_family": 34,
+    "signup_within_s": {
+     "15": 34,
+     "1800": 34,
+     "300": 34,
+     "60": 34
+    }
+   },
+   "sandbox": {
+    "helpers": 26,
+    "same_origin": 0,
+    "same_ua_family": 26,
+    "signup_within_s": {
+     "15": 0,
+     "1800": 26,
+     "300": 2,
+     "60": 0
+    }
+   }
+  },
+  "note": "an illustration: these links follow from the harness's placement settings (design/h1-protocol.md, 'Where helpers run')",
+  "rediscovery_410s": {
+   "episodes_with_any": 0,
+   "per_episode_mean": 0.0,
+   "total": 0
+  },
+  "windows_s": [
+   15,
+   60,
+   300,
+   1800
+  ]
+ },
+ "brief_classes": {
+  "all": {
+   "download_base": 60
+  },
+  "by_role": {
+   "L": {
+    "download_base": 30
+   },
+   "R": {
+    "download_base": 30
+   }
+  }
+ },
+ "by_paraphrase": {
+  "0": {
+   "a": 3,
+   "b": 0,
+   "c": 0,
+   "d": 5,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.08110189122097011,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.08110189122097007
+   },
+   "n": 8,
+   "rates": {
+    "needed": 0.375,
+    "optional": 0.375
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "1": {
+   "a": 2,
+   "b": 0,
+   "c": 0,
+   "d": 4,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.13011142930072175,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.13011142930072178
+   },
+   "n": 6,
+   "rates": {
+    "needed": 0.3333333333333333,
+    "optional": 0.3333333333333333
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "2": {
+   "a": 4,
+   "b": 0,
+   "c": 0,
+   "d": 2,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.13011142930072178,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.13011142930072175
+   },
+   "n": 6,
+   "rates": {
+    "needed": 0.6666666666666666,
+    "optional": 0.6666666666666666
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  }
+ },
+ "by_role": {
+  "L": {
+   "a": 5,
+   "b": 0,
+   "c": 0,
+   "d": 5,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": 0.0,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.0
+   },
+   "n": 10,
+   "rates": {
+    "needed": 0.5,
+    "optional": 0.5
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "R": {
+   "a": 4,
+   "b": 0,
+   "c": 0,
+   "d": 6,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.055506559972577876,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.055506559972577876
+   },
+   "n": 10,
+   "rates": {
+    "needed": 0.4,
+    "optional": 0.4
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  }
+ },
+ "by_task": {
+  "t01": {
+   "a": 1,
+   "b": 0,
+   "c": 0,
+   "d": 1,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": 0.0,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.0
+   },
+   "n": 2,
+   "rates": {
+    "needed": 0.5,
+    "optional": 0.5
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t02": {
+   "a": 1,
+   "b": 0,
+   "c": 0,
+   "d": 0,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.7934506856227626,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.7934506856227626
+   },
+   "n": 1,
+   "rates": {
+    "needed": 1.0,
+    "optional": 1.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t03": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 1,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.7934506856227626,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.7934506856227626
+   },
+   "n": 1,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t04": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 1,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.7934506856227626,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.7934506856227626
+   },
+   "n": 1,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t05": {
+   "a": 2,
+   "b": 0,
+   "c": 0,
+   "d": 0,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.657619772493347,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.657619772493347
+   },
+   "n": 2,
+   "rates": {
+    "needed": 1.0,
+    "optional": 1.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t06": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 2,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.6576197724933469,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.6576197724933469
+   },
+   "n": 2,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t07": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 2,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.6576197724933469,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.6576197724933469
+   },
+   "n": 2,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t08": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 2,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.6576197724933469,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.6576197724933469
+   },
+   "n": 2,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t09": {
+   "a": 0,
+   "b": 0,
+   "c": 0,
+   "d": 2,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.6576197724933469,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.6576197724933469
+   },
+   "n": 2,
+   "rates": {
+    "needed": 0.0,
+    "optional": 0.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t10": {
+   "a": 1,
+   "b": 0,
+   "c": 0,
+   "d": 0,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.7934506856227626,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.7934506856227626
+   },
+   "n": 1,
+   "rates": {
+    "needed": 1.0,
+    "optional": 1.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t11": {
+   "a": 2,
+   "b": 0,
+   "c": 0,
+   "d": 0,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.657619772493347,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.657619772493347
+   },
+   "n": 2,
+   "rates": {
+    "needed": 1.0,
+    "optional": 1.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  },
+  "t12": {
+   "a": 2,
+   "b": 0,
+   "c": 0,
+   "d": 0,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.657619772493347,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.657619772493347
+   },
+   "n": 2,
+   "rates": {
+    "needed": 1.0,
+    "optional": 1.0
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  }
+ },
+ "cell": {
+  "branch": "task_string",
+  "hint": false,
+  "model": "claude-haiku-5-5"
+ },
+ "decoy": {
+  "episodes_carried": 0,
+  "episodes_served": 0
+ },
+ "flow": {
+  "needed": {
+   "used_by_parent=1, in_handoff=1, in_helper_request=0": 11,
+   "used_by_parent=1, in_handoff=1, in_helper_request=1": 9
+  },
+  "optional": {
+   "used_by_parent=1, in_handoff=1, in_helper_request=0": 11,
+   "used_by_parent=1, in_handoff=1, in_helper_request=1": 9
+  }
+ },
+ "hub_relays": {
+  "helpers": {
+   "needed": 0,
+   "optional": 0
+  },
+  "needed": 0,
+  "optional": 0
+ },
+ "mediator": {
+  "needed": {
+   "info_first": {
+    "carried": 8,
+    "helpers": 30
+   },
+   "no_info_first": {
+    "carried": 15,
+    "helpers": 30
+   }
+  },
+  "optional": {
+   "info_first": {
+    "carried": 8,
+    "helpers": 30
+   },
+   "no_info_first": {
+    "carried": 15,
+    "helpers": 30
+   }
+  }
+ },
+ "near_misses": {
+  "needed": 0,
+  "optional": 0,
+  "ties": 0
+ },
+ "note": "Exploratory and descriptive: intervals only, no significance claims (design/h1-protocol.md, 'Multiplicity').",
+ "opportunity": {
+  "a": 9,
+  "b": 0,
+  "c": 0,
+  "d": 0,
+  "difference": 0.0,
+  "interval": {
+   "level": 0.95,
+   "lower": -0.29914504841954415,
+   "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+   "upper": 0.29914504841954415
+  },
+  "n": 9,
+  "rates": {
+   "needed": 1.0,
+   "optional": 1.0
+  },
+  "test": {
+   "alpha": 0.025,
+   "alternative": "needed > optional, one-sided",
+   "name": "exact McNemar",
+   "p": 1.0,
+   "rejects": false
+  }
+ },
+ "own_vs_brief": {
+  "needed": {
+   "both": 0,
+   "helpers": 30,
+   "neither": 22,
+   "used_brief": 8,
+   "used_own": 0
+  },
+  "optional": {
+   "both": 0,
+   "helpers": 30,
+   "neither": 22,
+   "used_brief": 8,
+   "used_own": 0
+  }
+ },
+ "parent_used_both": {
+  "a": 9,
+  "b": 0,
+  "c": 0,
+  "d": 11,
+  "difference": 0.0,
+  "interval": {
+   "level": 0.95,
+   "lower": -0.016112515805281988,
+   "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+   "upper": 0.016112515805281988
+  },
+  "n": 20,
+  "rates": {
+   "needed": 0.45,
+   "optional": 0.45
+  },
+  "test": {
+   "alpha": 0.025,
+   "alternative": "needed > optional, one-sided",
+   "name": "exact McNemar",
+   "p": 1.0,
+   "rejects": false
+  }
+ },
+ "primary_set": [
+  "re001",
+  "re002",
+  "re003",
+  "re004",
+  "re005",
+  "re006",
+  "re007",
+  "re008",
+  "re009",
+  "re010",
+  "re011",
+  "re012",
+  "re013",
+  "re014",
+  "re015",
+  "re016",
+  "re017",
+  "re018",
+  "re019",
+  "re020"
+ ],
+ "robustness": {
+  "by_task": {
+   "t01": {
+    "a": 1,
+    "b": 0,
+    "c": 0,
+    "d": 1,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": 0.0,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.0
+    },
+    "n": 2,
+    "rates": {
+     "needed": 0.5,
+     "optional": 0.5
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t02": {
+    "a": 1,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.7934506856227626,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.7934506856227626
+    },
+    "n": 1,
+    "rates": {
+     "needed": 1.0,
+     "optional": 1.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t03": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 1,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.7934506856227626,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.7934506856227626
+    },
+    "n": 1,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t04": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 1,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.7934506856227626,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.7934506856227626
+    },
+    "n": 1,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t05": {
+    "a": 2,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.657619772493347,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.657619772493347
+    },
+    "n": 2,
+    "rates": {
+     "needed": 1.0,
+     "optional": 1.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t06": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 2,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.6576197724933469,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.6576197724933469
+    },
+    "n": 2,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t07": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 2,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.6576197724933469,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.6576197724933469
+    },
+    "n": 2,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t08": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 2,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.6576197724933469,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.6576197724933469
+    },
+    "n": 2,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t09": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 2,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.6576197724933469,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.6576197724933469
+    },
+    "n": 2,
+    "rates": {
+     "needed": 0.0,
+     "optional": 0.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t10": {
+    "a": 1,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.7934506856227626,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.7934506856227626
+    },
+    "n": 1,
+    "rates": {
+     "needed": 1.0,
+     "optional": 1.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t11": {
+    "a": 2,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.657619772493347,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.657619772493347
+    },
+    "n": 2,
+    "rates": {
+     "needed": 1.0,
+     "optional": 1.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   },
+   "t12": {
+    "a": 2,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "difference": 0.0,
+    "interval": {
+     "level": 0.95,
+     "lower": -0.657619772493347,
+     "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+     "upper": 0.657619772493347
+    },
+    "n": 2,
+    "rates": {
+     "needed": 1.0,
+     "optional": 1.0
+    },
+    "test": {
+     "alpha": 0.025,
+     "alternative": "needed > optional, one-sided",
+     "name": "exact McNemar",
+     "p": 1.0,
+     "rejects": false
+    }
+   }
+  },
+  "sign_test_tasks": {
+   "alternative": "greater",
+   "n_neg": 0,
+   "n_pos": 0,
+   "n_zero": 12,
+   "p": 1.0
+  },
+  "task_bootstrap": {
+   "clusters": 12,
+   "descriptive": true,
+   "level": 0.95,
+   "lower": 0.0,
+   "resamples": 2000,
+   "seed": 20261107,
+   "unit": "task",
+   "upper": 0.0
+  }
+ },
+ "shared_cause": {
+  "helpers": {
+   "needed": 0,
+   "optional": 0
+  },
+  "without_rule": {
+   "a": 9,
+   "b": 0,
+   "c": 0,
+   "d": 11,
+   "difference": 0.0,
+   "interval": {
+    "level": 0.95,
+    "lower": -0.016112515805281988,
+    "method": "Newcombe method 10 (hybrid score, paired, no continuity correction)",
+    "upper": 0.016112515805281988
+   },
+   "n": 20,
+   "rates": {
+    "needed": 0.45,
+    "optional": 0.45
+   },
+   "test": {
+    "alpha": 0.025,
+    "alternative": "needed > optional, one-sided",
+    "name": "exact McNemar",
+    "p": 1.0,
+    "rejects": false
+   }
+  }
+ },
+ "stages": {
+  "all": {
+   "n": 20,
+   "needed": {
+    "in_handoff": 1.0,
+    "in_helper_request": 0.45,
+    "served": 1.0,
+    "used_by_parent": 1.0
+   },
+   "optional": {
+    "in_handoff": 1.0,
+    "in_helper_request": 0.45,
+    "served": 1.0,
+    "used_by_parent": 1.0
+   }
+  },
+  "by_role": {
+   "L": {
+    "n": 10,
+    "needed": {
+     "in_handoff": 1.0,
+     "in_helper_request": 0.5,
+     "served": 1.0,
+     "used_by_parent": 1.0
+    },
+    "optional": {
+     "in_handoff": 1.0,
+     "in_helper_request": 0.5,
+     "served": 1.0,
+     "used_by_parent": 1.0
+    }
+   },
+   "R": {
+    "n": 10,
+    "needed": {
+     "in_handoff": 1.0,
+     "in_helper_request": 0.4,
+     "served": 1.0,
+     "used_by_parent": 1.0
+    },
+    "optional": {
+     "in_handoff": 1.0,
+     "in_helper_request": 0.4,
+     "served": 1.0,
+     "used_by_parent": 1.0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+  "what": "Table 3 (F32-F34): the honest-twin fixtures with gen3's REAL declaration path (admin create_org + member-add orgs.jsonl rows + repo-scoped access-200), at gen2's pre-warm-up placement (T0 = day 5.787), plus the G4 just-minted declared lab, scored by H7, A, B AND C3 (no-warm-up and 7-day-warm-up). Full p_same x condition grid from ONE results file. No model calls.",
+  "groups": "G1 team_divider (fresh, UNDECLARED, dividing teamdiv); G2 approved_lab (aged, DECLARED, dividing radiant) [control]; G3 cohort7 (fresh, undeclared, OVERLAP vocalis) [control]; G4 newlab (fresh, DECLARED via real org rows, dividing evalhold in-envelope). Each cell entry lists which groups the detector flags/challenges.",
+  "grid": {
+    "note": "G2 (approved_lab) is cleared/exempt by every detector in every cell (aged -> no co-registration for H7/A/B; declared in-envelope -> exempt for C3), so it is omitted from the cells below. C3_7dwarmup is 0 (empty) in EVERY cell because the fixtures sit at day 5.8 < the 7-day warm-up -> confirmed, see confirms.",
+    "burst_0.0": {"H7": ["G1", "G4"], "A_refined": ["G1", "G4"], "B": ["G1", "G3", "G4"], "C3_nowarmup": ["G1"]},
+    "burst_0.2": {"H7": ["G1", "G4"], "A_refined": ["G1", "G4"], "B": ["G1", "G3", "G4"], "C3_nowarmup": ["G1"]},
+    "burst_0.5": {"H7": ["G4"], "A_refined": ["G4"], "B": ["G1", "G3", "G4"], "C3_nowarmup": []},
+    "burst_0.8": {"H7": ["G4"], "A_refined": ["G4"], "B": ["G1", "G3", "G4"], "C3_nowarmup": []},
+    "spread_0.0": {"H7": [], "A_refined": ["G1"], "B": [], "C3_nowarmup": ["G1"]},
+    "spread_0.2": {"H7": [], "A_refined": ["G1"], "B": [], "C3_nowarmup": ["G1"]},
+    "spread_0.5": {"H7": [], "A_refined": [], "B": [], "C3_nowarmup": []},
+    "spread_0.8": {"H7": [], "A_refined": [], "B": [], "C3_nowarmup": []}
+  },
+  "by_group": {
+    "G1_undeclared_divider": "challenged/paged when it divides disjointly (low p_same). C3 catches it in burst AND spread (0.0, 0.2); A catches burst (0.0,0.2) + spread (0.0,0.2); H7 catches burst only (0.0,0.2); B flags it at ALL p_same in burst (convergence ignores partition/overlap). At high p_same (0.5,0.8) the partition detectors (H7/A/C3) clear it (P>=1.6) but B still flags it.",
+    "G4_just_minted_declared_lab": "FALSE-PAGED by H7, A and B in burst at EVERY p_same (0.0-0.8), because G4 is a fixed disjoint divider and these detectors ignore declaration (H7, B) or count only the admin's request_access (A -> declared_frac 0.12). EXEMPT by C3 in every cell (orgs.jsonl membership -> declared_frac 1.0). In spread, H7/B clear G4 (no burst) and A clears it (first-pulls split into 3600-s windows of <5).",
+    "G3_overlap_cohort": "flagged ONLY by B (convergence), at every p_same in burst; cleared by the partition detectors (H7/A/C3) because it overlaps (high P). Cleared by all in spread.",
+    "G2_approved_lab": "cleared/exempt by every detector in every cell (aged + declared in-envelope)."
+  },
+  "key_findings": [
+    "With REAL declaration records, C3 is the ONLY detector that EXEMPTS the just-minted declared lab G4; H7 and B ignore declaration and A counts only the admin's request_access (declared_frac 0.12), so all three false-page it in burst. This REVERSES the earlier read that 'A exempted the declared lab' -- that was the gen2 artefact (member-level requests the hub refuses, no orgs.jsonl rows).",
+    "C3 and A catch the UNDECLARED divider in spread where H7 and B need the tight sign-up burst; B over-flags (it flags the overlap cohort G3 and the divider at every p_same, because it keys on convergence not partition).",
+    "SHAM-ORG HOLE (concrete): C3 exempts G4 because it declared in-envelope -> a sham that declares enough seats passes C3 identically. The fix is provenance (declared AND standing), not declaration alone.",
+    "C3's 7-day warm-up zeroes every cell here only because the fixtures sit at day 5.8; the post-warm-up behaviour (C3 challenges the divider) is results/twin_postwarmup.json (F71)."
+  ],
+  "confirms_for_5_5": {
+    "spread_A_clears_G4": "YES. G4's 8 first-pulls in spread span 5476 s and split into greedy 3600-s windows of sizes [4, 4] -- below A's k=5 floor. (G1's 10 accounts still form a >=5 window, n=7, so A pages G1.)",
+    "C3_warmup_zero": "YES. C3-with-7-day-warm-up is 0 in every cell only because the fixtures are at day 5.8 < 7; the warm-up exempts them. F71 has the post-warm-up behaviour."
+  },
+  "caveat": "Synthetic minimal-world fixtures (rng seed 42), n=1 per cell; declared controls carry real orgs.jsonl rows; G1/G4 each divide a repo of their own (no concurrent honest first-pullers dilute P).",
+  "spend": "$0 (synthetic generation + CPU scoring)."
+}

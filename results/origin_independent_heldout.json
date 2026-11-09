@@ -1,0 +1,22 @@
+{
+  "measured_eastern": "2026-11-08 ~01:55 EST",
+  "detector": "origin-independent resource-scoped partition (Explorer A, scratchpad/disjoint_resource.py)",
+  "rule": "group accounts by gated repo pulled within W=3600s (NO origin field); PAGE if size>=5, distinct>=4, partition P<1.6, FRESH>=0.8 (fraction of cohort created in-window), DECLARED<=0.2 (fraction using org-scoped access). Non-artefact separators only (UA and 13s cadence excluded).",
+  "note": "Not pre-registered (built after seeing dev swarm); this is an out-of-sample check on the same held-out seeds used for H7.",
+  "held_out_swarm_103_112": {
+    "naive": {"swarm_accounts_caught": 69, "false_pages": 3, "approved_lab_false_pages": 1},
+    "refined_with_separators": {"swarm_accounts_caught": 69, "false_pages": 0, "approved_lab_false_pages": 0},
+    "completed_attacks_paged": "7/7",
+    "fresh_separation": "swarm cohorts fresh=0.91-1.00; cleared honest/approved-lab cohorts fresh=0.00"
+  },
+  "held_out_honest_301_302": {
+    "naive": {"false_pages": 1, "approved_lab_false_pages": 1},
+    "refined_with_separators": {"false_pages": 0, "approved_lab_false_pages": 0}
+  },
+  "complementarity_vs_h7": "H7 caught 78/86 accounts (incl. non-pulling orchestrator via co-registration, needs shared origin); origin-independent caught 69 (pullers only, survives origin rotation). Union covers more; intended as two planes of the same v2.",
+  "limits": [
+    "Flags only accounts that actually pulled shards; a non-pulling orchestrator needs the co-registration plane (H7).",
+    "FRESH is defeated by pre-aged accounts (identity-marketplace cost -> pushes toward account-creation friction).",
+    "Still assumes the swarm partitions; an overlap-to-evade swarm (high P) is not caught by the partition plane (but pays a quota cost)."
+  ]
+}

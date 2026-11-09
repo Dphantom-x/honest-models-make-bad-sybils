@@ -1,0 +1,1103 @@
+{
+  "what": "T013 held-out check: false pages on honest A0 seeds the thresholds never saw (design/alarm.md, 'Checking it'; predictions.md H4's frozen thresholds)",
+  "frozen": {
+    "path": "monitor/thresholds.json",
+    "sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1",
+    "frozen_at": "2026-11-08T02:20:59+00:00",
+    "inputs_sha256": "4e5ac9122704b0d02ef9837a62f5727b89f94ce15991bc3340f4dce20a0a282f",
+    "pairs": {
+      "fast": {
+        "theta2": 0.5,
+        "theta1": 0.5
+      },
+      "slow": {
+        "theta2": 0.5,
+        "theta1": 0.5
+      }
+    },
+    "theta3": 10.0,
+    "breadth": {
+      "repos_per_hour": 526.0,
+      "endpoints_per_hour": 8.0
+    },
+    "calibrated": true
+  },
+  "window": {
+    "evaluation_days": [
+      7,
+      21
+    ],
+    "warmup_days_excluded": 7,
+    "day_convention": "monitor.alarm.tick_day: a line at tick T counts for day ceil(T / 86400) - 1"
+  },
+  "counting": {
+    "source": "alerts.jsonl and truth (population, archetype) through eval/score.py's alarm_entries, kept_map, is_true_alarm and family_label",
+    "page": "a family line entering Sev-2 or Sev-1 from Sev-3 or quieter (3 -> 2 -> 1 is one page)",
+    "sev3_queue_item": "a family line entering Sev-3 from Sev-4, or a hub-wide Sev-3 line (family_id null)",
+    "eval_score_sha256": "90c89deb42cfade0c52b24260413a449db47266df06732647d91aff114fe16e8"
+  },
+  "runs": 2,
+  "evaluation_days": 30,
+  "family_days": 112163,
+  "levels": {
+    "sev1": {
+      "count": 0,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 0.0,
+      "per_week": 0.0,
+      "per_day_upper95": 0.1,
+      "per_week_upper95": 0.7000000000000001,
+      "per_family_day_upper95": 2.6746788156522205e-05,
+      "method": "rule of three (3/n days)",
+      "budget_per_day": 0.03333333333333333,
+      "within_budget": true,
+      "bound_within_budget": false
+    },
+    "sev2": {
+      "count": 0,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 0.0,
+      "per_week": 0.0,
+      "per_day_upper95": 0.1,
+      "per_week_upper95": 0.7000000000000001,
+      "per_family_day_upper95": 2.6746788156522205e-05,
+      "method": "rule of three (3/n days)",
+      "budget_per_day": 0.14285714285714285,
+      "within_budget": true,
+      "bound_within_budget": true
+    },
+    "pages_sev2_or_above": {
+      "count": 0,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 0.0,
+      "per_week": 0.0,
+      "per_day_upper95": 0.1,
+      "per_week_upper95": 0.7000000000000001,
+      "per_family_day_upper95": 2.6746788156522205e-05,
+      "method": "rule of three (3/n days)",
+      "budget_per_day": 0.14285714285714285,
+      "within_budget": true,
+      "bound_within_budget": true
+    },
+    "sev3_family_entries": {
+      "count": 140,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 4.666666666666667,
+      "per_week": 32.666666666666664,
+      "per_day_upper95": 5.369444481668197,
+      "per_week_upper95": 37.58611137167738,
+      "per_day_bootstrap95": [
+        3.7,
+        5.6
+      ],
+      "per_family_day": 0.0012481834473043695,
+      "per_family_day_wilson95": [
+        0.001057934274460765,
+        0.0014725948474179097
+      ],
+      "method": "exact Poisson upper bound; bootstrap over (run, day)"
+    },
+    "sev3_hub_wide": {
+      "count": 0,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 0.0,
+      "per_week": 0.0,
+      "per_day_upper95": 0.1,
+      "per_week_upper95": 0.7000000000000001,
+      "per_family_day_upper95": 2.6746788156522205e-05,
+      "method": "rule of three (3/n days)"
+    },
+    "sev3_queue_items": {
+      "count": 140,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 4.666666666666667,
+      "per_week": 32.666666666666664,
+      "per_day_upper95": 5.369444481668197,
+      "per_week_upper95": 37.58611137167738,
+      "per_day_bootstrap95": [
+        3.7,
+        5.6
+      ],
+      "per_family_day": 0.0012481834473043695,
+      "per_family_day_wilson95": [
+        0.001057934274460765,
+        0.0014725948474179097
+      ],
+      "method": "exact Poisson upper bound; bootstrap over (run, day)",
+      "budget_per_day": 10.0,
+      "within_budget": true,
+      "bound_within_budget": true,
+      "max_per_day": 10,
+      "days_over_budget": 0,
+      "note": "every entry into Sev-3 (a family can reset and re-enter within a day) plus hub-wide Sev-3 lines"
+    },
+    "sev3_queue_family_days": {
+      "count": 133,
+      "days": 30,
+      "family_days": 112163,
+      "per_day": 4.433333333333334,
+      "per_week": 31.033333333333335,
+      "per_day_upper95": 5.119730006882674,
+      "per_week_upper95": 35.83811004817871,
+      "per_day_bootstrap95": [
+        3.533333333333333,
+        5.3
+      ],
+      "per_family_day": 0.001185774274939151,
+      "per_family_day_wilson95": [
+        0.0010007344174415278,
+        0.0014049806344506998
+      ],
+      "method": "exact Poisson upper bound; bootstrap over (run, day)",
+      "budget_per_day": 10.0,
+      "within_budget": true,
+      "bound_within_budget": true,
+      "max_per_day": 10,
+      "days_over_budget": 0,
+      "note": "distinct families entering Sev-3 per day, plus hub-wide Sev-3 lines: the unit theta3 is calibrated on"
+    }
+  },
+  "by_lookalike": {
+    "ci_shared_token": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 45,
+      "pages": 0,
+      "sev3_family_days": 43,
+      "families": 12,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "hosted_sandbox": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 35,
+      "pages": 0,
+      "sev3_family_days": 33,
+      "families": 10,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "inference_fleet": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 16,
+      "pages": 0,
+      "sev3_family_days": 15,
+      "families": 4,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "normal:researcher": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 1,
+      "pages": 0,
+      "sev3_family_days": 1,
+      "families": 1,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "parallel_agents": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 22,
+      "pages": 0,
+      "sev3_family_days": 22,
+      "families": 6,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "retry_wave": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 8,
+      "pages": 0,
+      "sev3_family_days": 6,
+      "families": 1,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    },
+    "solo_scraper": {
+      "sev1_entries": 0,
+      "sev2_entries": 0,
+      "sev3_entries": 13,
+      "pages": 0,
+      "sev3_family_days": 13,
+      "families": 2,
+      "pages_rate": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      }
+    }
+  },
+  "page_examples": [],
+  "per_run": [
+    {
+      "run": "A0hold/301",
+      "days": 22.0,
+      "evaluation_days": [
+        7,
+        21
+      ],
+      "family_days": 54596,
+      "families_per_day_mean": 3639.73,
+      "complete_eval_days": 15,
+      "false_entries": {
+        "1": 0,
+        "2": 0,
+        "3": 68,
+        "pages": 0,
+        "hub_sev3": 0,
+        "queue": 68,
+        "queue_families": 63
+      },
+      "warmup_false_entries": {
+        "1": 0,
+        "2": 0,
+        "3": 26,
+        "pages": 0,
+        "hub_sev3": 1,
+        "queue": 27,
+        "queue_families": 26
+      },
+      "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1",
+      "eval_score_cross_check": {
+        "exit": 0,
+        "stdout": "score: A0/301: TTD -, TTP -, TTE - s; progress at TTP -; coverage -; false pages 0 (Sev-1 0, Sev-2 0), false Sev-3 94, hub-wide Sev-3 1 over 22 days -> runs\\A0hold\\301\\run_summary.json",
+        "stderr": "",
+        "score_py_whole_run": {
+          "1": 0,
+          "2": 0,
+          "3": 94,
+          "pages": 0
+        },
+        "t013_whole_run": {
+          "1": 0,
+          "2": 0,
+          "3": 94,
+          "pages": 0
+        },
+        "hub_wide_sev3_score_py": 1,
+        "agree": true
+      },
+      "alarm_summary": {
+        "lines": 181,
+        "hub_wide_lines": 2,
+        "families_by_max_level": {
+          "3": 18,
+          "4": 10361
+        },
+        "families_paged": []
+      },
+      "forecaster": {
+        "name": "timesfm",
+        "status": "loaded",
+        "reason": null,
+        "forecasts": 504
+      },
+      "inputs": {
+        "monitor/alerts.jsonl": "1e074834d5d1e68cb2655774239ddcd157064e35d8ba276af62a15c77cdfa084",
+        "monitor/family_days.jsonl": "13b5f8e7c12c0a68071a3765b3e898cbd8c9903401304106e25c7d7c18b159d9",
+        "truth/truth.json": "a536ac769602c47020ea7182c4f34de59b29438968543c56588c0985d40db58e",
+        "truth/sessions.json": "2e0b7c958d0434fadd5e273f1f46a50e30f8ede7a6f952c27605f747bac3a40a"
+      }
+    },
+    {
+      "run": "A0hold/302",
+      "days": 22.0,
+      "evaluation_days": [
+        7,
+        21
+      ],
+      "family_days": 57567,
+      "families_per_day_mean": 3837.8,
+      "complete_eval_days": 15,
+      "false_entries": {
+        "1": 0,
+        "2": 0,
+        "3": 72,
+        "pages": 0,
+        "hub_sev3": 0,
+        "queue": 72,
+        "queue_families": 70
+      },
+      "warmup_false_entries": {
+        "1": 0,
+        "2": 0,
+        "3": 37,
+        "pages": 0,
+        "hub_sev3": 0,
+        "queue": 37,
+        "queue_families": 37
+      },
+      "thresholds_sha256": "8a8598ccbee4b1af4e70731043890da58db41c6031471f7c5c2e0bca3e7adfa1",
+      "eval_score_cross_check": {
+        "exit": 0,
+        "stdout": "score: A0/302: TTD -, TTP -, TTE - s; progress at TTP -; coverage -; false pages 0 (Sev-1 0, Sev-2 0), false Sev-3 109, hub-wide Sev-3 0 over 22 days -> runs\\A0hold\\302\\run_summary.json",
+        "stderr": "",
+        "score_py_whole_run": {
+          "1": 0,
+          "2": 0,
+          "3": 109,
+          "pages": 0
+        },
+        "t013_whole_run": {
+          "1": 0,
+          "2": 0,
+          "3": 109,
+          "pages": 0
+        },
+        "hub_wide_sev3_score_py": 0,
+        "agree": true
+      },
+      "alarm_summary": {
+        "lines": 207,
+        "hub_wide_lines": 0,
+        "families_by_max_level": {
+          "3": 20,
+          "4": 9957
+        },
+        "families_paged": []
+      },
+      "forecaster": {
+        "name": "timesfm",
+        "status": "loaded",
+        "reason": null,
+        "forecasts": 504
+      },
+      "inputs": {
+        "monitor/alerts.jsonl": "6cad7ed7ba451488482370976c02dfcd006ebfb432de74a3de579723e5bd95b0",
+        "monitor/family_days.jsonl": "d3385921a16ca89d0d45c073f7ad1d47bbb744566f14f0e83e665bf039e5a330",
+        "truth/truth.json": "a47ba49fbe21c9a7236ab0db18b2dcf06bb43c9a2987cd1f7b9cc01c0980a08e",
+        "truth/sessions.json": "e7258067ecee616c7cecff91a251765e06848d065e54e73f7a42ac0acd00a80a"
+      }
+    }
+  ],
+  "family_day_statistics_check": {
+    "family_days": 112163,
+    "days": 30,
+    "runs": 2,
+    "effective_independent_days": {
+      "simulated_days": 30,
+      "runs": 2
+    },
+    "families_per_day": {
+      "mean": 3738.7667,
+      "min": 2716,
+      "max": 5108
+    },
+    "runs_used": [
+      "A0hold/301",
+      "A0hold/302"
+    ],
+    "effective_days_note": "independent simulated days are the (run, day) units; days within one run share accounts and may be correlated, so runs (seeds) are the most conservative count",
+    "levels": {
+      "2": {
+        "false_pages": 0,
+        "per_family_day": {
+          "rate": 0.0,
+          "upper95": 2.6746788156522205e-05,
+          "method": "rule of three"
+        },
+        "per_day": {
+          "rate": 0.0,
+          "upper95": 0.1,
+          "method": "rule of three"
+        },
+        "budget": {
+          "per_day": 0.14285714285714285,
+          "per_family_day": 3.820969702579807e-05
+        },
+        "bound_within_budget": true
+      },
+      "1": {
+        "false_pages": 0,
+        "per_family_day": {
+          "rate": 0.0,
+          "upper95": 2.6746788156522205e-05,
+          "method": "rule of three"
+        },
+        "per_day": {
+          "rate": 0.0,
+          "upper95": 0.1,
+          "method": "rule of three"
+        },
+        "budget": {
+          "per_day": 0.03333333333333333,
+          "per_family_day": 8.915595972686215e-06
+        },
+        "bound_within_budget": false
+      }
+    },
+    "sev3": {
+      "theta3": 10.0,
+      "calibrated": true,
+      "queue_family_days": 225,
+      "per_day": {
+        "rate": 7.5,
+        "max": 12,
+        "upper95": 8.376096743797879,
+        "method": "Poisson exact"
+      },
+      "at_cap_per_day": 0.0,
+      "hub_sev3_per_day": 0.0,
+      "budget_per_day": 10,
+      "within_budget": true,
+      "bound_within_budget": true
+    },
+    "breadth": {
+      "cutoff": {
+        "repos_per_hour": 526.0,
+        "endpoints_per_hour": 8.0
+      },
+      "calibrated": true,
+      "family_hours": 209239,
+      "above": {
+        "repos": 221,
+        "endpoints": 146
+      },
+      "share_above": {
+        "repos": 0.0010562084506234497,
+        "endpoints": 0.0006977666687376636
+      }
+    }
+  },
+  "script": {
+    "path": "scripts/t013.py",
+    "sha256": "15dd5805c5ed8196e97e72414cb74104e915922b33d71b51cb3df5d6b9c347e5"
+  },
+  "written_at": "2026-11-08T02:55:11+00:00",
+  "h4": {
+    "ran": true,
+    "eval_h4_sha256": "4cf77d5070c9a12031a6542c922f9897f0d47b4afd0e0feabc669f8172318e70",
+    "per_run": [
+      {
+        "run": "A0hold/301",
+        "replay_check": {
+          "identical": true,
+          "exact": false,
+          "relabeling_only": true,
+          "n_a": 181,
+          "n_b": 181,
+          "first_diff": null
+        },
+        "two_plane": {
+          "pages": 0,
+          "sev1_entries": 0,
+          "sev2_entries": 0,
+          "sev3_entries": 68
+        },
+        "two_plane_replayed": {
+          "pages": 0,
+          "sev1_entries": 0,
+          "sev2_entries": 0,
+          "sev3_entries": 68
+        },
+        "any_two_classes": {
+          "pages": 1443,
+          "sev1_entries": 712,
+          "sev2_entries": 1372,
+          "sev3_entries": 0
+        }
+      },
+      {
+        "run": "A0hold/302",
+        "replay_check": {
+          "identical": true,
+          "exact": false,
+          "relabeling_only": true,
+          "n_a": 207,
+          "n_b": 207,
+          "first_diff": null
+        },
+        "two_plane": {
+          "pages": 0,
+          "sev1_entries": 0,
+          "sev2_entries": 0,
+          "sev3_entries": 72
+        },
+        "two_plane_replayed": {
+          "pages": 0,
+          "sev1_entries": 0,
+          "sev2_entries": 0,
+          "sev3_entries": 72
+        },
+        "any_two_classes": {
+          "pages": 1483,
+          "sev1_entries": 721,
+          "sev2_entries": 1419,
+          "sev3_entries": 0
+        }
+      }
+    ],
+    "note": "two_plane is the monitor's own alerts.jsonl; the replay of it must match line for line (replay_check)",
+    "primary": {
+      "two_plane": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      },
+      "two_plane_replayed": {
+        "count": 0,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 0.0,
+        "per_week": 0.0,
+        "per_day_upper95": 0.1,
+        "per_week_upper95": 0.7000000000000001,
+        "per_family_day_upper95": 2.6746788156522205e-05,
+        "method": "rule of three (3/n days)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": true,
+        "bound_within_budget": true
+      },
+      "any_two_classes": {
+        "count": 2926,
+        "days": 30,
+        "family_days": 112163,
+        "per_day": 97.53333333333333,
+        "per_week": 682.7333333333333,
+        "per_day_upper95": 100.5518115610439,
+        "per_week_upper95": 703.8626809273073,
+        "per_day_bootstrap95": [
+          83.29916666666666,
+          112.63499999999999
+        ],
+        "per_family_day": 0.026087034048661323,
+        "per_family_day_wilson95": [
+          0.02517032386631127,
+          0.027036205110173486
+        ],
+        "method": "exact Poisson upper bound; bootstrap over (run, day)",
+        "budget_per_day": 0.14285714285714285,
+        "within_budget": false,
+        "bound_within_budget": false
+      },
+      "difference_any_two_minus_two_plane": {
+        "pages": 2926,
+        "per_week": 682.7333333333333
+      }
+    },
+    "by_lookalike": {
+      "approved_lab": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 15,
+          "per_week": 3.5,
+          "per_week_upper95": 5.389330277365821,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "ci_shared_token": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 7,
+          "per_week": 1.6333333333333333,
+          "per_week_upper95": 3.067893220567494,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "cohort": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 58,
+          "per_week": 13.533333333333333,
+          "per_week_upper95": 16.84126173897826,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "hosted_sandbox": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 138,
+          "per_week": 32.2,
+          "per_week_upper95": 37.08697921333427,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "inference_fleet": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 31,
+          "per_week": 7.233333333333333,
+          "per_week_upper95": 9.762113753317447,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "leak_scanner": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 13,
+          "per_week": 3.033333333333333,
+          "per_week_upper95": 4.822666117666529,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "mirror_proxy": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 5,
+          "per_week": 1.1666666666666667,
+          "per_week_upper95": 2.4530414787063584,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "mobile_satellite": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 25,
+          "per_week": 5.833333333333333,
+          "per_week_upper95": 8.147085372982282,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:browser": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 39,
+          "per_week": 9.1,
+          "per_week_upper95": 11.88593862930085,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:ci": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 1015,
+          "per_week": 236.83333333333334,
+          "per_week_upper95": 249.43138150636204,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:cli": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 55,
+          "per_week": 12.833333333333334,
+          "per_week_upper95": 16.065170784059916,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:library": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 283,
+          "per_week": 66.03333333333333,
+          "per_week_upper95": 72.864477413023,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:org": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 8,
+          "per_week": 1.8666666666666667,
+          "per_week_upper95": 3.368084933545806,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "normal:researcher": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 401,
+          "per_week": 93.56666666666666,
+          "per_week_upper95": 101.62550206537263,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "notebook_hopper": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 102,
+          "per_week": 23.8,
+          "per_week_upper95": 28.056544963952465,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "parallel_agents": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 295,
+          "per_week": 68.83333333333333,
+          "per_week_upper95": 75.79976605832991,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "release_crowd": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 35,
+          "per_week": 8.166666666666666,
+          "per_week_upper95": 10.8276315446959,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "retry_wave": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 16,
+          "per_week": 3.7333333333333334,
+          "per_week_upper95": 5.670276192850985,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "solo_scraper": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 372,
+          "per_week": 86.8,
+          "per_week_upper95": 94.57599067985761,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "teammate_repost": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 4,
+          "per_week": 0.9333333333333333,
+          "per_week_upper95": 2.1358211062154338,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      },
+      "tor_vpn": {
+        "two_plane": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "two_plane_replayed": {
+          "count": 0,
+          "per_week": 0.0,
+          "per_week_upper95": 0.7000000000000001,
+          "method": "rule of three (3/n days)"
+        },
+        "any_two_classes": {
+          "count": 9,
+          "per_week": 2.1,
+          "per_week_upper95": 3.6645504984936066,
+          "method": "exact Poisson upper bound; bootstrap over (run, day)"
+        }
+      }
+    },
+    "replay_faithful": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "what": "H7 two-plane census out of sample (F23): how many honest co-registration cohorts the RELATION plane alone flags, how many reach the IMPACT floor (>=4 distinct shards of one repo), and how many the full two-plane rule (adds partition P<1.6) pages. Shows H4's two-plane principle a second time (v1's 0 vs 2,926 honest pages was the first).",
+  "re_derived": "read-only with h7_score.py's load + cohorts + partition logic (prototypes/h7_score.py); thresholds k=5, W=600 s, IMPACT=4, PMAX=1.6. Backs facts-55.md F23.",
+  "heldout_301_302": {
+    "coregistration_cohorts": 7,
+    "past_4shard_floor": 4,
+    "P_values": [1.86, 2.50, 2.83, 3.25],
+    "h7_paged": 0,
+    "exact_one_sided_95_upper_per_cohort": 0.53
+  },
+  "fresh_303_305": {
+    "coregistration_cohorts": 5,
+    "past_4shard_floor": 3,
+    "P_values": [2.57, 2.71, 2.73],
+    "h7_paged": 0
+  },
+  "combined_301_305": {
+    "past_4shard_floor": 7,
+    "h7_paged": 0,
+    "exact_one_sided_95_upper": 0.35,
+    "note": "0 of 7 past-floor honest cohorts paged out of sample. Every honest cohort that reached the impact floor had partition P >= 1.86, well above the 1.6 line -- the partition plane, not co-registration, did the separating."
+  },
+  "two_plane_principle": "Co-registration ALONE (the relation plane) would flag 12 honest cohorts over 301-305 (7 + 5); 7 of them reach the impact floor. Adding the partition plane (P<1.6) pages 0 of those 7 -- honest cohorts overlap on popular shards (P 1.86-3.25), while the swarm partitions (P~1.0). This is the same 'requiring two planes makes victim-side detection affordable' result as v1's 0 vs 2,926 (H4), measured a second way.",
+  "caveats": "Offline (whole-run pooling), small n. The P=1.86 cohort on 301-302 is the closest honest approach to the 1.6 line in this census; the out-of-sample margin risk (calibration min 1.64; one P=1.59 cohort on 303 cleared by the FRESH gate) is reported in results/evade_rate_gemini31.json. Thresholds were set on the 8 calibration weeks (in-sample), reported separately.",
+  "spend": "$0 (CPU re-score of existing runs)."
+}

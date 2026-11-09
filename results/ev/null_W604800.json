@@ -1,0 +1,344 @@
+{
+ "window_s": 604800.0,
+ "emulate": true,
+ "who": "deny",
+ "stretch": null,
+ "runs": [
+  {
+   "run": "runs/A0null/401",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 25,
+    "E": 3.974,
+    "swarm_in_family": 0,
+    "honest_in_family": 13,
+    "window_accounts": 55
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/402",
+   "best": {
+    "repo": "forgeai/gated-weights-7b",
+    "n": 8,
+    "family": 8,
+    "covered": 8,
+    "E": 2.619,
+    "swarm_in_family": 0,
+    "honest_in_family": 8,
+    "window_accounts": 58
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/403",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 23,
+    "E": 3.298,
+    "swarm_in_family": 0,
+    "honest_in_family": 12,
+    "window_accounts": 101
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/404",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 24,
+    "E": 3.681,
+    "swarm_in_family": 0,
+    "honest_in_family": 12,
+    "window_accounts": 111
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/405",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 17,
+    "covered": 26,
+    "E": 4.572,
+    "swarm_in_family": 0,
+    "honest_in_family": 17,
+    "window_accounts": 72
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/406",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 25,
+    "E": 3.927,
+    "swarm_in_family": 0,
+    "honest_in_family": 12,
+    "window_accounts": 115
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/407",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 9,
+    "covered": 22,
+    "E": 4.348,
+    "swarm_in_family": 0,
+    "honest_in_family": 9,
+    "window_accounts": 39
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/408",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 8,
+    "covered": 17,
+    "E": 2.303,
+    "swarm_in_family": 0,
+    "honest_in_family": 8,
+    "window_accounts": 57
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/409",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 16,
+    "covered": 27,
+    "E": 4.948,
+    "swarm_in_family": 0,
+    "honest_in_family": 16,
+    "window_accounts": 125
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/410",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 17,
+    "covered": 27,
+    "E": 4.994,
+    "swarm_in_family": 0,
+    "honest_in_family": 17,
+    "window_accounts": 105
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/411",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 8,
+    "covered": 22,
+    "E": 4.287,
+    "swarm_in_family": 0,
+    "honest_in_family": 8,
+    "window_accounts": 32
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/412",
+   "best": {
+    "repo": "vocalis/speech-licensed-v1",
+    "n": 30,
+    "family": 10,
+    "covered": 23,
+    "E": 4.906,
+    "swarm_in_family": 0,
+    "honest_in_family": 10,
+    "window_accounts": 56
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/413",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 14,
+    "covered": 26,
+    "E": 4.481,
+    "swarm_in_family": 0,
+    "honest_in_family": 14,
+    "window_accounts": 103
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/414",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 25,
+    "E": 3.876,
+    "swarm_in_family": 0,
+    "honest_in_family": 13,
+    "window_accounts": 114
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/415",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 14,
+    "covered": 25,
+    "E": 4.055,
+    "swarm_in_family": 0,
+    "honest_in_family": 14,
+    "window_accounts": 105
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/416",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 14,
+    "covered": 22,
+    "E": 3.041,
+    "swarm_in_family": 0,
+    "honest_in_family": 14,
+    "window_accounts": 122
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/417",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 11,
+    "covered": 27,
+    "E": 4.56,
+    "swarm_in_family": 0,
+    "honest_in_family": 11,
+    "window_accounts": 118
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/418",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 22,
+    "E": 2.985,
+    "swarm_in_family": 0,
+    "honest_in_family": 12,
+    "window_accounts": 113
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/419",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 21,
+    "E": 2.729,
+    "swarm_in_family": 0,
+    "honest_in_family": 13,
+    "window_accounts": 70
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/420",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 11,
+    "covered": 20,
+    "E": 2.383,
+    "swarm_in_family": 0,
+    "honest_in_family": 11,
+    "window_accounts": 46
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/421",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 13,
+    "covered": 22,
+    "E": 2.925,
+    "swarm_in_family": 0,
+    "honest_in_family": 13,
+    "window_accounts": 117
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/422",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 12,
+    "covered": 24,
+    "E": 3.681,
+    "swarm_in_family": 0,
+    "honest_in_family": 12,
+    "window_accounts": 114
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/423",
+   "best": {
+    "repo": "evalhold/holdout-v2",
+    "n": 40,
+    "family": 11,
+    "covered": 21,
+    "E": 2.684,
+    "swarm_in_family": 0,
+    "honest_in_family": 11,
+    "window_accounts": 108
+   },
+   "swarm_family": null
+  },
+  {
+   "run": "runs/A0null/424",
+   "best": {
+    "repo": "radiant/med-imaging-v3",
+    "n": 24,
+    "family": 9,
+    "covered": 14,
+    "E": 1.978,
+    "swarm_in_family": 0,
+    "honest_in_family": 9,
+    "window_accounts": 30
+   },
+   "swarm_family": null
+  }
+ ]
+}
