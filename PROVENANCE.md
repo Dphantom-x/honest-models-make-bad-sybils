@@ -3,6 +3,10 @@
 The experiments ran in a private repository. This is its full commit log: abbreviated hash, commit time (US Eastern, UTC-5) and message, newest first. The report (Appendix B) and `predictions.md` cite these hashes. Each prediction's commit comes before the commit of its outcome, and the private repository can be shown to reviewers to verify the hashes.
 
 ```
+e7402b0  2026-11-09 04:09  Report: keep every sentence; smaller top/bottom margins and table placement instead of trims (user request)
+ad4e07e  2026-11-09 04:05  Report: the collision test on a real 1995 web log (post hoc): simulated cutoffs do not transfer; Appendix H, section 5, Table 3 row, abstract
+0a01ef0  2026-11-09 03:39  Report: master table of conditions and outcomes (confess or be caught), E defined at Figure 1, 4.4 condensed
+ac36b02  2026-11-09 03:25  Report: 'confess or be caught' headline (59 swarms: 36 confessed, 23 flagged) and four numbered checkpoints
 9a4eca4  2026-11-09 03:19  Report: public repo link on the title page; Appendix B states what is public and what is on request
 19c31c6  2026-11-09 03:10  Submission copy of the final PDF and the plain-text abstract
 a5e9b38  2026-11-09 03:03  README: public-facing summary, results at a glance, reproduction, safety notes

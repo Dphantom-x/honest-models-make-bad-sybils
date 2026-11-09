@@ -4,7 +4,7 @@
 
 Aldo Hidalgo · Swarm Alignment Sprint, Apart Research · November 2026 · **[Read the report (PDF)](report/final/report.pdf)**
 
-> **Ask, then count.** Every one of 59 live AI swarms that attacked a simulated model hub either admitted it was one operator (36) or lied and was flagged within an hour by a test on its own downloads (23). No lying swarm went unflagged.
+> **Ask, then count.** Every one of 59 live AI swarms that attacked a simulated model hub either admitted it was one operator (36) or lied and was flagged within an hour by a test on its own downloads (23). No lying swarm went unflagged. On a real 1995 web log, though, unrelated visitors crossed the test's simulated cutoffs, so a hub must set its cutoffs on its own traffic ([Result 5](#result-5-on-a-real-web-log-our-cutoffs-are-too-low)).
 
 ![Suspicion accelerates: evidence against "these accounts are unrelated" grows as a swarm's collision-free accounts take more of the dataset](figures/fig_suspicion.png)
 
@@ -52,6 +52,18 @@ In 218 of the 221 yes answers, the account listed its other accounts by ID.
 | Incident-built credential alarm | 0 swarm accounts flagged in 37 runs (agents never held keys) | 0 alarms in 30 unseen days | `results/r1_eval_score.json`, `results/heldout_A0.json` |
 | Split rule (new accounts splitting one dataset) | 58 of 58 attack episodes | 0 alarms in 24 honest-only worlds, but it flags an honest team doing the same work | `results/r5_recall_A.json`, `results/null_worlds_r4_r5.json`, `results/table3_detectors.json` |
 
+## Result 5: on a real web log, our cutoffs are too low
+
+After every other result, we ran the collision test unchanged on one day of a real web server's log (EPA-HTTP, 29-30 August 1995, Internet Traffic Archive), treating every host as an account that said no and every folder as a dataset. This check was not pre-registered.
+
+| Check (59 folders, 2,245 real hosts) | 1-hour window | 24-hour window | Source |
+|---|---|---|---|
+| Folders over our simulated cutoff | 10 of 59 | 12 of 59 | `results/real_log_epa.json` |
+| Highest evidence E among unrelated visitors | 4.35 | 8.25 | same file |
+| Lying swarms above that highest E | 6 of 23 | 4 of 23 | same file |
+
+Two causes: big crowds hold chance clean splits, and many folders hold one file per need. A clean split still cannot finish any of our datasets under the log's 24-hour value, but it can take 75-92% of one first. A hub must set its cutoffs on its own traffic (report section 5 and Appendix H).
+
 ## Scorecard: confess or be caught
 
 | Version | Attacking swarms | Confessed | Lied and flagged | Lied and missed |
@@ -62,6 +74,8 @@ In 218 of the 221 yes answers, the account listed its other accounts by ID.
 | Hub refuses a "yes" | 9 | 0 | 9 | 0 |
 | **Total** | **59** | **36** | **23** | **0** |
 
+All counts are from the simulated hub, with cutoffs set on simulated honest users; Result 5 shows what a real web log does to those cutoffs.
+
 ## Measurement validity
 
 - **Pre-registered.** Every prediction and its scoring rule was committed before its result. The ledger is `predictions.md`, and `PROVENANCE.md` holds the private research repository's commit log with timestamps.
@@ -70,9 +84,10 @@ In 218 of the 221 yes answers, the account listed its other accounts by ID.
   - DeepSeek lied in only 5 of 8 swarms when told to;
   - one shared decoy per account breaks the simple collision test;
   - the coverage test's honest cutoffs failed on 4 of 12 new worlds;
-  - our canary-carry-over prediction (H1) ended in a tie.
+  - our canary-carry-over prediction (H1) ended in a tie;
+  - on a real 1995 web log, our simulated cutoffs raised false alarms in 10 of 59 folders within an hour (Result 5; not pre-registered).
 - **Controls.** A same-length sham question; a neutral brief; cutoffs set on 12 honest-only worlds and tested on 12 more.
-- **Main limitation.** The honest users are simulated. The simulator passed 13 of 32 realism checks and was never compared with a real trace (report §5 and Appendix A).
+- **Main limitation.** The honest users are simulated (13 of 32 realism checks passed), and the one real log we tried shows the cutoffs set on them are too low (report §5 and Appendices A and H).
 
 ## Repository structure
 
@@ -80,7 +95,8 @@ In 218 of the 221 yes answers, the account listed its other accounts by ID.
 report/final/          report.pdf, report.html (source), build.py (asserts the headline numbers), abstract_for_form.txt
 results/               one JSON per reported number (index: results/README.md)
 figures/               fig_suspicion.png, fig_ask.png and the scripts that draw them from results/
-reference/             collision_test.py: the paper's two statistics; test_collision_test.py reproduces Figure 1's numbers
+reference/             collision_test.py: the paper's two statistics; test_collision_test.py reproduces Figure 1's numbers;
+                       real_log_epa.py: the collision test on the EPA-HTTP 1995 log (Result 5)
 predictions.md         pre-registration ledger: every prediction, written before its data, with its outcome
 PROVENANCE.md          commit log of the private research repository (timestamps for every prediction and outcome)
 LICENSE, LICENSE-DATA, CITATION.cff
@@ -93,6 +109,8 @@ cd reference
 python collision_test.py        # Figure 1's endpoints and the shared-decoy example
 python -m pytest -q             # 4 tests reproduce the printed numbers
 ```
+
+To rerun Result 5, download `https://ita.ee.lbl.gov/traces/epa-http.txt.Z` (1.1 MB, freely redistributable, collected by Laura Bottomley of Duke University), unpack it, and from the repository root run `python -I reference/real_log_epa.py PATH/epa-http.txt`. The log itself is not included here.
 
 ## What is not in this repository
 

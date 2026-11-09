@@ -50,6 +50,19 @@ def checks():
             assert len(lying_flagged) == 13, lying_flagged
         else:
             assert honest_worlds == set(), honest_worlds
+    # post-hoc real-log check (Appendix H, section 5)
+    rl = j("results/real_log_epa.json")
+    assert rl["statistic_identical_to_evidence_split"] is True
+    assert (rl["folders"], rl["requests_parsed_kept"], rl["hosts_kept"]) == (59, 33451, 2245)
+    assert rl["folders_over_our_cutoff"] == {"1h": 10, "24h": 12}
+    assert rl["highest_E_real"] == {"1h": 4.351, "24h": 8.25}
+    assert rl["liars"] == 23 and rl["liars_over_real_highest"] == {"1h": 6, "24h": 4, "either": 6}
+    t1, t24 = rl["top_folders"]["1h"][0], rl["top_folders"]["24h"][0]
+    assert (t1["n"], t1["window_hosts"], t1["family"]) == (39, 72, 21)
+    assert (t24["family"], t24["covered"]) == (28, 32)
+    cx = rl["clean_split_crossings"]
+    assert {n: max(x["most_taken_unflagged"]["real_24h"] for x in cx if x["n"] == n) for n in (24, 30, 40)} == {24: 22, 30: 27, 40: 32}
+    assert round(100 * min(x["most_taken_unflagged"]["real_24h"] / x["n"] for x in cx)) == 75
 
 
 def main():
